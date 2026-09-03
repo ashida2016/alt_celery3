@@ -1,0 +1,29 @@
+# VCS
+.git
+.gitignore
+
+# Python 缓存与构建产物
+__pycache__
+*.py[cod]
+*.egg-info
+build
+dist
+
+# 虚拟环境
+.venv
+venv
+
+# 环境变量文件（敏感信息经环境变量注入，不进入镜像）
+.env
+.env.local
+
+# 文档与工具缓存
+README.md
+.ruff_cache
+.mypy_cache
+.pytest_cache
+
+# Docker 自身
+Dockerfile
+docker-compose.yml
+.dockerignore

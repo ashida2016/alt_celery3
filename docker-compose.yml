@@ -1,0 +1,67 @@
+# =============================================================================
+# alt_celery3 服务编排
+# - worker：执行任务
+# - beat：定时任务调度（beat_schedule 定义于 app/celery_app.py）
+# - flower：任务监控面板
+# Redis（redis-stack）为外部已有带密码服务，不在本文件中定义，
+# 连接参数经 .env（CELERY_BROKER_URL / CELERY_RESULT_BACKEND）注入
+# =============================================================================
+
+services:
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: alt_celery3:latest
+    container_name: alt_celery3-worker
+    command: celery -A app.celery_app worker --loglevel=info --concurrency=4
+    # 环境变量统一经 .env 注入（含 CELERY_BROKER_URL / CELERY_RESULT_BACKEND）
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; from app import app; sys.exit(0 if app.control.inspect(timeout=5).ping() else 1)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 20s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  beat:
+    image: alt_celery3:latest
+    container_name: alt_celery3-beat
+    # 单实例运行：beat 不可多副本，否则定时任务重复调度
+    command: celery -A app.celery_app beat --loglevel=info
+    env_file:
+      - .env
+    restart: unless-stopped
+    depends_on:
+      worker:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  flower:
+    image: alt_celery3:latest
+    container_name: alt_celery3-flower
+    command: celery -A app.celery_app flower --port=5555
+    ports:
+      - "${FLOWER_PORT:-5555}:5555"
+    env_file:
+      - .env
+    restart: unless-stopped
+    depends_on:
+      worker:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
