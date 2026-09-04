@@ -26,3 +26,8 @@ env/
 
 # 系统
 .DS_Store
+
+# 其他Ashida
+celerybeat-schedule
+celerybeat-schedule-shm
+celerybeat-schedule-wal
