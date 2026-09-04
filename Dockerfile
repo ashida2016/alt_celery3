@@ -19,6 +19,12 @@ WORKDIR /build
 
 COPY requirements.txt .
 
+# scdb_mysql_speed 依赖 mysqlclient（C 扩展），构建期需要 MySQL 开发头文件与编译工具
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential pkg-config default-libmysqlclient-dev git \
+    && rm -rf /var/lib/apt/lists/*
+
 # 先编译 wheels 供后续阶段离线安装，减少最终镜像体积
 RUN pip wheel --wheel-dir /wheels -r requirements.txt
 
@@ -33,7 +39,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=1
 
 # 显式创建专用非特权用户 celeuser（专供 celery 使用），UID/GUID 固定便于权限管理
-RUN groupadd --gid 1000 celeuser \
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libmariadb3 \
+    && rm -rf /var/lib/apt/lists/* \
+    && groupadd --gid 1000 celeuser \
     && useradd --uid 1000 --gid celeuser --create-home --shell /bin/bash celeuser
 
 WORKDIR /app

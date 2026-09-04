@@ -25,8 +25,10 @@ run_tasks.py(生产者) ──下发任务──▶ redis-stack(broker/result) �
 alt_celery3/
 ├── app/
 │   ├── celery_app.py        # Celery 应用实例、环境变量配置、beat_schedule
+│   ├── log_setup.py         # sclog 日志中间件初始化（控制台/文件 + MySQL sink）
 │   └── tasks/               # 任务子文件夹（新增任务放这里）
-│       └── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
+│       ├── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
+│       └── db_tasks.py      # 数据库任务：try_mysql + get_one_student
 ├── run_tasks.py             # 生产者脚本：调用示例任务、获取任务结果
 ├── run_celery.py            # 本地一键启动 worker / beat / flower
 ├── Dockerfile               # 多阶段构建，创建 celeuser 非 root 用户
@@ -98,7 +100,7 @@ alt_celery3/
 
 ### 1. 运行示例脚本 run_tasks.py
 
-`run_tasks.py` 会依次：调用普通加法任务并等待结果、手动触发一次定时任务并获取结果、从 redis backend 列出最近的任务执行结果（含 beat 周期触发的定时任务记录）。
+`run_tasks.py` 会依次：调用普通加法任务并等待结果、手动触发一次定时任务并获取结果、从 redis backend 列出最近的任务执行结果（含 beat 周期触发的定时任务记录）。Redis 连接参数自动从项目根目录的 `.env` 文件加载（`run_celery.py` 与 celery 命令行同理），无需手动 export。
 
 ```bash
 # 宿主机运行（需 Python >= 3.13 并安装依赖）
@@ -134,7 +136,39 @@ periodic_result = periodic_add.delay(4, 5)
 print(periodic_result.get(timeout=30))  # 9
 ```
 
-### 3. 新增任务
+### 3. 数据库任务
+
+`app/tasks/db_tasks.py` 提供两个基于 `scdb_mysql_speed` 的 MySQL 任务，均使用 `sclog` 记录操作日志（持久化到 `log_db`）：
+
+| 任务                    | 说明                                  |
+| ----------------------- | -------------------------------------- |
+| `tasks.try_mysql`       | 测试业务库（web_db）连通性             |
+| `tasks.get_one_student` | 按主键查询单个学生信息（students 表）  |
+
+```python
+from app.tasks.db_tasks import try_mysql, get_one_student
+
+print(try_mysql.delay().get(timeout=30))
+# {'ok': True, 'database': 'web_db'}
+print(get_one_student.delay(1).get(timeout=30))
+# {'found': True, 'student': {'id': 1, 'name': '李骧渊', 'gender': 'M', 'birthday': ...}}
+```
+
+`students` 表结构（如业务库中不存在，需先创建）：
+
+```sql
+CREATE TABLE IF NOT EXISTS students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(32) NOT NULL,
+    gender VARCHAR(4) NOT NULL,
+    birthday DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
+
+可使用 `alt_generate_zh_name` 包生成随机学生数据灌入该表用于测试。
+
+### 4. 新增任务
 
 在 `app/tasks/` 下新建 py 文件（如 `app/tasks/notice_tasks.py`）：
 
@@ -149,13 +183,17 @@ def send_notice(user_id: int, content: str) -> str:
 
 并在 `app/celery_app.py` 的 `include` 列表中加入 `"app.tasks.notice_tasks"`；如需定时执行，在 `beat_schedule` 中增加条目即可。
 
-### 4. 更新部署
+### 5. 更新部署
 
 服务器上拉取最新代码并重建拉起服务：
 
 ```bash
 ./update.sh
 ```
+
+> **注意**：更新代码后务必重建并重启所有 worker。若同一 broker 上存在运行旧代码的其他 worker 节点，新任务可能被旧节点抢占而报 `NotRegistered`。可用 `celery -A app.celery_app inspect ping` 检查在线节点。
+
+> **队列说明**：worker 同时监听 `default` 与 `db` 两个队列；`tasks.try_mysql`、`tasks.get_one_student` 路由到专用 `db` 队列（定义于 `app/celery_app.py` 的 `task_routes`），与默认队列隔离。本地启动脚本 `run_celery.py` 与 docker-compose 中的 worker 命令均已包含 `-Q default,db`。
 
 ## 环境变量说明
 
@@ -164,6 +202,17 @@ def send_notice(user_id: int, content: str) -> str:
 | `CELERY_BROKER_URL`   | 是   | 消息中间件连接地址（外部带密码 redis-stack）    | `redis://:pass@redis-stack-host:6379/0`       |
 | `CELERY_RESULT_BACKEND` | 是 | 结果后端连接地址（与 broker 共用 redis-stack）  | `redis://:pass@redis-stack-host:6379/1`       |
 | `FLOWER_PORT`         | 否   | Flower 对外暴露端口（默认 5555）                | `5555`                                        |
+| `APP_DB_HOST`         | 是   | MySQL 业务库地址（web_db，数据库任务使用）      | `192.168.1.101`                               |
+| `APP_DB_PORT`         | 否   | MySQL 业务库端口（默认 3306）                   | `3306`                                        |
+| `APP_DB_USER`         | 是   | MySQL 业务库用户                                | `web_user`                                    |
+| `APP_DB_PASSWORD`     | 是   | MySQL 业务库密码                                | `******`                                      |
+| `APP_DB_NAME`         | 否   | MySQL 业务库名（默认 web_db）                   | `web_db`                                      |
+| `LOG_DB_HOST`         | 是   | sclog 日志库地址（log_db，日志 sink 使用）      | `192.168.1.101`                               |
+| `LOG_DB_PORT`         | 否   | sclog 日志库端口（默认 3306）                   | `3306`                                        |
+| `LOG_DB_USER`         | 是   | sclog 日志库用户                                | `log_user`                                    |
+| `LOG_DB_PASSWORD`     | 是   | sclog 日志库密码                                | `******`                                      |
+| `LOG_DB_NAME`         | 否   | sclog 日志库名（默认 log_db）                   | `log_db`                                      |
+| `LOG_DIR`             | 否   | 本地日志文件目录（默认 logs）                   | `logs`                                        |
 
 ## 本地开发
 
@@ -178,16 +227,17 @@ cp .env.example .env
 
 ### 使用 run_celery.py 一键启动
 
-无需 Docker，直接在本地拉起全套服务（自动加载 `.env` 文件）：
+无需 Docker，直接在本地拉起 worker 与 beat（自动加载 `.env` 文件，默认不启动 flower）：
 
 ```bash
-python run_celery.py                            # 启动 worker + beat + flower
-python run_celery.py --components worker,beat   # 只启动部分组件
+python run_celery.py                            # 启动 worker + beat
+python run_celery.py --components worker        # 只启动 worker
+python run_celery.py --components worker,beat,flower  # 额外启动 flower
 python run_celery.py --flower-port 5566         # 指定 flower 端口
 python run_celery.py --loglevel debug           # 调试日志
 ```
 
-启动后按 `Ctrl+C` 优雅停止全部进程；Flower 面板默认在 `http://localhost:5555`。
+启动后按 `Ctrl+C` 优雅停止全部进程；如需 flower 监控面板（默认 `http://localhost:5555`），通过 `--components` 显式加入。
 
 ### 手动分进程启动（等价方式）
 

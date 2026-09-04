@@ -5,6 +5,11 @@ celery[redis]>=5.4,<6
 # 监控面板
 flower>=2.0
 
+# 自定义包（未发布 PyPI，从 GitHub 按 tag 安装）
+sclog_lite @ git+https://github.com/ashida2016/sclog_lite.git@ver0.3.1
+alt_generate_zh_name @ git+https://github.com/ashida2016/alt_generate_zh_name.git@ver0.3.1
+scdb_mysql_speed @ git+https://github.com/ashida2016/scdb_mysql_speed.git@ver0.6.0
+
 # 开发工具（可选，按需取消注释）
 # ruff>=0.6
 # mypy>=1.11

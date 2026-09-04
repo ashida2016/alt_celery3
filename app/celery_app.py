@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Celery 应用实例与全局配置模块。
 
 从环境变量读取 broker / backend 等必要参数，集中定义 beat_schedule
@@ -29,7 +28,7 @@ app = Celery(
     "alt_celery3",
     broker=BROKER_URL,
     backend=RESULT_BACKEND,
-    include=["app.tasks.math_tasks"],
+    include=["app.tasks.math_tasks", "app.tasks.db_tasks"],
 )
 
 # ---------------------------------------------------------------------------
@@ -49,8 +48,13 @@ app.conf.update(
     worker_prefetch_multiplier=1,
     task_acks_late=True,
     worker_max_tasks_per_child=1000,
-    # 任务路由：默认队列，后续可按需扩展
+    # 任务路由：默认队列 + 数据库任务专用队列
+    # （db 队列与 default 隔离，避免被只监听 default 的旧代码 worker 抢占）
     task_default_queue="default",
+    task_routes={
+        "tasks.try_mysql": {"queue": "db"},
+        "tasks.get_one_student": {"queue": "db"},
+    },
     # broker 连接可靠性
     broker_connection_retry_on_startup=True,
     # 任务执行超时保护

@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """生产者端示例脚本。
 
 调用本项目中的全部示例任务并获取执行结果：
@@ -11,9 +10,8 @@
 
 用法::
 
-    # 需先配置临时环境变量 
-    export CELERY_BROKER_URL="redis://:Gjh-2026@192.168.1.101:16380/6"
-    export CELERY_RESULT_BACKEND="redis://:Gjh-2026@192.168.1.101:16380/7"
+    # 连接参数自动从项目根目录的 .env 文件加载，
+    # 修改 .env 中的 CELERY_BROKER_URL / CELERY_RESULT_BACKEND 即可。
     python run_tasks.py
     python run_tasks.py --timeout 10
 """
@@ -25,6 +23,7 @@ import sys
 from typing import Any
 
 from app import app
+from app.tasks.db_tasks import get_one_student, try_mysql
 from app.tasks.math_tasks import add, periodic_add
 
 logging.basicConfig(
@@ -134,6 +133,25 @@ def show_beat_schedule() -> None:
         )
 
 
+def run_db_tasks(timeout: float) -> tuple[dict, dict]:
+    """下发数据库相关任务并等待结果。
+
+    Args:
+        timeout: 等待结果的最长秒数。
+
+    Returns:
+        (try_mysql 结果, get_one_student 结果) 元组。
+    """
+    logger.info("下发任务 tasks.try_mysql ...")
+    mysql_result = try_mysql.delay().get(timeout=timeout)
+    print(f"[数据库] tasks.try_mysql = {mysql_result}")
+
+    logger.info("下发任务 tasks.get_one_student(1) ...")
+    student_result = get_one_student.delay(1).get(timeout=timeout)
+    print(f"[数据库] tasks.get_one_student(1) = {student_result}")
+    return mysql_result, student_result
+
+
 def main() -> int:
     """脚本入口：依次执行示例任务演示。
 
@@ -161,7 +179,10 @@ def main() -> int:
     periodic_result = run_scheduled_task(10, 20, args.timeout)
     print(f"[定时任务] tasks.periodic_add(10, 20) = {periodic_result}")
 
-    # 3. 从 redis backend 查询定时任务等的历史执行结果
+    # 3. 数据库任务：MySQL 连通性测试 + 查询单个学生信息
+    run_db_tasks(args.timeout)
+
+    # 4. 从 redis backend 查询定时任务等的历史执行结果
     recent = list_recent_task_results(limit=10)
     if recent:
         print("\n[最近任务结果] (来自 result backend):")

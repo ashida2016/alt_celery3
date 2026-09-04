@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """本地启动脚本：一键拉起 celery 全套服务。
 
 用于在没有 Docker 的本地环境中运行 Celery 应用，可选启动：
@@ -14,8 +13,8 @@ shell 中导出。
 
 用法::
 
-    python run_celery.py                          # 启动 worker + beat + flower
-    python run_celery.py --components worker,beat # 只启动部分组件
+    python run_celery.py                          # 启动 worker + beat
+    python run_celery.py --components worker,beat,flower  # 额外启动 flower
     python run_celery.py --flower-port 5566       # 指定 flower 端口
 
 按 ``Ctrl+C`` 优雅停止全部进程。
@@ -67,7 +66,13 @@ def build_commands(loglevel: str, flower_port: int) -> dict[str, list[str]]:
     base = [sys.executable, "-m", "celery", "-A", "app.celery_app"]
     return {
         "worker": base
-        + ["worker", f"--loglevel={loglevel}", "--concurrency=4"],
+        + [
+            "worker",
+            f"--loglevel={loglevel}",
+            "--concurrency=4",
+            "-Q",
+            "default,db",
+        ],
         "beat": base + ["beat", f"--loglevel={loglevel}"],
         "flower": base + ["flower", f"--port={flower_port}"],
     }
@@ -100,8 +105,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="本地启动 celery 全套服务")
     parser.add_argument(
         "--components",
-        default="worker,beat,flower",
-        help="要启动的组件，逗号分隔（默认 worker,beat,flower）",
+        default="worker,beat",
+        help="要启动的组件，逗号分隔（默认 worker,beat；flower 可按需加入）",
     )
     parser.add_argument(
         "--loglevel",

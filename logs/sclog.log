@@ -1,0 +1,36 @@
+2026-09-04 17:43:14.678 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:43:22.707 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:44:03.268 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:44:03.386 | INFO     | app.tasks.db_tasks:try_mysql:49 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-04 17:44:03.527 | INFO     | app.tasks.db_tasks:try_mysql:59 - [try_mysql] 测试结果: ok=True
+2026-09-04 17:44:29.111 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:44:29.212 | INFO     | app.tasks.db_tasks:try_mysql:49 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-04 17:44:29.312 | INFO     | app.tasks.db_tasks:try_mysql:59 - [try_mysql] 测试结果: ok=True
+2026-09-04 17:44:35.252 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:44:39.883 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:46:04.314 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:46:19.415 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:46:19.535 | INFO     | app.tasks.db_tasks:try_mysql:49 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-04 17:46:19.635 | INFO     | app.tasks.db_tasks:try_mysql:59 - [try_mysql] 测试结果: ok=True
+2026-09-04 17:46:31.053 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:46:31.163 | INFO     | app.tasks.db_tasks:get_one_student:76 - [get_one_student] 查询学生信息: id=1
+2026-09-04 17:46:31.277 | INFO     | app.tasks.db_tasks:get_one_student:94 - [get_one_student] 查询成功: {'id': 1, 'name': '李骧渊', 'gender': 'M', 'birthday': datetime.date(2001, 2, 23)}
+2026-09-04 17:46:31.288 | INFO     | app.tasks.db_tasks:get_one_student:76 - [get_one_student] 查询学生信息: id=999
+2026-09-04 17:46:31.392 | WARNING  | app.tasks.db_tasks:get_one_student:90 - [get_one_student] 学生不存在: id=999
+2026-09-04 17:57:04.056 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:57:04.058 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:57:24.742 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 17:59:57.787 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:00:16.175 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:00:16.294 | INFO     | app.tasks.db_tasks:try_mysql:49 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-04 18:00:16.378 | INFO     | app.tasks.db_tasks:try_mysql:59 - [try_mysql] 测试结果: ok=True
+2026-09-04 18:00:16.391 | INFO     | app.tasks.db_tasks:get_one_student:76 - [get_one_student] 查询学生信息: id=1
+2026-09-04 18:00:16.474 | INFO     | app.tasks.db_tasks:get_one_student:94 - [get_one_student] 查询成功: {'id': 1, 'name': '李骧渊', 'gender': 'M', 'birthday': datetime.date(2001, 2, 23)}
+2026-09-04 18:01:13.213 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:01:52.505 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:01:52.508 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:01:56.447 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-04 18:01:56.585 | INFO     | app.tasks.db_tasks:try_mysql:49 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-04 18:01:56.699 | INFO     | app.tasks.db_tasks:try_mysql:59 - [try_mysql] 测试结果: ok=True
+2026-09-04 18:01:56.705 | INFO     | app.tasks.db_tasks:get_one_student:76 - [get_one_student] 查询学生信息: id=1
+2026-09-04 18:01:56.803 | INFO     | app.tasks.db_tasks:get_one_student:94 - [get_one_student] 查询成功: {'id': 1, 'name': '李骧渊', 'gender': 'M', 'birthday': datetime.date(2001, 2, 23)}
