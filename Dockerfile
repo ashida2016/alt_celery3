@@ -56,9 +56,11 @@ RUN pip install --no-cache-dir --no-index --find-links=/wheels /wheels/* \
 COPY --chown=celeuser:celeuser app/ ./app/
 COPY --chown=celeuser:celeuser run_tasks.py ./
 
-# beat 等组件的持久化状态目录（属主 celeuser，可写）
-RUN mkdir -p /app/data \
-    && chown celeuser:celeuser /app/data
+# 运行时需要写入的目录统一预创建并赋予 celeuser 属主：
+# - /app/data  ：beat 调度状态文件（compose 中挂载 beat_data 卷）
+# - /app/logs  ：sclog 文件日志与 MySQL 回退文件
+RUN mkdir -p /app/data /app/logs \
+    && chown -R celeuser:celeuser /app/data /app/logs
 
 # 切换到非特权用户运行
 USER celeuser

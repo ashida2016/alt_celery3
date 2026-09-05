@@ -52,15 +52,19 @@ def init_logging() -> None:
     1. setup_logging：启用控制台 INFO 与文件 DEBUG（带轮转）日志
     2. add_mysql_sink：添加 MySQL 异步批量持久化 sink
 
-    任何初始化失败都不抛出异常（日志属于旁路组件，不应阻断主应用）。
+    各 sink 相互独立：任一组件初始化失败不影响其余组件，
+    且任何失败都不抛出异常（日志属于旁路组件，不应阻断主应用）。
     """
     global _initialized
     if _initialized:
         return
 
+    errors: list[str] = []
+
     with contextlib.suppress(OSError):
         os.makedirs(LOG_DIR, exist_ok=True)  # 目录创建失败时跳过文件日志，不影响 sink
 
+    # 1. 控制台/文件日志（文件写入失败时降级为仅控制台输出）
     try:
         setup_logging(
             console=True,
@@ -70,6 +74,13 @@ def init_logging() -> None:
             file_rotation="10 MB",
             file_retention="10 days",
         )
+    except Exception as exc:  # noqa: BLE001
+        errors.append(f"file sink: {exc!r}")
+        with contextlib.suppress(Exception):
+            setup_logging(console=True, console_level="INFO", file_path=False)
+
+    # 2. MySQL 数据库 sink（独立于文件日志，目录权限问题不影响其初始化）
+    try:
         add_mysql_sink(
             **_log_db_config(),
             table_name="app_logs",
@@ -79,8 +90,11 @@ def init_logging() -> None:
             fallback_path=FALLBACK_PATH,
             level="INFO",
         )
-        _initialized = True
-        logger.info("日志中间件初始化完成（console/file/mysql sink）。")
     except Exception as exc:  # noqa: BLE001
-        # 故障隔离：日志初始化失败不能阻断应用启动
-        print(f"[log_setup] 日志中间件初始化失败: {exc!r}")
+        errors.append(f"mysql sink: {exc!r}")
+
+    _initialized = True
+    if errors:
+        print(f"[log_setup] 日志中间件部分组件初始化失败: {'; '.join(errors)}")
+    else:
+        logger.info("日志中间件初始化完成（console/file/mysql sink）。")

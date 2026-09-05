@@ -54,3 +54,6 @@
 2026-09-05 09:52:43.243 | INFO     | app.tasks.db_tasks:get_one_student:76 - [get_one_student] 查询学生信息: id=1
 2026-09-05 09:52:43.351 | INFO     | app.tasks.db_tasks:get_one_student:94 - [get_one_student] 查询成功: {'id': 1, 'name': '李骧渊', 'gender': 'M', 'birthday': datetime.date(2001, 2, 23)}
 2026-09-05 10:03:11.067 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-05 10:26:48.299 | INFO     | app.log_setup:init_logging:83 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-05 10:40:04.868 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-05 10:40:06.256 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
