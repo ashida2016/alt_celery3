@@ -23,7 +23,11 @@ import sys
 from typing import Any
 
 from app import app
-from app.tasks.db_tasks import get_one_student, try_mysql
+from app.tasks.db_tasks import (
+    generate_many_students,
+    get_one_student,
+    try_mysql,
+)
 from app.tasks.math_tasks import add, periodic_add
 
 logging.basicConfig(
@@ -152,6 +156,35 @@ def run_db_tasks(timeout: float) -> tuple[dict, dict]:
     return mysql_result, student_result
 
 
+def run_generate_task(args: argparse.Namespace) -> dict:
+    """单独下发 generate_many_students 任务并等待结果。
+
+    Args:
+        args: 命令行参数（numbers/birthday_min/birthday_max 等）。
+
+    Returns:
+        任务执行摘要（inserted、elapsed_seconds 等）。
+    """
+    logger.info(
+        "下发任务 tasks.generate_many_students: numbers=%s, "
+        "birthday=[%s, %s], chunk_size=%s, max_workers=%s",
+        args.numbers,
+        args.birthday_min,
+        args.birthday_max,
+        args.chunk_size,
+        args.max_workers,
+    )
+    result = generate_many_students.delay(
+        numbers=args.numbers,
+        birthday_min=args.birthday_min,
+        birthday_max=args.birthday_max,
+        chunk_size=args.chunk_size,
+        max_workers=args.max_workers,
+    ).get(timeout=args.timeout)
+    print(f"[生成任务] tasks.generate_many_students = {result}")
+    return result
+
+
 def main() -> int:
     """脚本入口：依次执行示例任务演示。
 
@@ -162,12 +195,50 @@ def main() -> int:
         description="alt_celery3 生产者示例脚本"
     )
     parser.add_argument(
+        "--task",
+        choices=["all", "generate"],
+        default="all",
+        help="要执行的任务：all=运行全部示例（默认），generate=仅运行批量生成学生任务",
+    )
+    parser.add_argument(
         "--timeout",
         type=float,
         default=30.0,
-        help="等待任务结果的最长秒数（默认 30）",
+        help="等待任务结果的最长秒数（默认 30；大批量生成时请调大，如 3600）",
+    )
+    parser.add_argument(
+        "--numbers",
+        type=int,
+        default=1000,
+        help="generate 任务要生成的学生人数（默认 1000）",
+    )
+    parser.add_argument(
+        "--birthday-min",
+        default="2000-01-01",
+        help="generate 任务出生年月日最小值（默认 2000-01-01）",
+    )
+    parser.add_argument(
+        "--birthday-max",
+        default="2010-12-31",
+        help="generate 任务出生年月日最大值（默认 2010-12-31）",
+    )
+    parser.add_argument(
+        "--chunk-size",
+        type=int,
+        default=50000,
+        help="generate 任务单块人数上限（默认 50000）",
+    )
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=8,
+        help="generate 任务并发线程数（默认 8）",
     )
     args = parser.parse_args()
+
+    if args.task == "generate":
+        run_generate_task(args)
+        return 0
 
     show_beat_schedule()
 

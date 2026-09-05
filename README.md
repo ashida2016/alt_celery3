@@ -28,7 +28,7 @@ alt_celery3/
 │   ├── log_setup.py         # sclog 日志中间件初始化（控制台/文件 + MySQL sink）
 │   └── tasks/               # 任务子文件夹（新增任务放这里）
 │       ├── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
-│       └── db_tasks.py      # 数据库任务：try_mysql + get_one_student
+│       └── db_tasks.py      # 数据库任务：try_mysql + get_one_student + generate_many_students
 ├── run_tasks.py             # 生产者脚本：调用示例任务、获取任务结果
 ├── run_celery.py            # 本地一键启动 worker / beat / flower
 ├── Dockerfile               # 多阶段构建，创建 celeuser 非 root 用户
@@ -167,6 +167,39 @@ CREATE TABLE IF NOT EXISTS students (
 ```
 
 可使用 `alt_generate_zh_name` 包生成随机学生数据灌入该表用于测试。
+
+### 批量生成学生任务 generate_many_students
+
+`tasks.generate_many_students` 批量生成随机学生信息并直接写入 `web_db.students` 表。面向**百万级**数据量做了多线程优化：总量按块切分，线程池并发执行"生成 + 批量入库"，共享数据库连接池。
+
+| 参数           | 类型 | 默认值       | 说明                                     |
+| -------------- | ---- | ------------ | ---------------------------------------- |
+| `numbers`      | int  | 必填         | 要生成的学生总人数                       |
+| `birthday_min` | str  | `2000-01-01` | 出生年月日最小值（YYYY-MM-DD）           |
+| `birthday_max` | str  | `2010-12-31` | 出生年月日最大值（YYYY-MM-DD）           |
+| `chunk_size`   | int  | `50000`      | 单块人数上限（分块生成与入库）           |
+| `max_workers`  | int  | `8`          | 并发线程数（连接池同步扩容，上限 32）    |
+
+通过 `run_tasks.py` 单独指定运行（大批量时请同步调大 `--timeout`）：
+
+```bash
+# 生成 10000 条
+python run_tasks.py --task generate --numbers 10000 --timeout 120
+
+# 百万级示例（实测约 2 万行/秒，100 万条约 50 秒）
+python run_tasks.py --task generate --numbers 1000000 \
+    --birthday-min 2000-01-01 --birthday-max 2010-12-31 \
+    --chunk-size 50000 --max-workers 8 --timeout 600
+```
+
+返回结果示例：
+
+```
+{'inserted': 200000, 'numbers': 200000, 'chunk_size': 25000, 'max_workers': 8,
+ 'elapsed_seconds': 9.6, 'rows_per_second': 20833.9}
+```
+
+> 该任务执行耗时较长，已单独设置任务超时上限（soft 1800s / hard 1900s），不受全局 `task_time_limit=600` 限制。
 
 ### 4. 新增任务
 
