@@ -56,6 +56,10 @@ RUN pip install --no-cache-dir --no-index --find-links=/wheels /wheels/* \
 COPY --chown=celeuser:celeuser app/ ./app/
 COPY --chown=celeuser:celeuser run_tasks.py ./
 
+# beat 等组件的持久化状态目录（属主 celeuser，可写）
+RUN mkdir -p /app/data \
+    && chown celeuser:celeuser /app/data
+
 # 切换到非特权用户运行
 USER celeuser
 
@@ -64,4 +68,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
     CMD python -c "import sys; from app import app; sys.exit(0 if app.control.inspect(timeout=5).ping() else 1)" || exit 1
 
 # 默认命令：celery worker（compose 中按服务覆盖 command）
-CMD ["celery", "-A", "app.celery_app", "worker", "--loglevel=info"]
+# CMD ["celery", "-A", "app.celery_app", "worker", "--loglevel=info"]
+CMD ["celery", "-A", "app.celery_app", "worker", "--loglevel=info","-n","web01-worker@%n"]

@@ -36,8 +36,13 @@ services:
     container_name: alt_celery3-beat
     # 单实例运行：beat 不可多副本，否则定时任务重复调度
     command: celery -A app.celery_app beat --loglevel=info
+    environment:
+      # beat 调度状态文件写入专属可写目录（/app/data 属主为 celeuser）
+      CELERY_BEAT_SCHEDULE_FILE: /app/data/celerybeat-schedule
     env_file:
       - .env
+    volumes:
+      - beat_data:/app/data
     restart: unless-stopped
     depends_on:
       worker:
@@ -65,3 +70,6 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+volumes:
+  beat_data:

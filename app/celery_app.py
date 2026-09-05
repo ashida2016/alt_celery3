@@ -62,6 +62,11 @@ app.conf.update(
     task_time_limit=600,
     # 日志输出到 stdout，便于 docker logs 收集
     worker_hijack_root_logger=False,
+    # beat 调度状态文件路径（容器内经环境变量指向可写目录，
+    # 避免非特权用户在工作目录写入被 PermissionError 拒绝）
+    beat_schedule_filename=os.environ.get(
+        "CELERY_BEAT_SCHEDULE_FILE", "celerybeat-schedule"
+    ),
 )
 
 # ---------------------------------------------------------------------------
