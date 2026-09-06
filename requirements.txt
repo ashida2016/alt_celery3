@@ -5,6 +5,9 @@ celery[redis]>=5.4,<6
 # 监控面板
 flower>=2.0
 
+# LLM API（硅基流动 Chat Completion，OpenAI 兼容协议）
+openai>=1.40,<2
+
 # 自定义包（未发布 PyPI，从 GitHub 按 tag 安装）
 sclog_lite @ git+https://github.com/ashida2016/sclog_lite.git@ver0.3.1
 alt_generate_zh_name @ git+https://github.com/ashida2016/alt_generate_zh_name.git@ver0.3.1

@@ -4830,3 +4830,132 @@
 2026-09-05 21:15:38.412 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 5000 条
 2026-09-05 21:15:38.414 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 10000000/10000000 (100%)
 2026-09-05 21:15:38.432 | INFO     | app.tasks.db_tasks:generate_many_students:247 - [generate_many_students] 完成: {'inserted': 10000000, 'numbers': 10000000, 'chunk_size': 5000, 'max_workers': 16, 'elapsed_seconds': 294.61, 'rows_per_second': 33943.1}
+2026-09-05 22:28:10.511 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 00:00:08.906 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:05.665 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:24.559 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:24.566 | INFO     | app.tasks.un_tasks:get_un_groups:220 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:53:43.520 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:43.526 | INFO     | app.tasks.un_tasks:get_un_groups:220 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:53:43.536 | INFO     | app.tasks.un_tasks:get_un_groups:227 - [get_un_groups] 模型返回并校验通过 2 条高校信息
+2026-09-06 12:53:43.668 | INFO     | app.tasks.un_tasks:_insert_universities:169 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-06 12:53:50.853 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:50.860 | INFO     | app.tasks.un_tasks:get_un_groups:220 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-06 12:53:50.860 | INFO     | app.tasks.un_tasks:get_un_groups:227 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-06 12:53:50.983 | INFO     | app.tasks.un_tasks:_insert_universities:169 - [get_un_groups] 高校入库: 测试大学
+2026-09-06 12:53:50.998 | INFO     | app.tasks.un_tasks:get_un_groups:238 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 0, 'major_new': 0, 'major_dup': 0}
+2026-09-06 12:53:57.575 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:53:57.580 | INFO     | app.tasks.un_tasks:get_un_groups:220 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-06 12:53:57.580 | INFO     | app.tasks.un_tasks:get_un_groups:227 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-06 12:53:57.699 | INFO     | app.tasks.un_tasks:_insert_universities:159 - [get_un_groups] 高校已存在，跳过: 测试大学
+2026-09-06 12:53:57.703 | INFO     | app.tasks.un_tasks:get_un_groups:238 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 0, 'major_dup': 0}
+2026-09-06 12:54:28.626 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:56:00.999 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:56:01.007 | INFO     | app.tasks.un_tasks:get_un_groups:270 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:56:01.007 | INFO     | app.tasks.un_tasks:get_un_groups:277 - [get_un_groups] 模型返回并校验通过 2 条高校信息
+2026-09-06 12:56:01.131 | INFO     | app.tasks.un_tasks:_insert_universities:200 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-06 12:56:01.153 | WARNING  | app.tasks.un_tasks:_insert_universities:224 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-06 12:56:01.164 | INFO     | app.tasks.un_tasks:_insert_universities:200 - [get_un_groups] 高校入库: 浙江万里学院
+2026-09-06 12:56:01.195 | INFO     | app.tasks.un_tasks:get_un_groups:288 - [get_un_groups] 入库统计: {'university_new': 2, 'university_dup': 0, 'major_new': 2, 'major_dup': 1}
+2026-09-06 12:56:01.230 | INFO     | app.tasks.un_tasks:get_un_groups:270 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:56:01.230 | INFO     | app.tasks.un_tasks:get_un_groups:277 - [get_un_groups] 模型返回并校验通过 2 条高校信息
+2026-09-06 12:56:01.342 | INFO     | app.tasks.un_tasks:_insert_universities:179 - [get_un_groups] 高校已存在，跳过: 上海建桥学院
+2026-09-06 12:56:01.343 | INFO     | app.tasks.un_tasks:_insert_universities:179 - [get_un_groups] 高校已存在，跳过: 浙江万里学院
+2026-09-06 12:56:01.346 | INFO     | app.tasks.un_tasks:get_un_groups:288 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 2, 'major_new': 0, 'major_dup': 0}
+2026-09-06 12:56:39.991 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:56:40.001 | INFO     | app.tasks.un_tasks:get_un_groups:269 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:56:40.002 | INFO     | app.tasks.un_tasks:get_un_groups:276 - [get_un_groups] 模型返回并校验通过 2 条高校信息
+2026-09-06 12:56:40.129 | INFO     | app.tasks.un_tasks:_insert_universities:199 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-06 12:56:40.159 | INFO     | app.tasks.un_tasks:_insert_universities:178 - [get_un_groups] 高校已存在，跳过: 浙江万里学院
+2026-09-06 12:56:40.162 | INFO     | app.tasks.un_tasks:get_un_groups:287 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 1, 'major_new': 2, 'major_dup': 0}
+2026-09-06 12:56:40.213 | INFO     | app.tasks.un_tasks:get_un_groups:269 - [get_un_groups] 开始获取 2 所高校信息 ...
+2026-09-06 12:56:40.214 | INFO     | app.tasks.un_tasks:get_un_groups:276 - [get_un_groups] 模型返回并校验通过 2 条高校信息
+2026-09-06 12:56:40.328 | INFO     | app.tasks.un_tasks:_insert_universities:178 - [get_un_groups] 高校已存在，跳过: 上海建桥学院
+2026-09-06 12:56:40.329 | INFO     | app.tasks.un_tasks:_insert_universities:178 - [get_un_groups] 高校已存在，跳过: 浙江万里学院
+2026-09-06 12:56:40.336 | INFO     | app.tasks.un_tasks:get_un_groups:287 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 2, 'major_new': 0, 'major_dup': 0}
+2026-09-06 12:56:51.424 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 12:56:51.429 | INFO     | app.tasks.un_tasks:get_un_groups:269 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 13:05:18.592 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:05:41.183 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:06:28.533 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:06:38.230 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:08:00.932 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:08:10.739 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:08:11.226 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 13:33:10.533 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:33:10.542 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 13:33:58.107 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:40:05.399 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:43:07.363 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:43:07.370 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 13:43:19.047 | INFO     | app.tasks.un_tasks:get_un_groups:244 - [get_un_groups] 模型返回并校验通过 3 条高校信息
+2026-09-06 13:43:19.155 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-06 13:43:19.174 | WARNING  | app.tasks.un_tasks:_insert_universities:190 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-06 13:43:19.202 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 清华大学
+2026-09-06 13:43:19.245 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 南京信息工程大学
+2026-09-06 13:43:19.329 | INFO     | app.tasks.un_tasks:get_un_groups:254 - [get_un_groups] 入库统计: {'university_new': 3, 'university_dup': 0, 'major_new': 9, 'major_dup': 1}
+2026-09-06 13:50:24.528 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:50:24.534 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:50:52.129 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:50:52.735 | INFO     | app.tasks.db_tasks:try_mysql:63 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-06 13:50:52.879 | INFO     | app.tasks.db_tasks:try_mysql:73 - [try_mysql] 测试结果: ok=True
+2026-09-06 13:50:52.888 | INFO     | app.tasks.db_tasks:get_one_student:90 - [get_one_student] 查询学生信息: id=1
+2026-09-06 13:50:53.031 | WARNING  | app.tasks.db_tasks:get_one_student:104 - [get_one_student] 学生不存在: id=1
+2026-09-06 13:55:25.834 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:56:02.472 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 13:56:02.995 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 14:03:31.460 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:03:31.917 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 14:12:24.339 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:12:24.362 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:12:32.348 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:12:32.613 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 14:19:15.789 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:19:38.756 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:19:39.130 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 14:19:48.285 | INFO     | app.tasks.un_tasks:get_un_groups:244 - [get_un_groups] 模型返回并校验通过 3 条高校信息
+2026-09-06 14:19:48.386 | INFO     | app.tasks.un_tasks:_insert_universities:145 - [get_un_groups] 高校已存在，跳过: 上海建桥学院
+2026-09-06 14:19:48.386 | INFO     | app.tasks.un_tasks:_insert_universities:145 - [get_un_groups] 高校已存在，跳过: 清华大学
+2026-09-06 14:19:48.397 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 南京理工大学
+2026-09-06 14:19:48.482 | INFO     | app.tasks.un_tasks:get_un_groups:254 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 2, 'major_new': 5, 'major_dup': 0}
+2026-09-06 14:23:32.139 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:23:32.141 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:23:38.414 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 14:23:38.689 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 3 所高校信息 ...
+2026-09-06 14:23:41.064 | INFO     | app.tasks.un_tasks:get_un_groups:244 - [get_un_groups] 模型返回并校验通过 3 条高校信息
+2026-09-06 14:23:41.181 | INFO     | app.tasks.un_tasks:_insert_universities:145 - [get_un_groups] 高校已存在，跳过: 清华大学
+2026-09-06 14:23:41.211 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 上海大学
+2026-09-06 14:23:41.323 | INFO     | app.tasks.un_tasks:_insert_universities:145 - [get_un_groups] 高校已存在，跳过: 上海建桥学院
+2026-09-06 14:23:41.328 | INFO     | app.tasks.un_tasks:get_un_groups:254 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 2, 'major_new': 4, 'major_dup': 0}
+2026-09-06 14:34:55.907 | INFO     | app.tasks.db_tasks:generate_many_students:199 - [generate_many_students] 开始: numbers=1000000, range=[2000-01-01, 2010-12-31], chunk_size=50000, max_workers=8
+2026-09-06 14:35:11.320 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:11.379 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:11.439 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 100000/1000000 (10%)
+2026-09-06 14:35:11.620 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.051 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.097 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 200000/1000000 (20%)
+2026-09-06 14:35:12.175 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.231 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.304 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 300000/1000000 (30%)
+2026-09-06 14:35:12.608 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.645 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:12.853 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 400000/1000000 (40%)
+2026-09-06 14:35:27.454 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:27.969 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:27.986 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 500000/1000000 (50%)
+2026-09-06 14:35:28.170 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:28.339 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:28.394 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 600000/1000000 (60%)
+2026-09-06 14:35:28.475 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:28.695 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:28.773 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 700000/1000000 (70%)
+2026-09-06 14:35:28.900 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:29.227 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:29.280 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 800000/1000000 (80%)
+2026-09-06 14:35:36.731 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:36.824 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:36.836 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 900000/1000000 (90%)
+2026-09-06 14:35:37.115 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:37.142 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-06 14:35:37.153 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 1000000/1000000 (100%)
+2026-09-06 14:35:37.162 | INFO     | app.tasks.db_tasks:generate_many_students:247 - [generate_many_students] 完成: {'inserted': 1000000, 'numbers': 1000000, 'chunk_size': 50000, 'max_workers': 8, 'elapsed_seconds': 41.12, 'rows_per_second': 24321.0}

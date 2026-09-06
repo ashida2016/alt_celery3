@@ -71,7 +71,7 @@ def build_commands(loglevel: str, flower_port: int) -> dict[str, list[str]]:
             f"--loglevel={loglevel}",
             "--concurrency=4",
             "-Q",
-            "default,db",
+            "default,db,llm",
         ],
         "beat": base + ["beat", f"--loglevel={loglevel}"],
         "flower": base + ["flower", f"--port={flower_port}"],

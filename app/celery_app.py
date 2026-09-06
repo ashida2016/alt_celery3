@@ -28,7 +28,11 @@ app = Celery(
     "alt_celery3",
     broker=BROKER_URL,
     backend=RESULT_BACKEND,
-    include=["app.tasks.math_tasks", "app.tasks.db_tasks"],
+    include=[
+        "app.tasks.math_tasks",
+        "app.tasks.db_tasks",
+        "app.tasks.un_tasks",
+    ],
 )
 
 # ---------------------------------------------------------------------------
@@ -54,6 +58,9 @@ app.conf.update(
     task_routes={
         "tasks.try_mysql": {"queue": "db"},
         "tasks.get_one_student": {"queue": "db"},
+        "tasks.generate_many_students": {"queue": "db"},
+        # LLM 任务走 llm 队列（长耗时 API 调用与普通任务隔离）
+        "tasks.get_un_groups": {"queue": "llm"},
     },
     # broker 连接可靠性
     broker_connection_retry_on_startup=True,

@@ -29,6 +29,7 @@ from app.tasks.db_tasks import (
     try_mysql,
 )
 from app.tasks.math_tasks import add, periodic_add
+from app.tasks.un_tasks import get_un_groups
 
 logging.basicConfig(
     level=logging.INFO,
@@ -156,6 +157,22 @@ def run_db_tasks(timeout: float) -> tuple[dict, dict]:
     return mysql_result, student_result
 
 
+def run_un_task(args: argparse.Namespace) -> list[dict]:
+    """单独下发 get_un_groups 任务并等待结果。
+
+    Args:
+        args: 命令行参数（count）。
+
+    Returns:
+        模型返回的高校信息 JSON 数组。
+    """
+    logger.info("下发任务 tasks.get_un_groups: count=%s", args.count)
+    result = get_un_groups.delay(count=args.count).get(timeout=args.timeout)
+    print(f"[高校任务] tasks.get_un_groups({args.count}) =")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return result
+
+
 def run_generate_task(args: argparse.Namespace) -> dict:
     """单独下发 generate_many_students 任务并等待结果。
 
@@ -196,9 +213,18 @@ def main() -> int:
     )
     parser.add_argument(
         "--task",
-        choices=["all", "generate"],
+        choices=["all", "generate", "un"],
         default="all",
-        help="要执行的任务：all=运行全部示例（默认），generate=仅运行批量生成学生任务",
+        help=(
+            "要执行的任务：all=运行全部示例（默认），"
+            "generate=仅运行批量生成学生任务，un=仅运行获取高校信息任务"
+        ),
+    )
+    parser.add_argument(
+        "--count",
+        type=int,
+        default=5,
+        help="un 任务要获取的高校数量（默认 5）",
     )
     parser.add_argument(
         "--timeout",
@@ -238,6 +264,10 @@ def main() -> int:
 
     if args.task == "generate":
         run_generate_task(args)
+        return 0
+
+    if args.task == "un":
+        run_un_task(args)
         return 0
 
     show_beat_schedule()

@@ -28,7 +28,8 @@ alt_celery3/
 │   ├── log_setup.py         # sclog 日志中间件初始化（控制台/文件 + MySQL sink）
 │   └── tasks/               # 任务子文件夹（新增任务放这里）
 │       ├── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
-│       └── db_tasks.py      # 数据库任务：try_mysql + get_one_student + generate_many_students
+│       ├── db_tasks.py      # 数据库任务：try_mysql + get_one_student + generate_many_students
+│       └── un_tasks.py      # 高校信息任务：get_un_groups（硅基流动 API + 查重入库）
 ├── run_tasks.py             # 生产者脚本：调用示例任务、获取任务结果
 ├── run_celery.py            # 本地一键启动 worker / beat / flower
 ├── Dockerfile               # 多阶段构建，创建 celeuser 非 root 用户
@@ -201,6 +202,45 @@ python run_tasks.py --task generate --numbers 1000000 \
 
 > 该任务执行耗时较长，已单独设置任务超时上限（soft 1800s / hard 1900s），不受全局 `task_time_limit=600` 限制。
 
+### 高校信息任务 get_un_groups
+
+`tasks.get_un_groups` 通过硅基流动（SiliconFlow）Chat Completion API 自动获取指定数量的高校信息（含下属专业组），以名称查重（重复不添加）后写入 `web_db` 的 `universities` / `major_groups` 表，并返回标准 JSON 对象。
+
+- 公用 API 函数：`app/gjld_api.py` 的 `gjld_chat_completion(question)`，可输入任意问题获得文本回答
+- 环境变量：`API_KEY_GJLD`（API-KEY）、`BASE_URL`（默认 `https://api.siliconflow.cn/v1`）、`GJLD_MODEL`（默认 `Qwen/Qwen2.5-72B-Instruct`）
+- 数据库表已预先存在（结构由项目方维护），任务不做建表操作
+- 该任务路由到 `llm` 专用队列，worker 启动参数需包含 `-Q default,db,llm`
+
+```bash
+# 获取 3 所高校信息
+python run_tasks.py --task un --count 3 --timeout 300
+```
+
+返回 JSON 示例：
+
+```json
+[
+  {
+    "name": "上海建桥学院",
+    "code": "10299",
+    "type": "民办",
+    "nature": "其他",
+    "majors": [
+      {"name": "计算机科学与技术", "code": "080901"},
+      {"name": "软件工程", "code": "080902"}
+    ]
+  }
+]
+```
+
+数据库表结构（已预先存在，任务不建表）：
+
+- `universities`：name（唯一）、code（char(5) 院校标识码，全局唯一）、type（民办/公办）、nature（985/211/一本/其他）
+- `major_groups`：university_id（外键）、name、code（char(5)）；同校内 (university_id, code) 唯一
+
+> 查重规则：以名称为准；同时兼容表的唯一约束，code 冲突的条目记日志后跳过。
+> 注意：`major_groups.code` 为 char(5)，模型返回的 6 位专业代码入库时会截断为前 5 位（返回 JSON 保留原始代码）。
+
 ### 4. 新增任务
 
 在 `app/tasks/` 下新建 py 文件（如 `app/tasks/notice_tasks.py`）：
@@ -246,6 +286,11 @@ def send_notice(user_id: int, content: str) -> str:
 | `LOG_DB_PASSWORD`     | 是   | sclog 日志库密码                                | `******`                                      |
 | `LOG_DB_NAME`         | 否   | sclog 日志库名（默认 log_db）                   | `log_db`                                      |
 | `LOG_DIR`             | 否   | 本地日志文件目录（默认 logs）                   | `logs`                                        |
+| `API_KEY_GJLD`        | 是*  | 硅基流动 API-KEY（get_un_groups 任务使用）      | `sk-xxxx`                                     |
+| `BASE_URL`            | 否   | 硅基流动 API 地址（默认官方地址）               | `https://api.siliconflow.cn/v1`               |
+| `GJLD_MODEL`          | 否   | 硅基流动模型名（默认 Qwen2.5-72B-Instruct）     | `Qwen/Qwen2.5-72B-Instruct`                   |
+
+\* 使用 `--task un` 时必填。
 
 ## 本地开发
 
@@ -271,6 +316,7 @@ python run_celery.py --loglevel debug           # 调试日志
 ```
 
 启动后按 `Ctrl+C` 优雅停止全部进程；如需 flower 监控面板（默认 `http://localhost:5555`），通过 `--components` 显式加入。
+nohup python run_celery.py
 
 ### 手动分进程启动（等价方式）
 
