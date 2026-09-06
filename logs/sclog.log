@@ -4959,3 +4959,14 @@
 2026-09-06 14:35:37.142 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
 2026-09-06 14:35:37.153 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 1000000/1000000 (100%)
 2026-09-06 14:35:37.162 | INFO     | app.tasks.db_tasks:generate_many_students:247 - [generate_many_students] 完成: {'inserted': 1000000, 'numbers': 1000000, 'chunk_size': 50000, 'max_workers': 8, 'elapsed_seconds': 41.12, 'rows_per_second': 24321.0}
+2026-09-06 15:08:06.533 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 15:08:06.537 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-06 15:08:08.145 | INFO     | app.tasks.un_tasks:get_un_groups:236 - [get_un_groups] 开始获取 5 所高校信息 ...
+2026-09-06 15:08:12.585 | INFO     | app.tasks.un_tasks:get_un_groups:244 - [get_un_groups] 模型返回并校验通过 5 条高校信息
+2026-09-06 15:08:12.710 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 清华大学
+2026-09-06 15:08:12.808 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 复旦大学
+2026-09-06 15:08:12.906 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-06 15:08:12.925 | WARNING  | app.tasks.un_tasks:_insert_universities:190 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-06 15:08:12.959 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 浙江工业大学
+2026-09-06 15:08:13.079 | INFO     | app.tasks.un_tasks:_insert_universities:166 - [get_un_groups] 高校入库: 北京城市学院
+2026-09-06 15:08:13.138 | INFO     | app.tasks.un_tasks:get_un_groups:254 - [get_un_groups] 入库统计: {'university_new': 5, 'university_dup': 0, 'major_new': 14, 'major_dup': 1}
