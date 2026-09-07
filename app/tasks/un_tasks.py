@@ -38,9 +38,9 @@ _JSON_EXAMPLE = """[
 # 高校信息提示词模板
 UN_PROMPT_TEMPLATE = (
     "请列举 {count} 所中国真实存在的本科高校信息，要求覆盖不同类型"
-    "（民办/公办）与不同性质（985/211/一本/其他），每所高校给出 3-5 个"
+    "（民办/公办）与不同性质（985/211/一本/其他），每所高校给出 3-15 个"
     "有代表性的专业组。name 必须是真实高校全称，code 使用真实的高校"
-    "院校标识码（5 位数字），专业组 code 使用五位数字代码。\n"
+    "院校标识码，专业组 code 使用真实的数字代码。\n"
     "严格按照如下 JSON 数组格式输出，禁止输出任何解释、前缀或 markdown "
     "代码块标记，直接输出 JSON：\n" + _JSON_EXAMPLE
 )
@@ -110,10 +110,14 @@ def _sanitize_code(code: str, width: int = 5) -> str:
 def _insert_universities(
     db: SCDBMySQLSpeed, universities: list[dict[str, Any]]
 ) -> dict[str, int]:
-    """高校及专业组查重入库（以名称为准，重复不添加）。
+    """高校及专业组查重入库（以名称为准）。
 
-    同时兼容表结构的唯一约束：高校 code 全局唯一、专业组
-    (university_id, code) 唯一，冲突的条目记日志后跳过。
+    查重规则：
+    - 高校已存在：本体不重复添加，但仍检查其名下专业组，
+      未出现过的专业组补录入库
+    - 专业组以名称查重，重复不添加
+    - 同时兼容表结构的唯一约束：高校 code 全局唯一、专业组
+      (university_id, code) 唯一，冲突的条目记日志后跳过
 
     Args:
         db: 数据库连接池句柄。
@@ -140,13 +144,15 @@ def _insert_universities(
     }
 
     for un in universities:
-        if un["name"] in existing_universities:
-            stats["university_dup"] += 1
-            logger.info("[get_un_groups] 高校已存在，跳过: {}", un["name"])
-            continue
-
         un_code = _sanitize_code(un["code"], width=5)
-        if un_code and un_code in existing_un_codes:
+        if un["name"] in existing_universities:
+            # 高校已存在：本体不重复添加，但仍需检查其名下专业组
+            stats["university_dup"] += 1
+            logger.info(
+                "[get_un_groups] 高校已存在，检查其专业组: {}", un["name"]
+            )
+        elif un_code and un_code in existing_un_codes:
+            # 代码冲突：无法入库，且其专业组缺少可挂靠的高校，整条跳过
             stats["university_dup"] += 1
             logger.warning(
                 "[get_un_groups] 高校代码冲突，跳过: {} (code={})",
@@ -154,18 +160,18 @@ def _insert_universities(
                 un_code,
             )
             continue
+        else:
+            db.execute(
+                "INSERT INTO universities (name, code, type, nature) "
+                "VALUES (%s, %s, %s, %s)",
+                (un["name"], un_code, un["type"], un["nature"]),
+            )
+            existing_universities.add(un["name"])
+            existing_un_codes.add(un_code)
+            stats["university_new"] += 1
+            logger.info("[get_un_groups] 高校入库: {}", un["name"])
 
-        db.execute(
-            "INSERT INTO universities (name, code, type, nature) "
-            "VALUES (%s, %s, %s, %s)",
-            (un["name"], un_code, un["type"], un["nature"]),
-        )
-        existing_universities.add(un["name"])
-        existing_un_codes.add(un_code)
-        stats["university_new"] += 1
-        logger.info("[get_un_groups] 高校入库: {}", un["name"])
-
-        # 2. 专业组查重：该校已有名称 / 代码集合
+        # 专业组查重：该校已有名称 / 代码集合（高校重复时同样检查）
         un_row = db.fetch_all(
             "SELECT id FROM universities WHERE name = %s LIMIT 1",
             (un["name"],),
@@ -221,8 +227,8 @@ def get_un_groups(count: int = 5) -> list[dict[str, Any]]:
     流程：
     1. 以固化的问题模板调用 ``gjld_chat_completion`` 生成高校信息
     2. 解析并校验模型返回的标准 JSON 数组
-    3. 以名称为准查重（重复不添加）后写入
-       ``universities`` / ``major_groups`` 表
+    3. 以名称为准查重后写入 ``universities`` / ``major_groups`` 表：
+       高校重复不添加，但其名下未出现过的专业组仍会补录
 
     Args:
         count: 要获取的高校数量（默认 5）。

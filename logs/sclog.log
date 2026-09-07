@@ -6519,3 +6519,37 @@
 2026-09-06 21:30:28.578 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:154 - [generate_many_students] 分块入库完成: 50000 条
 2026-09-06 21:30:28.586 | INFO     | app.tasks.db_tasks:generate_many_students:229 - [generate_many_students] 进度: 10000000/10000000 (100%)
 2026-09-06 21:30:28.593 | INFO     | app.tasks.db_tasks:generate_many_students:247 - [generate_many_students] 完成: {'inserted': 10000000, 'numbers': 10000000, 'chunk_size': 50000, 'max_workers': 8, 'elapsed_seconds': 296.4, 'rows_per_second': 33737.7}
+2026-09-07 21:00:01.231 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 21:47:22.976 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 21:47:22.981 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-07 21:47:22.982 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-07 21:47:23.090 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-07 21:47:23.103 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 网络工程 (code=08090)
+2026-09-07 21:47:23.106 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 0, 'major_dup': 2}
+2026-09-07 21:47:47.117 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 21:47:47.124 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-07 21:47:47.142 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-07 21:47:47.237 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-07 21:47:47.267 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 1, 'major_dup': 0}
+2026-09-07 21:48:55.245 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 21:48:55.248 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 21:49:12.092 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 10 所高校信息 ...
+2026-09-07 21:49:18.024 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 10 条高校信息
+2026-09-07 21:49:18.147 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 清华大学
+2026-09-07 21:49:18.157 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 21:49:18.244 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京大学
+2026-09-07 21:49:18.390 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 复旦大学
+2026-09-07 21:49:18.434 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉大学
+2026-09-07 21:49:18.487 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 21:49:18.487 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 郑州大学
+2026-09-07 21:49:18.574 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 深圳大学
+2026-09-07 21:49:18.593 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江工业大学
+2026-09-07 21:49:18.607 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 21:49:18.607 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 制药工程 (code=08130)
+2026-09-07 21:49:18.683 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京审计大学
+2026-09-07 21:49:18.759 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 会计学 (code=12020)
+2026-09-07 21:49:18.760 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 21:49:18.781 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-07 21:49:18.788 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 21:49:18.855 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 西安培华学院 (code=10697)
+2026-09-07 21:49:18.858 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 9, 'major_new': 26, 'major_dup': 21}

@@ -238,7 +238,7 @@ python run_tasks.py --task un --count 3 --timeout 300
 - `universities`：name（唯一）、code（char(5) 院校标识码，全局唯一）、type（民办/公办）、nature（985/211/一本/其他）
 - `major_groups`：university_id（外键）、name、code（char(5)）；同校内 (university_id, code) 唯一
 
-> 查重规则：以名称为准；同时兼容表的唯一约束，code 冲突的条目记日志后跳过。
+> 查重规则：以名称为准——高校重复不添加，但仍会检查其名下专业组并补录未出现过的专业组；专业组同样以名称查重，重复不添加。同时兼容表的唯一约束，code 冲突的条目记日志后跳过。
 > 注意：`major_groups.code` 为 char(5)，模型返回的 6 位专业代码入库时会截断为前 5 位（返回 JSON 保留原始代码）。
 
 ### 4. 新增任务
