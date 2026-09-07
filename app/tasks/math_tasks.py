@@ -4,11 +4,13 @@
 （periodic_add）示例，后续更多任务可参照本文件新建模块。
 """
 
-import logging
+from sclog_lite import logger
 
 from app.celery_app import app
+from app.log_setup import init_logging
 
-logger = logging.getLogger(__name__)
+# 确保任务进程内日志中间件已初始化（幂等）
+init_logging()
 
 
 @app.task(name="tasks.add", bind=True, max_retries=3)
@@ -24,7 +26,7 @@ def add(self, x: int, y: int) -> int:
         两数之和。
     """
     result = x + y
-    logger.info("add(%s, %s) = %s", x, y, result)
+    logger.info("add({}, {}) = {}", x, y, result)
     return result
 
 
@@ -40,5 +42,5 @@ def periodic_add(x: int, y: int) -> int:
         两数之和，结果写入 result backend 供 run_tasks.py 查询。
     """
     result = x + y
-    logger.info("periodic_add(%s, %s) = %s", x, y, result)
+    logger.info("periodic_add({}, {}) = {}", x, y, result)
     return result

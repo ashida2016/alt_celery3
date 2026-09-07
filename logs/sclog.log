@@ -6553,3 +6553,825 @@
 2026-09-07 21:49:18.788 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
 2026-09-07 21:49:18.855 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 西安培华学院 (code=10697)
 2026-09-07 21:49:18.858 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 9, 'major_new': 26, 'major_dup': 21}
+2026-09-07 22:20:11.736 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 22:20:11.742 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 22:20:13.405 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 50 所高校信息 ...
+2026-09-07 22:21:35.526 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 179 条高校信息
+2026-09-07 22:21:35.653 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京大学
+2026-09-07 22:21:35.693 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 清华大学
+2026-09-07 22:21:35.755 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 复旦大学
+2026-09-07 22:21:35.791 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海交通大学
+2026-09-07 22:21:35.866 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江大学
+2026-09-07 22:21:35.872 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:21:35.894 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京大学
+2026-09-07 22:21:35.912 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉大学
+2026-09-07 22:21:35.925 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中山大学
+2026-09-07 22:21:35.961 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 四川大学
+2026-09-07 22:21:35.980 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 高分子材料与工程 (code=08040)
+2026-09-07 22:21:35.980 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:35.980 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 哈尔滨工业大学
+2026-09-07 22:21:35.998 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 航空航天工程 (code=08200)
+2026-09-07 22:21:35.998 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 焊接技术与工程 (code=08041)
+2026-09-07 22:21:35.998 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安交通大学
+2026-09-07 22:21:36.026 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:36.027 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 能源与动力工程 (code=08050)
+2026-09-07 22:21:36.068 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京师范大学
+2026-09-07 22:21:36.105 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国人民大学
+2026-09-07 22:21:36.181 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南开大学
+2026-09-07 22:21:36.204 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:36.204 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津大学
+2026-09-07 22:21:36.213 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:36.223 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 同济大学
+2026-09-07 22:21:36.232 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 城市规划 (code=08280)
+2026-09-07 22:21:36.265 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东南大学
+2026-09-07 22:21:36.367 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息工程 (code=08070)
+2026-09-07 22:21:36.393 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华中科技大学
+2026-09-07 22:21:36.497 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 吉林大学
+2026-09-07 22:21:36.518 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 山东大学
+2026-09-07 22:21:36.530 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:36.530 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:36.531 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 中国语言文学 (code=05010)
+2026-09-07 22:21:36.531 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中南大学
+2026-09-07 22:21:36.547 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 厦门大学
+2026-09-07 22:21:36.637 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京航空航天大学
+2026-09-07 22:21:36.665 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 飞行器设计与工程 (code=08200)
+2026-09-07 22:21:36.666 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:21:36.680 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京理工大学
+2026-09-07 22:21:36.711 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 兵器工程 (code=08210)
+2026-09-07 22:21:36.711 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:21:36.746 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 重庆大学
+2026-09-07 22:21:36.784 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:36.785 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:36.785 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 大连理工大学
+2026-09-07 22:21:36.813 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:36.842 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:36.879 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华东师范大学
+2026-09-07 22:21:36.946 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国农业大学
+2026-09-07 22:21:37.028 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:21:37.072 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北工业大学
+2026-09-07 22:21:37.079 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 飞行器动力工程 (code=08200)
+2026-09-07 22:21:37.079 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:37.079 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 兰州大学
+2026-09-07 22:21:37.137 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 电子科技大学
+2026-09-07 22:21:37.167 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:21:37.167 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 微电子科学与工程 (code=08070)
+2026-09-07 22:21:37.167 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:21:37.167 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湖南大学
+2026-09-07 22:21:37.180 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:37.206 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华南理工大学
+2026-09-07 22:21:37.227 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:37.227 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:37.227 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京科技大学
+2026-09-07 22:21:37.236 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 冶金工程 (code=08040)
+2026-09-07 22:21:37.236 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:37.249 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京航空航天大学
+2026-09-07 22:21:37.281 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京理工大学
+2026-09-07 22:21:37.289 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 武器系统与工程 (code=08210)
+2026-09-07 22:21:37.302 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 哈尔滨工程大学
+2026-09-07 22:21:37.341 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 合肥工业大学
+2026-09-07 22:21:37.374 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 车辆工程 (code=08020)
+2026-09-07 22:21:37.374 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:37.413 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华东理工大学
+2026-09-07 22:21:37.460 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:37.460 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 制药工程 (code=08130)
+2026-09-07 22:21:37.526 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京工业大学
+2026-09-07 22:21:37.628 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海大学
+2026-09-07 22:21:37.664 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京邮电大学
+2026-09-07 22:21:37.673 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息工程 (code=08070)
+2026-09-07 22:21:37.673 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子科学与技术 (code=08070)
+2026-09-07 22:21:37.673 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京化工大学
+2026-09-07 22:21:37.686 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:37.686 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:37.739 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京外国语大学
+2026-09-07 22:21:37.745 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 德语 (code=05020)
+2026-09-07 22:21:37.746 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 法语 (code=05020)
+2026-09-07 22:21:37.746 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 西班牙语 (code=05020)
+2026-09-07 22:21:37.746 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海财经大学
+2026-09-07 22:21:37.770 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:21:37.771 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津医科大学
+2026-09-07 22:21:37.848 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国政法大学
+2026-09-07 22:21:37.855 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 政治学与行政学 (code=03020)
+2026-09-07 22:21:37.868 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 苏州大学
+2026-09-07 22:21:37.877 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:37.879 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 郑州大学
+2026-09-07 22:21:37.895 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北大学
+2026-09-07 22:21:37.922 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 福州大学
+2026-09-07 22:21:38.007 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 云南大学
+2026-09-07 22:21:38.074 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 安徽大学
+2026-09-07 22:21:38.134 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南昌大学
+2026-09-07 22:21:38.166 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 食品科学与工程 (code=08270)
+2026-09-07 22:21:38.166 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:21:38.177 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 太原理工大学
+2026-09-07 22:21:38.186 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:38.186 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:38.242 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 辽宁大学
+2026-09-07 22:21:38.342 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广西大学
+2026-09-07 22:21:38.361 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:38.387 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 贵州大学
+2026-09-07 22:21:38.432 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 新疆大学
+2026-09-07 22:21:38.485 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 中国少数民族语言文学 (code=05010)
+2026-09-07 22:21:38.498 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 内蒙古大学
+2026-09-07 22:21:38.536 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 蒙古语言文学 (code=05010)
+2026-09-07 22:21:38.583 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 海南大学
+2026-09-07 22:21:38.688 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 宁夏大学
+2026-09-07 22:21:38.758 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 青海大学
+2026-09-07 22:21:38.781 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 临床医学 (code=10020)
+2026-09-07 22:21:38.795 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 石河子大学
+2026-09-07 22:21:38.805 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 临床医学 (code=10020)
+2026-09-07 22:21:38.805 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:38.805 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中央民族大学
+2026-09-07 22:21:38.930 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北农林科技大学
+2026-09-07 22:21:38.950 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 动物科学 (code=09030)
+2026-09-07 22:21:38.950 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园艺 (code=09010)
+2026-09-07 22:21:38.950 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京林业大学
+2026-09-07 22:21:38.959 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园林 (code=09050)
+2026-09-07 22:21:38.971 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海外国语大学
+2026-09-07 22:21:38.979 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:21:38.979 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 德语 (code=05020)
+2026-09-07 22:21:38.979 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 法语 (code=05020)
+2026-09-07 22:21:38.979 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国矿业大学
+2026-09-07 22:21:39.040 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国石油大学（华东）
+2026-09-07 22:21:39.046 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:39.085 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国地质大学（武汉）
+2026-09-07 22:21:39.121 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 地质工程 (code=08140)
+2026-09-07 22:21:39.121 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 资源勘查工程 (code=08140)
+2026-09-07 22:21:39.156 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国石油大学（北京）
+2026-09-07 22:21:39.172 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:39.244 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国地质大学（北京）
+2026-09-07 22:21:39.280 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 地质工程 (code=08140)
+2026-09-07 22:21:39.280 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 资源勘查工程 (code=08140)
+2026-09-07 22:21:39.280 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 地球物理学 (code=07080)
+2026-09-07 22:21:39.280 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河海大学
+2026-09-07 22:21:39.385 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江南大学
+2026-09-07 22:21:39.418 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 暨南大学
+2026-09-07 22:21:39.450 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 东华大学 (code=10255)
+2026-09-07 22:21:39.450 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南交通大学
+2026-09-07 22:21:39.498 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:39.498 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:39.498 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南财经大学
+2026-09-07 22:21:39.508 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:21:39.508 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉理工大学
+2026-09-07 22:21:39.538 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长安大学
+2026-09-07 22:21:39.545 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 土木工程 (code=08100)
+2026-09-07 22:21:39.545 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通工程 (code=08180)
+2026-09-07 22:21:39.557 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京农业大学
+2026-09-07 22:21:39.565 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:21:39.579 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华中农业大学
+2026-09-07 22:21:39.610 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北农业大学
+2026-09-07 22:21:39.688 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北林业大学
+2026-09-07 22:21:39.806 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海中医药大学
+2026-09-07 22:21:39.813 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:21:39.824 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京师范大学
+2026-09-07 22:21:39.838 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 教育学 (code=04010)
+2026-09-07 22:21:39.851 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华南师范大学
+2026-09-07 22:21:39.870 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:21:39.870 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 陕西师范大学
+2026-09-07 22:21:39.936 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湖南师范大学
+2026-09-07 22:21:39.945 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:39.985 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北师范大学
+2026-09-07 22:21:40.068 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南大学
+2026-09-07 22:21:40.113 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 首都师范大学
+2026-09-07 22:21:40.198 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津师范大学
+2026-09-07 22:21:40.206 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 教育学 (code=04010)
+2026-09-07 22:21:40.238 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广东工业大学
+2026-09-07 22:21:40.246 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:40.258 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 深圳大学
+2026-09-07 22:21:40.348 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海师范大学
+2026-09-07 22:21:40.397 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:21:40.397 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江工业大学
+2026-09-07 22:21:40.429 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:40.486 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南方医科大学
+2026-09-07 22:21:40.597 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广州大学
+2026-09-07 22:21:40.631 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京邮电大学
+2026-09-07 22:21:40.640 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:21:40.652 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 杭州电子科技大学
+2026-09-07 22:21:40.678 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:21:40.679 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 重庆邮电大学
+2026-09-07 22:21:40.709 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:21:40.709 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 微电子科学与工程 (code=08070)
+2026-09-07 22:21:40.709 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安电子科技大学
+2026-09-07 22:21:40.746 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息安全 (code=08090)
+2026-09-07 22:21:40.747 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 微电子科学与工程 (code=08070)
+2026-09-07 22:21:40.747 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 兰州交通大学
+2026-09-07 22:21:40.781 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:40.820 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 成都理工大学
+2026-09-07 22:21:40.852 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 资源勘查工程 (code=08140)
+2026-09-07 22:21:40.852 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 勘查技术与工程 (code=08140)
+2026-09-07 22:21:40.932 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 长春理工大学
+2026-09-07 22:21:40.999 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:21:41.031 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 哈尔滨理工大学
+2026-09-07 22:21:41.153 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 燕山大学
+2026-09-07 22:21:41.161 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:41.161 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河北工业大学
+2026-09-07 22:21:41.181 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河南大学
+2026-09-07 22:21:41.200 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 山西大学
+2026-09-07 22:21:41.231 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河北大学
+2026-09-07 22:21:41.334 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湘潭大学
+2026-09-07 22:21:41.343 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:41.343 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:41.359 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 江苏大学 (code=10299)
+2026-09-07 22:21:41.359 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 扬州大学
+2026-09-07 22:21:41.388 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 福建师范大学
+2026-09-07 22:21:41.444 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 安徽师范大学
+2026-09-07 22:21:41.539 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山东师范大学
+2026-09-07 22:21:41.613 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江西师范大学
+2026-09-07 22:21:41.661 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:41.688 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 云南师范大学
+2026-09-07 22:21:41.788 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 贵州师范大学
+2026-09-07 22:21:41.843 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广西师范大学
+2026-09-07 22:21:41.867 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:21:41.939 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 海南师范大学
+2026-09-07 22:21:42.061 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西华大学
+2026-09-07 22:21:42.115 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 昆明理工大学
+2026-09-07 22:21:42.124 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:42.155 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西安理工大学
+2026-09-07 22:21:42.287 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海理工大学
+2026-09-07 22:21:42.297 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 能源与动力工程 (code=08050)
+2026-09-07 22:21:42.297 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:42.298 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 光电信息科学与工程 (code=08070)
+2026-09-07 22:21:42.332 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江理工大学
+2026-09-07 22:21:42.449 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华北电力大学
+2026-09-07 22:21:42.458 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:42.458 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 能源与动力工程 (code=08050)
+2026-09-07 22:21:42.484 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南石油大学
+2026-09-07 22:21:42.493 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:21:42.493 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:42.506 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津工业大学
+2026-09-07 22:21:42.543 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:42.604 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京建筑大学
+2026-09-07 22:21:42.701 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 城乡规划 (code=08280)
+2026-09-07 22:21:42.712 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海海事大学
+2026-09-07 22:21:42.719 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 轮机工程 (code=08180)
+2026-09-07 22:21:42.719 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输 (code=08180)
+2026-09-07 22:21:42.739 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 大连海事大学
+2026-09-07 22:21:42.765 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 轮机工程 (code=08180)
+2026-09-07 22:21:42.879 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 中国民航大学
+2026-09-07 22:21:42.900 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输 (code=08180)
+2026-09-07 22:21:42.924 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京信息工程大学
+2026-09-07 22:21:42.932 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 应用气象学 (code=07060)
+2026-09-07 22:21:42.951 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 成都信息工程大学
+2026-09-07 22:21:43.067 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:21:43.067 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海对外经贸大学
+2026-09-07 22:21:43.075 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北财经大学
+2026-09-07 22:21:43.088 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:21:43.088 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江西财经大学
+2026-09-07 22:21:43.131 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山东财经大学
+2026-09-07 22:21:43.252 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:21:43.276 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京财经大学
+2026-09-07 22:21:43.394 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉科技大学
+2026-09-07 22:21:43.410 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:21:43.410 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 冶金工程 (code=08040)
+2026-09-07 22:21:43.410 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:43.433 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西安建筑科技大学
+2026-09-07 22:21:43.502 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 城乡规划 (code=08280)
+2026-09-07 22:21:43.581 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 石家庄铁道大学
+2026-09-07 22:21:43.682 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长沙理工大学
+2026-09-07 22:21:43.690 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:21:43.723 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 昆明医科大学
+2026-09-07 22:21:43.884 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广西医科大学
+2026-09-07 22:21:43.981 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 重庆医科大学
+2026-09-07 22:21:44.016 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 儿科学 (code=10020)
+2026-09-07 22:21:44.052 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 安徽医科大学
+2026-09-07 22:21:44.195 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 温州医科大学
+2026-09-07 22:21:44.215 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 眼视光医学 (code=10020)
+2026-09-07 22:21:44.255 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京医科大学
+2026-09-07 22:21:44.408 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 中国医科大学
+2026-09-07 22:21:44.545 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 哈尔滨医科大学
+2026-09-07 22:21:44.624 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河北医科大学
+2026-09-07 22:21:44.753 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山西医科大学
+2026-09-07 22:21:44.852 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 内蒙古医科大学
+2026-09-07 22:21:44.907 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 新疆医科大学
+2026-09-07 22:21:44.955 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 宁夏医科大学 (code=10752)
+2026-09-07 22:21:44.955 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 青海大学医学院 (code=10743)
+2026-09-07 22:21:44.955 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西藏大学
+2026-09-07 22:21:45.016 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 生态学 (code=07100)
+2026-09-07 22:21:45.016 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 石河子大学
+2026-09-07 22:21:45.034 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 临床医学 (code=10020)
+2026-09-07 22:21:45.034 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:45.055 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 塔里木大学
+2026-09-07 22:21:45.078 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园艺 (code=09010)
+2026-09-07 22:21:45.115 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 延边大学
+2026-09-07 22:21:45.160 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 华北理工大学
+2026-09-07 22:21:45.298 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 辽宁工程技术大学
+2026-09-07 22:21:45.355 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 黑龙江大学
+2026-09-07 22:21:45.451 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 安徽理工大学
+2026-09-07 22:21:45.553 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河南理工大学
+2026-09-07 22:21:45.653 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 湖南科技大学
+2026-09-07 22:21:45.757 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山东科技大学
+2026-09-07 22:21:45.837 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 陕西科技大学
+2026-09-07 22:21:45.953 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 大连交通大学
+2026-09-07 22:21:45.988 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:21:46.021 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 兰州理工大学
+2026-09-07 22:21:46.123 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 青岛大学
+2026-09-07 22:21:46.133 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 宁波大学
+2026-09-07 22:21:46.176 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海电力大学
+2026-09-07 22:21:46.307 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 东北电力大学
+2026-09-07 22:21:46.383 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 40, 'university_dup': 139, 'major_new': 310, 'major_dup': 392}
+2026-09-07 22:32:31.348 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 300 所高校信息 ...
+2026-09-07 22:39:19.977 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 271 条高校信息
+2026-09-07 22:39:20.127 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京大学
+2026-09-07 22:39:20.137 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学 (code=07010)
+2026-09-07 22:39:20.137 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 清华大学
+2026-09-07 22:39:20.165 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国人民大学
+2026-09-07 22:39:20.172 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京航空航天大学
+2026-09-07 22:39:20.197 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 飞行器设计与工程 (code=08200)
+2026-09-07 22:39:20.197 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:39:20.197 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京理工大学
+2026-09-07 22:39:20.233 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:20.233 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:39:20.233 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:20.233 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国农业大学
+2026-09-07 22:39:20.263 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:39:20.331 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京师范大学
+2026-09-07 22:39:20.337 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中央民族大学
+2026-09-07 22:39:20.348 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 汉语言文学 (code=05010)
+2026-09-07 22:39:20.362 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 复旦大学
+2026-09-07 22:39:20.424 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海交通大学
+2026-09-07 22:39:20.540 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 同济大学
+2026-09-07 22:39:20.549 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:20.549 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华东师范大学
+2026-09-07 22:39:20.559 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京大学
+2026-09-07 22:39:20.581 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东南大学
+2026-09-07 22:39:20.607 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:20.646 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江大学
+2026-09-07 22:39:20.684 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:39:20.733 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国科学技术大学
+2026-09-07 22:39:20.756 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 物理学 (code=07020)
+2026-09-07 22:39:20.920 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息安全 (code=08090)
+2026-09-07 22:39:20.921 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 厦门大学
+2026-09-07 22:39:20.945 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 新闻学 (code=05030)
+2026-09-07 22:39:20.945 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 山东大学
+2026-09-07 22:39:20.955 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:20.972 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:20.990 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国海洋大学
+2026-09-07 22:39:21.027 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 水产养殖学 (code=09060)
+2026-09-07 22:39:21.027 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 食品科学与工程 (code=08270)
+2026-09-07 22:39:21.065 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉大学
+2026-09-07 22:39:21.135 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:39:21.135 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华中科技大学
+2026-09-07 22:39:21.153 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:21.201 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湖南大学
+2026-09-07 22:39:21.236 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 车辆工程 (code=08020)
+2026-09-07 22:39:21.289 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中南大学
+2026-09-07 22:39:21.387 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:21.387 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中山大学
+2026-09-07 22:39:21.435 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华南理工大学
+2026-09-07 22:39:21.463 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:21.487 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:21.487 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 四川大学
+2026-09-07 22:39:21.551 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:21.586 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 重庆大学
+2026-09-07 22:39:21.609 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:21.643 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 电子科技大学
+2026-09-07 22:39:21.687 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:39:21.687 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 微电子科学与工程 (code=08070)
+2026-09-07 22:39:21.723 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安交通大学
+2026-09-07 22:39:21.762 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:21.762 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 能源与动力工程 (code=08050)
+2026-09-07 22:39:21.800 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北工业大学
+2026-09-07 22:39:21.812 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 飞行器设计与工程 (code=08200)
+2026-09-07 22:39:21.812 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:21.828 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 兰州大学
+2026-09-07 22:39:21.889 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 国防科技大学
+2026-09-07 22:39:21.926 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:21.927 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息安全 (code=08090)
+2026-09-07 22:39:21.927 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:21.966 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京科技大学
+2026-09-07 22:39:22.006 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:22.006 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 冶金工程 (code=08040)
+2026-09-07 22:39:22.006 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京邮电大学
+2026-09-07 22:39:22.014 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:22.014 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:22.014 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息安全 (code=08090)
+2026-09-07 22:39:22.014 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京林业大学
+2026-09-07 22:39:22.023 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园林 (code=09050)
+2026-09-07 22:39:22.023 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 生物科学 (code=07100)
+2026-09-07 22:39:22.023 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京化工大学
+2026-09-07 22:39:22.031 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:22.031 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:22.064 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京外国语大学
+2026-09-07 22:39:22.094 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 法语 (code=05020)
+2026-09-07 22:39:22.094 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 德语 (code=05020)
+2026-09-07 22:39:22.094 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:22.094 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 西班牙语 (code=05020)
+2026-09-07 22:39:22.094 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国传媒大学
+2026-09-07 22:39:22.128 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 新闻学 (code=05030)
+2026-09-07 22:39:22.128 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 播音与主持艺术 (code=13030)
+2026-09-07 22:39:22.210 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中央财经大学
+2026-09-07 22:39:22.284 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 保险学 (code=02030)
+2026-09-07 22:39:22.284 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 对外经济贸易大学
+2026-09-07 22:39:22.369 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国政法大学
+2026-09-07 22:39:22.387 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 政治学与行政学 (code=03020)
+2026-09-07 22:39:22.388 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 国际政治 (code=03020)
+2026-09-07 22:39:22.388 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华北电力大学
+2026-09-07 22:39:22.398 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:22.398 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 能源与动力工程 (code=08050)
+2026-09-07 22:39:22.417 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京中医药大学
+2026-09-07 22:39:22.425 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:22.440 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京交通大学
+2026-09-07 22:39:22.449 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通工程 (code=08180)
+2026-09-07 22:39:22.480 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京工业大学
+2026-09-07 22:39:22.605 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京邮电大学世纪学院
+2026-09-07 22:39:22.649 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:22.650 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:22.650 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数字媒体技术 (code=08090)
+2026-09-07 22:39:22.676 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 首都师范大学科德学院
+2026-09-07 22:39:22.740 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 播音与主持艺术 (code=13030)
+2026-09-07 22:39:22.841 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京工商大学嘉华学院
+2026-09-07 22:39:22.895 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:22.895 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 审计学 (code=12020)
+2026-09-07 22:39:22.926 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京第二外国语学院
+2026-09-07 22:39:22.998 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:22.998 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 西班牙语 (code=05020)
+2026-09-07 22:39:23.025 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 酒店管理 (code=12090)
+2026-09-07 22:39:23.055 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 首都经济贸易大学
+2026-09-07 22:39:23.163 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:23.163 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 中国农业大学烟台研究院 (code=10019)
+2026-09-07 22:39:23.164 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津大学
+2026-09-07 22:39:23.244 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南开大学
+2026-09-07 22:39:23.281 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:23.313 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津师范大学
+2026-09-07 22:39:23.348 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 教育学 (code=04010)
+2026-09-07 22:39:23.383 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津医科大学
+2026-09-07 22:39:23.497 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津工业大学
+2026-09-07 22:39:23.517 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:23.555 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 天津理工大学
+2026-09-07 22:39:23.712 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 天津财经大学
+2026-09-07 22:39:23.734 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河北大学
+2026-09-07 22:39:23.759 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河北工业大学
+2026-09-07 22:39:23.769 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:23.769 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 燕山大学
+2026-09-07 22:39:23.874 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河北师范大学
+2026-09-07 22:39:23.994 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 山西大学
+2026-09-07 22:39:24.018 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 太原理工大学
+2026-09-07 22:39:24.030 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:24.030 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:24.030 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 内蒙古大学
+2026-09-07 22:39:24.037 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 汉语言文学 (code=05010)
+2026-09-07 22:39:24.109 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 生物科学 (code=07100)
+2026-09-07 22:39:24.109 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 辽宁大学
+2026-09-07 22:39:24.131 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 大连理工大学
+2026-09-07 22:39:24.141 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:24.141 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:24.153 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北大学
+2026-09-07 22:39:24.172 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:24.173 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 冶金工程 (code=08040)
+2026-09-07 22:39:24.253 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 大连海事大学
+2026-09-07 22:39:24.294 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 轮机工程 (code=08180)
+2026-09-07 22:39:24.340 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输 (code=08180)
+2026-09-07 22:39:24.341 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 吉林大学
+2026-09-07 22:39:24.441 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 延边大学
+2026-09-07 22:39:24.469 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北师范大学
+2026-09-07 22:39:24.494 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 哈尔滨工业大学
+2026-09-07 22:39:24.652 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 哈尔滨工程大学
+2026-09-07 22:39:24.675 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北林业大学
+2026-09-07 22:39:24.703 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 环境科学 (code=08250)
+2026-09-07 22:39:24.703 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 哈尔滨医科大学
+2026-09-07 22:39:24.802 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 黑龙江大学
+2026-09-07 22:39:24.874 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海大学
+2026-09-07 22:39:24.902 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:24.973 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海财经大学
+2026-09-07 22:39:25.053 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海外国语大学
+2026-09-07 22:39:25.062 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:25.063 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 德语 (code=05020)
+2026-09-07 22:39:25.063 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 法语 (code=05020)
+2026-09-07 22:39:25.063 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 西班牙语 (code=05020)
+2026-09-07 22:39:25.063 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 东华大学 (code=10255)
+2026-09-07 22:39:25.063 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华东理工大学
+2026-09-07 22:39:25.072 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:25.073 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海中医药大学
+2026-09-07 22:39:25.082 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:25.097 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海师范大学
+2026-09-07 22:39:25.177 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海对外经贸大学
+2026-09-07 22:39:25.239 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京理工大学
+2026-09-07 22:39:25.260 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 武器系统与工程 (code=08210)
+2026-09-07 22:39:25.283 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:25.283 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京航空航天大学
+2026-09-07 22:39:25.352 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河海大学
+2026-09-07 22:39:25.387 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 港口航道与海岸工程 (code=08110)
+2026-09-07 22:39:25.387 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京农业大学
+2026-09-07 22:39:25.393 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:39:25.449 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国药科大学
+2026-09-07 22:39:25.480 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 药物制剂 (code=10070)
+2026-09-07 22:39:25.515 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京师范大学
+2026-09-07 22:39:25.551 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 教育学 (code=04010)
+2026-09-07 22:39:25.582 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江南大学
+2026-09-07 22:39:25.622 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:25.622 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 苏州大学
+2026-09-07 22:39:25.653 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:25.677 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京邮电大学
+2026-09-07 22:39:25.705 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:25.705 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:25.732 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京林业大学
+2026-09-07 22:39:25.852 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园林 (code=09050)
+2026-09-07 22:39:25.897 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京信息工程大学
+2026-09-07 22:39:25.933 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 应用气象学 (code=07060)
+2026-09-07 22:39:26.020 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京中医药大学
+2026-09-07 22:39:26.063 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:26.088 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京财经大学
+2026-09-07 22:39:26.113 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 国际经济与贸易 (code=02040)
+2026-09-07 22:39:26.272 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 徐州医科大学
+2026-09-07 22:39:26.307 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 麻醉学 (code=10020)
+2026-09-07 22:39:26.307 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 医学影像学 (code=10020)
+2026-09-07 22:39:26.330 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 江苏大学 (code=10299)
+2026-09-07 22:39:26.330 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 扬州大学
+2026-09-07 22:39:26.359 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:26.359 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南京医科大学
+2026-09-07 22:39:26.438 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江工业大学
+2026-09-07 22:39:26.457 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:26.485 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江师范大学
+2026-09-07 22:39:26.509 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:26.509 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 物理学 (code=07020)
+2026-09-07 22:39:26.546 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 杭州电子科技大学
+2026-09-07 22:39:26.596 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:39:26.596 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:26.660 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 中国计量大学
+2026-09-07 22:39:26.852 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江理工大学
+2026-09-07 22:39:26.863 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 服装设计与工程 (code=08160)
+2026-09-07 22:39:26.864 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:26.880 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 宁波大学
+2026-09-07 22:39:26.905 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 水产养殖学 (code=09060)
+2026-09-07 22:39:27.007 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江工商大学
+2026-09-07 22:39:27.068 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:27.088 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 温州医科大学
+2026-09-07 22:39:27.124 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 眼视光医学 (code=10020)
+2026-09-07 22:39:27.231 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江财经大学
+2026-09-07 22:39:27.317 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 安徽大学
+2026-09-07 22:39:27.387 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国科学技术大学
+2026-09-07 22:39:27.414 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 物理学 (code=07020)
+2026-09-07 22:39:27.414 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 信息安全 (code=08090)
+2026-09-07 22:39:27.414 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 合肥工业大学
+2026-09-07 22:39:27.421 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:27.475 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 安徽师范大学
+2026-09-07 22:39:27.585 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 福建师范大学
+2026-09-07 22:39:27.615 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 福州大学
+2026-09-07 22:39:27.627 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华侨大学
+2026-09-07 22:39:27.678 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南昌大学
+2026-09-07 22:39:27.711 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:27.711 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:27.711 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 食品科学与工程 (code=08270)
+2026-09-07 22:39:27.711 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江西财经大学
+2026-09-07 22:39:27.797 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:27.797 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 江西师范大学
+2026-09-07 22:39:27.806 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:27.826 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国石油大学（华东）
+2026-09-07 22:39:27.835 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 勘查技术与工程 (code=08140)
+2026-09-07 22:39:27.835 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:27.858 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 河南大学
+2026-09-07 22:39:27.997 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 郑州大学
+2026-09-07 22:39:28.054 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉理工大学
+2026-09-07 22:39:28.065 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:28.065 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 汽车服务工程 (code=08020)
+2026-09-07 22:39:28.065 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华中师范大学
+2026-09-07 22:39:28.177 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中国地质大学（武汉）
+2026-09-07 22:39:28.200 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 资源勘查工程 (code=08140)
+2026-09-07 22:39:28.222 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 中南财经政法大学
+2026-09-07 22:39:28.242 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华中农业大学
+2026-09-07 22:39:28.290 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:39:28.354 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湖北大学
+2026-09-07 22:39:28.460 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湖南师范大学
+2026-09-07 22:39:28.474 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:28.485 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 湘潭大学
+2026-09-07 22:39:28.515 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数学与应用数学 (code=07010)
+2026-09-07 22:39:28.543 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长沙理工大学
+2026-09-07 22:39:28.586 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输工程 (code=08180)
+2026-09-07 22:39:28.586 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:28.682 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 中南林业科技大学
+2026-09-07 22:39:28.811 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广东外语外贸大学
+2026-09-07 22:39:28.823 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 商务英语 (code=05026)
+2026-09-07 22:39:28.922 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华南师范大学
+2026-09-07 22:39:28.973 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 暨南大学
+2026-09-07 22:39:29.013 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 深圳大学
+2026-09-07 22:39:29.034 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广东工业大学
+2026-09-07 22:39:29.060 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广州大学
+2026-09-07 22:39:29.101 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 广西大学
+2026-09-07 22:39:29.141 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 海南大学
+2026-09-07 22:39:29.211 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南大学
+2026-09-07 22:39:29.278 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 重庆邮电大学
+2026-09-07 22:39:29.293 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:29.293 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:29.315 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南交通大学
+2026-09-07 22:39:29.355 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:29.398 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南财经大学
+2026-09-07 22:39:29.497 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 四川农业大学
+2026-09-07 22:39:29.524 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 云南大学
+2026-09-07 22:39:29.534 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北大学
+2026-09-07 22:39:29.554 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长安大学
+2026-09-07 22:39:29.577 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 土木工程 (code=08100)
+2026-09-07 22:39:29.577 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通工程 (code=08180)
+2026-09-07 22:39:29.577 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安电子科技大学
+2026-09-07 22:39:29.609 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:29.609 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:29.610 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 微电子科学与工程 (code=08070)
+2026-09-07 22:39:29.610 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西北农林科技大学
+2026-09-07 22:39:29.652 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 动物科学 (code=09030)
+2026-09-07 22:39:29.652 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 食品科学与工程 (code=08270)
+2026-09-07 22:39:29.652 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 青海大学
+2026-09-07 22:39:29.677 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 临床医学 (code=10020)
+2026-09-07 22:39:29.736 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 宁夏大学
+2026-09-07 22:39:29.769 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 新疆大学
+2026-09-07 22:39:29.808 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 汉语言文学 (code=05010)
+2026-09-07 22:39:29.881 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 石河子大学
+2026-09-07 22:39:29.901 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 临床医学 (code=10020)
+2026-09-07 22:39:29.901 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 动物科学 (code=09030)
+2026-09-07 22:39:29.948 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京联合大学
+2026-09-07 22:39:30.104 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北方工业大学
+2026-09-07 22:39:30.188 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 首都师范大学
+2026-09-07 22:39:30.255 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京信息科技大学
+2026-09-07 22:39:30.397 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京印刷学院
+2026-09-07 22:39:30.425 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 包装工程 (code=08170)
+2026-09-07 22:39:30.513 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 视觉传达设计 (code=13050)
+2026-09-07 22:39:30.551 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京石油化工学院
+2026-09-07 22:39:30.701 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 首钢工学院
+2026-09-07 22:39:30.837 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 天津科技大学
+2026-09-07 22:39:30.971 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 天津商业大学 (code=10069)
+2026-09-07 22:39:30.992 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河北经贸大学
+2026-09-07 22:39:31.069 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:31.111 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 华北理工大学
+2026-09-07 22:39:31.145 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:31.145 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:31.208 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山西财经大学
+2026-09-07 22:39:31.381 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 内蒙古工业大学
+2026-09-07 22:39:31.498 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 沈阳工业大学
+2026-09-07 22:39:31.618 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 沈阳农业大学
+2026-09-07 22:39:31.651 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园艺 (code=09010)
+2026-09-07 22:39:31.743 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 大连大学
+2026-09-07 22:39:31.872 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 东北财经大学
+2026-09-07 22:39:31.938 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 吉林师范大学
+2026-09-07 22:39:32.060 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长春理工大学
+2026-09-07 22:39:32.073 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:32.073 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电子信息工程 (code=08070)
+2026-09-07 22:39:32.107 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 黑龙江中医药大学
+2026-09-07 22:39:32.158 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:32.208 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海电力大学
+2026-09-07 22:39:32.310 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海应用技术大学
+2026-09-07 22:39:32.417 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海海事大学
+2026-09-07 22:39:32.428 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 轮机工程 (code=08180)
+2026-09-07 22:39:32.428 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输 (code=08180)
+2026-09-07 22:39:32.456 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京工程学院
+2026-09-07 22:39:32.607 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 江苏师范大学
+2026-09-07 22:39:32.735 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江中医药大学
+2026-09-07 22:39:32.785 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:32.894 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江农林大学
+2026-09-07 22:39:32.933 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 园林 (code=09050)
+2026-09-07 22:39:33.003 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 杭州师范大学 (code=10346)
+2026-09-07 22:39:33.047 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 温州大学
+2026-09-07 22:39:33.225 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江海洋大学
+2026-09-07 22:39:33.371 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 安徽工业大学
+2026-09-07 22:39:33.395 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:33.438 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 安徽医科大学
+2026-09-07 22:39:33.541 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 福建农林大学
+2026-09-07 22:39:33.582 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:39:33.682 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 福建医科大学
+2026-09-07 22:39:33.825 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 江西理工大学
+2026-09-07 22:39:33.853 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:33.960 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 华东交通大学
+2026-09-07 22:39:34.056 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 济南大学
+2026-09-07 22:39:34.106 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 青岛大学
+2026-09-07 22:39:34.189 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 烟台大学
+2026-09-07 22:39:34.304 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 山东师范大学
+2026-09-07 22:39:34.357 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 曲阜师范大学
+2026-09-07 22:39:34.542 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河南科技大学
+2026-09-07 22:39:34.677 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河南师范大学
+2026-09-07 22:39:34.790 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长江大学
+2026-09-07 22:39:34.825 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉科技大学
+2026-09-07 22:39:34.837 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:34.837 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 冶金工程 (code=08040)
+2026-09-07 22:39:34.893 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 湖南农业大学
+2026-09-07 22:39:34.951 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 植物保护 (code=09010)
+2026-09-07 22:39:35.036 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南华大学
+2026-09-07 22:39:35.058 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 核工程与核技术 (code=08220)
+2026-09-07 22:39:35.108 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广州中医药大学
+2026-09-07 22:39:35.205 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 针灸推拿学 (code=10050)
+2026-09-07 22:39:35.263 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广东医科大学
+2026-09-07 22:39:35.421 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 桂林电子科技大学
+2026-09-07 22:39:35.444 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 通信工程 (code=08070)
+2026-09-07 22:39:35.455 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:35.474 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西南石油大学
+2026-09-07 22:39:35.490 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 油气储运工程 (code=08150)
+2026-09-07 22:39:35.491 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 化学工程与工艺 (code=08130)
+2026-09-07 22:39:35.491 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 成都理工大学
+2026-09-07 22:39:35.530 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 勘查技术与工程 (code=08140)
+2026-09-07 22:39:35.571 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 重庆工商大学
+2026-09-07 22:39:35.647 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:35.712 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西南民族大学
+2026-09-07 22:39:35.840 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 贵州大学
+2026-09-07 22:39:35.851 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:35.862 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 昆明理工大学
+2026-09-07 22:39:35.875 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 材料科学与工程 (code=08040)
+2026-09-07 22:39:35.875 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西藏大学
+2026-09-07 22:39:35.986 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西北政法大学
+2026-09-07 22:39:36.143 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 兰州交通大学
+2026-09-07 22:39:36.165 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 交通运输工程 (code=08180)
+2026-09-07 22:39:36.165 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:36.165 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 电气工程及其自动化 (code=08060)
+2026-09-07 22:39:36.165 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 兰州理工大学
+2026-09-07 22:39:36.174 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械工程 (code=08020)
+2026-09-07 22:39:36.188 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 宁夏医科大学 (code=10752)
+2026-09-07 22:39:36.189 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 新疆医科大学
+2026-09-07 22:39:36.252 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 北京城市学院
+2026-09-07 22:39:36.324 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:36.369 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 会计学 (code=12020)
+2026-09-07 22:39:36.414 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京吉利学院
+2026-09-07 22:39:36.602 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 天津财经大学珠江学院
+2026-09-07 22:39:36.651 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:36.651 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 审计学 (code=12020)
+2026-09-07 22:39:36.681 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河北传媒学院
+2026-09-07 22:39:36.809 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 播音与主持艺术 (code=13030)
+2026-09-07 22:39:36.870 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山西工商学院
+2026-09-07 22:39:36.922 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:36.981 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 市场营销 (code=12020)
+2026-09-07 22:39:37.008 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 辽宁对外经贸学院
+2026-09-07 22:39:37.154 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 市场营销 (code=12020)
+2026-09-07 22:39:37.182 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 大连东软信息学院
+2026-09-07 22:39:37.215 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:37.216 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 网络工程 (code=08090)
+2026-09-07 22:39:37.216 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数字媒体技术 (code=08090)
+2026-09-07 22:39:37.286 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 长春光华学院
+2026-09-07 22:39:37.449 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 市场营销 (code=12020)
+2026-09-07 22:39:37.476 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 哈尔滨华德学院
+2026-09-07 22:39:37.508 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:37.634 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 上海杉达学院 (code=10298)
+2026-09-07 22:39:37.634 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-07 22:39:37.644 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:37.700 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海外国语大学贤达经济人文学院
+2026-09-07 22:39:37.766 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:37.910 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京传媒学院
+2026-09-07 22:39:37.942 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 播音与主持艺术 (code=13030)
+2026-09-07 22:39:38.075 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 无锡太湖学院
+2026-09-07 22:39:38.189 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 浙江越秀外国语学院 (code=13667)
+2026-09-07 22:39:38.222 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 安徽新华学院
+2026-09-07 22:39:38.243 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:38.368 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 厦门工学院
+2026-09-07 22:39:38.525 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 闽南理工学院
+2026-09-07 22:39:38.615 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:38.615 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 南昌理工学院
+2026-09-07 22:39:38.636 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:38.677 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 江西科技学院
+2026-09-07 22:39:38.815 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 机械设计制造及其自动化 (code=08020)
+2026-09-07 22:39:38.839 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 青岛黄海学院
+2026-09-07 22:39:38.886 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:38.979 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 山东英才学院
+2026-09-07 22:39:39.147 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 郑州工商学院
+2026-09-07 22:39:39.191 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:39.251 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 武汉工商学院
+2026-09-07 22:39:39.286 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:39.286 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 会计学 (code=12020)
+2026-09-07 22:39:39.301 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 长沙医学院
+2026-09-07 22:39:39.411 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 湖南涉外经济学院
+2026-09-07 22:39:39.568 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广东白云学院
+2026-09-07 22:39:39.633 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:39.634 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 汽车服务工程 (code=08020)
+2026-09-07 22:39:39.634 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 珠海科技学院
+2026-09-07 22:39:39.662 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:39.751 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广西外国语学院
+2026-09-07 22:39:39.813 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 越南语 (code=05022)
+2026-09-07 22:39:39.920 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 四川传媒学院
+2026-09-07 22:39:39.945 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 播音与主持艺术 (code=13030)
+2026-09-07 22:39:39.980 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数字媒体艺术 (code=13050)
+2026-09-07 22:39:40.003 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 成都文理学院
+2026-09-07 22:39:40.178 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 云南经济管理学院
+2026-09-07 22:39:40.205 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:40.322 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西安培华学院
+2026-09-07 22:39:40.417 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安欧亚学院
+2026-09-07 22:39:40.460 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 宁夏理工学院
+2026-09-07 22:39:40.622 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 新疆农业大学科学技术学院
+2026-09-07 22:39:40.742 | WARNING  | app.tasks.un_tasks:_insert_universities:157 - [get_un_groups] 高校代码冲突，跳过: 上海大学悉尼工商学院 (code=10280)
+2026-09-07 22:39:40.767 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 河北工程技术学院
+2026-09-07 22:39:40.801 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:40.951 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 沈阳工学院
+2026-09-07 22:39:41.254 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 南京信息工程大学滨江学院
+2026-09-07 22:39:41.293 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:41.321 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 浙江树人学院
+2026-09-07 22:39:41.340 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 计算机科学与技术 (code=08090)
+2026-09-07 22:39:41.369 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 财务管理 (code=12020)
+2026-09-07 22:39:41.399 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 福州外语外贸学院
+2026-09-07 22:39:41.551 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 齐鲁理工学院
+2026-09-07 22:39:41.676 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 商丘工学院
+2026-09-07 22:39:41.808 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 信阳学院
+2026-09-07 22:39:41.938 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 湖北商贸学院
+2026-09-07 22:39:42.013 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 市场营销 (code=12020)
+2026-09-07 22:39:42.061 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 湖南信息学院
+2026-09-07 22:39:42.111 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:42.142 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 网络工程 (code=08090)
+2026-09-07 22:39:42.205 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广州理工学院
+2026-09-07 22:39:42.245 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:42.368 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 广西城市职业大学
+2026-09-07 22:39:42.414 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 工商管理 (code=12020)
+2026-09-07 22:39:42.497 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 重庆工程学院
+2026-09-07 22:39:42.534 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:42.534 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 网络工程 (code=08090)
+2026-09-07 22:39:42.534 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 物联网工程 (code=08090)
+2026-09-07 22:39:42.577 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 成都东软学院
+2026-09-07 22:39:42.638 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 软件工程 (code=08090)
+2026-09-07 22:39:42.638 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 网络工程 (code=08090)
+2026-09-07 22:39:42.638 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 数字媒体技术 (code=08090)
+2026-09-07 22:39:42.677 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 西安外事学院
+2026-09-07 22:39:42.687 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:42.705 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 会计学 (code=12020)
+2026-09-07 22:39:42.770 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 西安翻译学院
+2026-09-07 22:39:42.804 | WARNING  | app.tasks.un_tasks:_insert_universities:196 - [get_un_groups] 专业组代码冲突，跳过: 日语 (code=05020)
+2026-09-07 22:39:42.905 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 92, 'university_dup': 179, 'major_new': 587, 'major_dup': 723}
+2026-09-07 22:49:38.127 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-07 22:49:38.130 | INFO     | app.tasks.math_tasks:add:29 - add(2, 3) = 5
+2026-09-07 22:49:38.159 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
