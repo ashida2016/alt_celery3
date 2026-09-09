@@ -28,6 +28,7 @@ from app.tasks.db_tasks import (
     get_one_student,
     try_mysql,
 )
+from app.tasks.init_tasks import init_web_db
 from app.tasks.math_tasks import add, periodic_add
 from app.tasks.un_tasks import get_un_groups
 
@@ -173,6 +174,30 @@ def run_un_task(args: argparse.Namespace) -> list[dict]:
     return result
 
 
+def run_initdb_task(args: argparse.Namespace) -> dict:
+    """下发 init_web_db 任务并等待结果。
+
+    Args:
+        args: 命令行参数（须包含 yes=True 确认危险操作）。
+
+    Returns:
+        任务执行摘要（重建的库、表列表等）。
+    """
+    if not args.yes:
+        logger.error(
+            "init_web_db 是危险操作（会删除旧库与用户），"
+            "确认执行请追加 --yes 参数。"
+        )
+        raise SystemExit(1)
+    logger.info("下发任务 tasks.init_web_db (confirm=True) ...")
+    result = init_web_db.delay(confirm=True).get(timeout=args.timeout)
+    print(
+        "[初始化任务] tasks.init_web_db =",
+        json.dumps(result, ensure_ascii=False, indent=1),
+    )
+    return result
+
+
 def run_generate_task(args: argparse.Namespace) -> dict:
     """单独下发 generate_many_students 任务并等待结果。
 
@@ -213,12 +238,18 @@ def main() -> int:
     )
     parser.add_argument(
         "--task",
-        choices=["all", "generate", "un"],
+        choices=["all", "generate", "un", "initdb"],
         default="all",
         help=(
             "要执行的任务：all=运行全部示例（默认），"
-            "generate=仅运行批量生成学生任务，un=仅运行获取高校信息任务"
+            "generate=仅运行批量生成学生任务，un=仅运行获取高校信息任务，"
+            "initdb=初始化数据库（危险，需 --yes）"
         ),
+    )
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="确认执行危险操作（initdb 任务必须）",
     )
     parser.add_argument(
         "--count",
@@ -264,6 +295,10 @@ def main() -> int:
 
     if args.task == "generate":
         run_generate_task(args)
+        return 0
+
+    if args.task == "initdb":
+        run_initdb_task(args)
         return 0
 
     if args.task == "un":

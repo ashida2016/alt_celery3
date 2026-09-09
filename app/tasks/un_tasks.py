@@ -89,16 +89,16 @@ def _extract_json(text: str) -> list[dict[str, Any]]:
     return valid
 
 
-def _sanitize_code(code: str, width: int = 5) -> str:
+def _sanitize_code(code: str, width: int = 10) -> str:
     """清洗代码字段：仅保留数字并截断到表结构允许的宽度。
 
-    表结构中 universities.code / major_groups.code 均为 char(5)，
-    模型可能返回超长代码，入库前截断；返回给调用方的 JSON
-    仍保留模型原始代码。
+    表结构中 universities.code / major_groups.code 均为 char(10)，
+    高校代码 5 位、专业组代码最长 10 位，超长部分截断；
+    返回给调用方的 JSON 仍保留模型原始代码。
 
     Args:
         code: 原始代码字符串。
-        width: 目标宽度（默认 5）。
+        width: 目标宽度（默认 10）。
 
     Returns:
         清洗后的代码字符串。
@@ -144,7 +144,7 @@ def _insert_universities(
     }
 
     for un in universities:
-        un_code = _sanitize_code(un["code"], width=5)
+        un_code = _sanitize_code(un["code"])
         if un["name"] in existing_universities:
             # 高校已存在：本体不重复添加，但仍需检查其名下专业组
             stats["university_dup"] += 1

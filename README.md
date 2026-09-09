@@ -29,7 +29,8 @@ alt_celery3/
 │   └── tasks/               # 任务子文件夹（新增任务放这里）
 │       ├── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
 │       ├── db_tasks.py      # 数据库任务：try_mysql + get_one_student + generate_many_students
-│       └── un_tasks.py      # 高校信息任务：get_un_groups（硅基流动 API + 查重入库）
+│       ├── un_tasks.py      # 高校信息任务：get_un_groups（硅基流动 API + 查重入库）
+│       └── init_tasks.py    # 数据库初始化任务：init_web_db（重建库/用户/业务表）
 ├── run_tasks.py             # 生产者脚本：调用示例任务、获取任务结果
 ├── run_celery.py            # 本地一键启动 worker / beat / flower
 ├── Dockerfile               # 多阶段构建，创建 celeuser 非 root 用户
@@ -239,6 +240,30 @@ python run_tasks.py --task un --count 3 --timeout 300
 - `major_groups`：university_id（外键）、name、code（char(5)）；同校内 (university_id, code) 唯一
 
 > 查重规则：以名称为准——高校重复不添加，但仍会检查其名下专业组并补录未出现过的专业组；专业组同样以名称查重，重复不添加。同时兼容表的唯一约束，code 冲突的条目记日志后跳过。
+
+### 数据库初始化任务 init_web_db
+
+`tasks.init_web_db` 一键重建 `web_db` / `log_db` 数据库与用户 `web_user` / `log_user`，并在 `web_db` 内创建全部业务表。
+
+**危险操作**：会删除旧库、旧用户及全部数据，必须追加 `--yes` 确认，且需要管理员账号（`.env` 中 `MYSQL_ADMIN_USER` / `MYSQL_ADMIN_PASSWORD`，需全局 DROP/CREATE 权限）。执行后需重启 worker/beat 以恢复 sclog 日志持久化连接。
+
+```bash
+python run_tasks.py --task initdb --yes --timeout 120
+```
+
+业务表（面向千万级学生数据优化：InnoDB + BIGINT 主键 + 高频查询二级索引；大表不建外键，引用完整性由应用层保证）：
+
+| 表名                   | 说明                                       |
+| ---------------------- | ------------------------------------------ |
+| `students`             | 学生信息表（索引：name、birthday）         |
+| `universities`         | 高校信息表（name、code 唯一）              |
+| `major_groups`         | 专业组信息表（外键关联高校，级联删除）     |
+| `gaokao_scores`        | 高考成绩表（student_id 唯一，一人一条）    |
+| `undergraduate_scores` | 本科成绩表（学年 + 课程，按学生索引）      |
+| `graduation_scores`    | 毕业成绩表（student_id 唯一，含绩点）      |
+| `student_enrollments`  | 学生-高校-专业组入学关系表（防重复入学）   |
+
+同时会在 `log_db` 内重建 `app_logs` 日志表，恢复 sclog 日志持久化。
 > 注意：`major_groups.code` 为 char(5)，模型返回的 6 位专业代码入库时会截断为前 5 位（返回 JSON 保留原始代码）。
 
 ### 4. 新增任务
@@ -266,7 +291,9 @@ def send_notice(user_id: int, content: str) -> str:
 
 > **注意**：更新代码后务必重建并重启所有 worker。若同一 broker 上存在运行旧代码的其他 worker 节点，新任务可能被旧节点抢占而报 `NotRegistered`。可用 `celery -A app.celery_app inspect ping` 检查在线节点。
 
-> **队列说明**：worker 同时监听 `default` 与 `db` 两个队列；`tasks.try_mysql`、`tasks.get_one_student` 路由到专用 `db` 队列（定义于 `app/celery_app.py` 的 `task_routes`），与默认队列隔离。本地启动脚本 `run_celery.py` 与 docker-compose 中的 worker 命令均已包含 `-Q default,db`。
+> **队列说明**：worker 同时监听 `default`、`db` 与 `llm` 三个队列；数据库任务路由到 `db` 队列，LLM 任务路由到 `llm` 队列（定义于 `app/celery_app.py` 的 `task_routes`），与默认队列隔离。
+>
+> **进程池说明**：worker 使用 `--pool=threads`（而非默认 prefork）。原因：sclog 的 MySQL sink 依赖主进程内的后台写库线程，prefork 的子进程不继承该线程，会导致任务执行日志无法落库；threads 池的任务在同进程内执行，规避此问题。注意 threads 池下 celery 的时间限制（time_limit）不生效。
 
 ## 环境变量说明
 
@@ -289,6 +316,10 @@ def send_notice(user_id: int, content: str) -> str:
 | `API_KEY_GJLD`        | 是*  | 硅基流动 API-KEY（get_un_groups 任务使用）      | `sk-xxxx`                                     |
 | `BASE_URL`            | 否   | 硅基流动 API 地址（默认官方地址）               | `https://api.siliconflow.cn/v1`               |
 | `GJLD_MODEL`          | 否   | 硅基流动模型名（默认 Qwen2.5-72B-Instruct）     | `Qwen/Qwen2.5-72B-Instruct`                   |
+| `MYSQL_ADMIN_USER`       | 是*  | MySQL 管理员账号（initdb 任务使用）             | `root`                                        |
+| `MYSQL_ADMIN_PASSWORD`   | 是*  | MySQL 管理员密码                                | `******`                                      |
+
+\* 使用 `--task initdb` 时必填。
 
 \* 使用 `--task un` 时必填。
 

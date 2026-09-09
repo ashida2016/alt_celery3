@@ -7375,3 +7375,307 @@
 2026-09-07 22:49:38.127 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
 2026-09-07 22:49:38.130 | INFO     | app.tasks.math_tasks:add:29 - add(2, 3) = 5
 2026-09-07 22:49:38.159 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 12:38:07.955 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:38:28.338 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:38:44.705 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:38:44.713 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 12:38:44.713 | WARNING  | app.tasks.init_tasks:_admin_meta:169 - [init_web_db] DB_ADMIN_PASSWORD 未配置，若管理员账号认证失败请填写该环境变量。
+2026-09-09 12:38:59.557 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:38:59.694 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:273 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-09 12:57:45.620 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:57:45.622 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:57:47.418 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 12:58:00.074 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 12:58:44.272 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 12:58:44.544 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 12:58:44.545 | WARNING  | app.tasks.init_tasks:_admin_meta:169 - [init_web_db] DB_ADMIN_PASSWORD 未配置，若管理员账号认证失败请填写该环境变量。
+2026-09-09 12:59:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:00:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:01:00.034 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:02:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:03:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:03:11.000 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:03:11.007 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 13:03:11.472 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:207 - [init_web_db] 旧数据库与用户已删除
+2026-09-09 13:03:11.713 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:239 - [init_web_db] 数据库与用户重建完成
+2026-09-09 13:03:11.888 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: students
+2026-09-09 13:03:11.974 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: universities
+2026-09-09 13:03:12.068 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: major_groups
+2026-09-09 13:03:12.145 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-09 13:03:12.218 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-09 13:03:12.284 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-09 13:03:12.370 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-09 13:03:12.613 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:273 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-09 13:03:12.617 | INFO     | app.tasks.init_tasks:init_web_db:343 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-09 13:03:20.653 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:03:20.660 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 13:03:21.082 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:207 - [init_web_db] 旧数据库与用户已删除
+2026-09-09 13:03:21.272 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:239 - [init_web_db] 数据库与用户重建完成
+2026-09-09 13:03:21.480 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: students
+2026-09-09 13:03:21.739 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: universities
+2026-09-09 13:03:21.824 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: major_groups
+2026-09-09 13:03:21.922 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-09 13:03:21.996 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-09 13:03:22.084 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-09 13:03:22.177 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-09 13:03:22.328 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:273 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-09 13:03:22.333 | INFO     | app.tasks.init_tasks:init_web_db:343 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-09 13:03:33.807 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:03:34.128 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 13:03:34.128 | WARNING  | app.tasks.init_tasks:_admin_meta:169 - [init_web_db] DB_ADMIN_PASSWORD 未配置，若管理员账号认证失败请填写该环境变量。
+2026-09-09 13:03:37.852 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:03:37.856 | INFO     | app.tasks.db_tasks:try_mysql:63 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-09 13:03:37.954 | INFO     | app.tasks.db_tasks:try_mysql:73 - [try_mysql] 测试结果: ok=True
+2026-09-09 13:03:37.984 | INFO     | app.tasks.db_tasks:get_one_student:90 - [get_one_student] 查询学生信息: id=1
+2026-09-09 13:03:38.093 | WARNING  | app.tasks.db_tasks:get_one_student:104 - [get_one_student] 学生不存在: id=1
+2026-09-09 13:03:57.374 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:03:57.381 | INFO     | app.tasks.db_tasks:get_one_student:90 - [get_one_student] 查询学生信息: id=1
+2026-09-09 13:03:57.484 | WARNING  | app.tasks.db_tasks:get_one_student:104 - [get_one_student] 学生不存在: id=1
+2026-09-09 13:04:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:05:00.038 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:06:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:07:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:08:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:09:04.245 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:09:04.277 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:09:06.303 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:09:29.597 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:09:29.961 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 13:09:30.387 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:207 - [init_web_db] 旧数据库与用户已删除
+2026-09-09 13:09:30.551 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:239 - [init_web_db] 数据库与用户重建完成
+2026-09-09 13:09:30.753 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: students
+2026-09-09 13:09:30.838 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: universities
+2026-09-09 13:09:30.908 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: major_groups
+2026-09-09 13:09:30.987 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-09 13:09:31.101 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-09 13:09:31.180 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-09 13:09:31.249 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-09 13:09:31.402 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:273 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-09 13:09:31.407 | INFO     | app.tasks.init_tasks:init_web_db:343 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-09 13:10:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:10:01.761 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:10:02.149 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-09 13:10:04.211 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-09 13:10:04.321 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-09 13:10:04.529 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 1, 'university_dup': 0, 'major_new': 15, 'major_dup': 0}
+2026-09-09 13:10:56.856 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:10:57.223 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-09 13:11:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:11:00.027 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-09 13:11:00.135 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-09 13:11:00.282 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 8, 'major_dup': 5}
+2026-09-09 13:11:32.435 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:11:32.461 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:12:00.066 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:12:04.128 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:12:04.567 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-09 13:12:06.464 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-09 13:12:06.561 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-09 13:12:06.609 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 2, 'major_dup': 10}
+2026-09-09 13:13:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:14:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:14:09.882 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:14:09.884 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:14:44.272 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:14:44.690 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-09 13:14:46.845 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 1 条高校信息
+2026-09-09 13:14:46.944 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-09 13:14:46.980 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 0, 'university_dup': 1, 'major_new': 2, 'major_dup': 13}
+2026-09-09 13:14:47.776 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:14:48.160 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 1 所高校信息 ...
+2026-09-09 13:14:56.097 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 4 条高校信息
+2026-09-09 13:14:56.198 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-09 13:14:56.228 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江工业大学
+2026-09-09 13:14:56.310 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京工业大学
+2026-09-09 13:14:56.376 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 清华大学
+2026-09-09 13:14:56.423 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 3, 'university_dup': 1, 'major_new': 9, 'major_dup': 3}
+2026-09-09 13:15:00.561 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:16:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:16:36.238 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:16:36.242 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:16:36.831 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:16:45.596 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-09 13:16:45.893 | INFO     | app.tasks.init_tasks:init_web_db:320 - [init_web_db] 开始初始化数据库 ...
+2026-09-09 13:16:46.251 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:207 - [init_web_db] 旧数据库与用户已删除
+2026-09-09 13:16:46.417 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:239 - [init_web_db] 数据库与用户重建完成
+2026-09-09 13:16:46.575 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: students
+2026-09-09 13:16:46.636 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: universities
+2026-09-09 13:16:46.709 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: major_groups
+2026-09-09 13:16:46.774 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-09 13:16:46.845 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-09 13:16:46.905 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-09 13:16:46.988 | INFO     | app.tasks.init_tasks:_create_business_tables:256 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-09 13:16:47.145 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:273 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-09 13:16:47.152 | INFO     | app.tasks.init_tasks:init_web_db:343 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-09 13:17:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:17:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:18:00.017 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:18:00.022 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:19:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:19:00.031 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:20:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:20:00.028 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:21:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:21:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:22:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:22:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:23:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:23:00.016 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:24:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:24:00.558 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:25:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:25:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:26:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:26:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:27:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:27:00.533 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:28:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:28:00.019 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:29:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:29:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:30:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:30:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:31:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:31:00.035 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:32:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:32:00.018 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:33:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:33:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:34:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:34:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:35:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:35:00.016 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:36:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:36:00.029 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:37:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:37:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:38:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:38:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:39:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:39:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:40:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:40:00.028 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:41:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:41:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:42:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:42:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:43:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:43:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:44:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:44:00.033 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:45:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:45:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:46:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:46:00.016 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:47:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:47:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:48:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:48:00.031 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:49:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:49:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:50:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:50:00.027 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:51:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:51:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:52:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:52:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:53:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:53:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:54:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:54:00.019 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:55:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:55:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:56:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:56:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:57:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:57:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:58:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:58:00.028 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:59:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 13:59:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:00:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:00:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:01:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:01:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:02:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:02:00.534 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:03:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:03:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:04:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:04:00.031 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:05:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:05:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:06:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:06:00.034 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:07:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:07:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:08:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:08:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:09:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:09:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:10:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:10:00.028 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:11:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:11:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:12:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:12:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:13:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:13:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:14:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:14:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:15:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:15:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:16:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:16:00.022 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:17:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:17:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:18:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:18:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:19:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:19:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:20:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:20:00.017 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:21:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:21:00.027 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:22:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:22:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:23:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:23:00.018 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:24:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:24:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:25:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:25:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:26:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:26:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:27:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:27:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:28:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:28:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:29:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:29:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:30:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:30:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:31:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:31:00.026 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:32:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:32:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:33:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:33:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:34:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:34:00.020 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:35:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:35:00.030 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:36:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:36:00.534 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:37:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:37:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:38:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:38:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:39:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:39:00.018 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:40:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:40:00.017 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:41:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:41:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:42:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-09 14:42:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3

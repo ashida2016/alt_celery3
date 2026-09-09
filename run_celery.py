@@ -69,6 +69,9 @@ def build_commands(loglevel: str, flower_port: int) -> dict[str, list[str]]:
         + [
             "worker",
             f"--loglevel={loglevel}",
+            # threads 池：任务在同进程线程内执行，保证 sclog MySQL
+            # sink 的后台写库线程随主进程存活（prefork 子进程会丢失）
+            "--pool=threads",
             "--concurrency=4",
             "-Q",
             "default,db,llm",

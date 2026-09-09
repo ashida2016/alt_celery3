@@ -32,6 +32,7 @@ app = Celery(
         "app.tasks.math_tasks",
         "app.tasks.db_tasks",
         "app.tasks.un_tasks",
+        "app.tasks.init_tasks",
     ],
 )
 
