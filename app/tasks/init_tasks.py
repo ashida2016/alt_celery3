@@ -20,6 +20,7 @@
 
 import os
 
+from alt_celery3_contract.constants import TaskName
 from scdb_mysql_speed import SCDBMySQLMeta, SCDBMySQLSpeed
 from sclog_lite import logger
 
@@ -293,7 +294,7 @@ def _build_web_meta() -> SCDBMySQLMeta:
     )
 
 
-@app.task(name="tasks.init_web_db")
+@app.task(name=TaskName.INIT_WEB_DB)
 def init_web_db(confirm: bool = False) -> dict:
     """初始化数据库：重建 web_db / log_db 及用户，并创建业务表。
 

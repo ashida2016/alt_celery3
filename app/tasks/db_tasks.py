@@ -10,6 +10,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
+from alt_celery3_contract.constants import TaskName
 from alt_generate_zh_name import generate as generate_zh_students
 from scdb_mysql_speed import SCDBMySQLMeta, SCDBMySQLSpeed
 from sclog_lite import logger
@@ -49,7 +50,7 @@ def _build_meta(pool_size: int = 5) -> SCDBMySQLMeta:
     )
 
 
-@app.task(name="tasks.try_mysql", bind=True, max_retries=3)
+@app.task(name=TaskName.TRY_MYSQL, bind=True, max_retries=3)
 def try_mysql(self) -> dict:
     """测试 MySQL 业务库（web_db）连通性。
 
@@ -76,7 +77,7 @@ def try_mysql(self) -> dict:
     return {"ok": ok, "database": meta.database}
 
 
-@app.task(name="tasks.get_one_student")
+@app.task(name=TaskName.GET_ONE_STUDENT)
 def get_one_student(student_id: int) -> dict:
     """查询单个学生信息。
 
@@ -159,7 +160,7 @@ def _generate_and_insert_chunk(
 
 
 @app.task(
-    name="tasks.generate_many_students",
+    name=TaskName.GENERATE_MANY_STUDENTS,
     soft_time_limit=1800,
     time_limit=1900,
 )

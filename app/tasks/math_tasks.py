@@ -4,6 +4,7 @@
 （periodic_add）示例，后续更多任务可参照本文件新建模块。
 """
 
+from alt_celery3_contract.constants import TaskName
 from sclog_lite import logger
 
 from app.celery_app import app
@@ -13,7 +14,7 @@ from app.log_setup import init_logging
 init_logging()
 
 
-@app.task(name="tasks.add", bind=True, max_retries=3)
+@app.task(name=TaskName.ADD, bind=True, max_retries=3)
 def add(self, x: int, y: int) -> int:
     """计算两数之和（普通任务示例）。
 
@@ -30,7 +31,7 @@ def add(self, x: int, y: int) -> int:
     return result
 
 
-@app.task(name="tasks.periodic_add")
+@app.task(name=TaskName.PERIODIC_ADD)
 def periodic_add(x: int, y: int) -> int:
     """周期性加法定时任务示例，由 celery beat 调度。
 

@@ -7,6 +7,7 @@
 
 import os
 
+from alt_celery3_contract.constants import TaskName
 from celery import Celery
 from celery.schedules import crontab
 
@@ -58,16 +59,16 @@ app.conf.update(
     # （db 队列与 default 隔离，避免被只监听 default 的旧代码 worker 抢占）
     task_default_queue="default",
     task_routes={
-        "tasks.try_mysql": {"queue": "db"},
-        "tasks.get_one_student": {"queue": "db"},
-        "tasks.generate_many_students": {"queue": "db"},
+        TaskName.TRY_MYSQL: {"queue": "db"},
+        TaskName.GET_ONE_STUDENT: {"queue": "db"},
+        TaskName.GENERATE_MANY_STUDENTS: {"queue": "db"},
         # LLM 任务走 llm 队列（长耗时 API 调用与普通任务隔离）
-        "tasks.get_un_groups": {"queue": "llm"},
+        TaskName.GET_UN_GROUPS: {"queue": "llm"},
         # 业务模拟任务走 db 队列
-        "tasks.simu_ncee": {"queue": "db"},
-        "tasks.simu_admission": {"queue": "db"},
-        "tasks.simu_exam": {"queue": "db"},
-        "tasks.simu_graduate": {"queue": "db"},
+        TaskName.SIMU_NCEE: {"queue": "db"},
+        TaskName.SIMU_ADMISSION: {"queue": "db"},
+        TaskName.SIMU_EXAM: {"queue": "db"},
+        TaskName.SIMU_GRADUATE: {"queue": "db"},
     },
     # broker 连接可靠性
     broker_connection_retry_on_startup=True,
@@ -89,7 +90,7 @@ app.conf.update(
 app.conf.beat_schedule = {
     # 示例定时任务：每分钟执行一次周期加法
     "periodic-add-every-minute": {
-        "task": "tasks.periodic_add",
+        "task": TaskName.PERIODIC_ADD,
         "schedule": crontab(minute="*/1"),
         "args": (1, 2),
         "options": {"queue": "default"},

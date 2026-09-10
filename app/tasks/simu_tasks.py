@@ -19,6 +19,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
+from alt_celery3_contract.constants import TaskName
 from scdb_mysql_speed import SCDBMySQLSpeed
 from sclog_lite import logger
 
@@ -180,7 +181,7 @@ def _ncee_chunk(
     return len(rows)
 
 
-@app.task(name="tasks.simu_ncee")
+@app.task(name=TaskName.SIMU_NCEE)
 def simu_ncee(
     year: int, chunk_size: int = 50_000, max_workers: int = 8
 ) -> dict:
@@ -407,7 +408,7 @@ def _admission_chunk(
     return len(rows), band_stats
 
 
-@app.task(name="tasks.simu_admission")
+@app.task(name=TaskName.SIMU_ADMISSION)
 def simu_admission(
     year: int, chunk_size: int = 50_000, max_workers: int = 8
 ) -> dict:
@@ -569,7 +570,7 @@ def _exam_chunk(
     return inserted
 
 
-@app.task(name="tasks.simu_exam")
+@app.task(name=TaskName.SIMU_EXAM)
 def simu_exam(
     year: int, chunk_size: int = 50_000, max_workers: int = 8
 ) -> dict:
@@ -686,7 +687,7 @@ def _graduate_chunk(
     return len(rows), no_score
 
 
-@app.task(name="tasks.simu_graduate")
+@app.task(name=TaskName.SIMU_GRADUATE)
 def simu_graduate(
     year: int, chunk_size: int = 50_000, max_workers: int = 8
 ) -> dict:

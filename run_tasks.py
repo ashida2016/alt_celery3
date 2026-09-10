@@ -22,6 +22,8 @@ import logging
 import sys
 from typing import Any
 
+from alt_celery3_contract import schemas
+
 from app import app
 from app.tasks.db_tasks import (
     generate_many_students,
@@ -60,7 +62,9 @@ def run_normal_task(x: int, y: int, timeout: float) -> int:
         TimeoutError: 结果等待超时。
     """
     logger.info("下发普通任务 tasks.add(%d, %d) ...", x, y)
-    async_result = add.delay(x, y)
+    # 下发前经契约 Schema 校验入参
+    payload = schemas.AddPayload(x=x, y=y)
+    async_result = add.delay(**payload.model_dump())
     result = async_result.get(timeout=timeout)
     logger.info("tasks.add 结果: task_id=%s, result=%s", async_result.id, result)
     return result
@@ -232,11 +236,13 @@ def run_simu_task(args: argparse.Namespace) -> dict:
         args.chunk_size,
         args.max_workers,
     )
-    result = task_fn.delay(
+    # 下发前经契约 Schema 校验入参
+    payload = schemas.SimuTaskPayload(
         year=args.year,
         chunk_size=args.chunk_size,
         max_workers=args.max_workers,
-    ).get(timeout=args.timeout)
+    )
+    result = task_fn.delay(**payload.model_dump()).get(timeout=args.timeout)
     print(
         f"[模拟任务] {task_fn.name} =",
         json.dumps(result, ensure_ascii=False, indent=1),
@@ -262,13 +268,17 @@ def run_generate_task(args: argparse.Namespace) -> dict:
         args.chunk_size,
         args.max_workers,
     )
-    result = generate_many_students.delay(
+    # 下发前经契约 Schema 校验入参
+    payload = schemas.GenerateManyStudentsPayload(
         numbers=args.numbers,
         birthday_min=args.birthday_min,
         birthday_max=args.birthday_max,
         chunk_size=args.chunk_size,
         max_workers=args.max_workers,
-    ).get(timeout=args.timeout)
+    )
+    result = generate_many_students.delay(**payload.model_dump()).get(
+        timeout=args.timeout
+    )
     print(f"[生成任务] tasks.generate_many_students = {result}")
     return result
 

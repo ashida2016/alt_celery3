@@ -10,6 +10,7 @@ Completion 接口生成指定数量的中国高校信息（含下属专业组）
 import json
 from typing import Any
 
+from alt_celery3_contract.constants import TaskName
 from scdb_mysql_speed import SCDBMySQLSpeed
 from sclog_lite import logger
 
@@ -220,7 +221,7 @@ def _insert_universities(
     return stats
 
 
-@app.task(name="tasks.get_un_groups")
+@app.task(name=TaskName.GET_UN_GROUPS)
 def get_un_groups(count: int = 5) -> list[dict[str, Any]]:
     """自动获取指定数量的高校信息（含专业组），查重后入库。
 

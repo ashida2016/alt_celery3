@@ -8850,3 +8850,47 @@
 2026-09-10 13:08:29.089 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=99834，分数线 985/211/一本 = 612/582/556
 2026-09-10 13:08:29.345 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2027 待录取学生 ID 范围 [None, None]，窗口数=0，线程数=8
 2026-09-10 13:08:29.640 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2027, 'admitted': 0, 'band_stats': {}, 'elapsed_seconds': 1.05}
+2026-09-10 13:09:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:10:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:10:39.785 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:10:40.308 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=99834，分数线 985/211/一本 = 612/582/556
+2026-09-10 13:10:40.556 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2027 待录取学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-10 13:10:40.838 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2027, 'admitted': 0, 'band_stats': {}, 'elapsed_seconds': 0.78}
+2026-09-10 13:11:00.030 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:12:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:13:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:14:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:15:07.630 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:16:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:17:00.015 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:18:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:19:00.030 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 15:48:56.317 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:49:42.800 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:49:42.816 | INFO     | app.tasks.math_tasks:add:30 - add(7, 8) = 15
+2026-09-10 15:50:29.774 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:50:29.782 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:50:43.738 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:51:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:52:00.017 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:53:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:54:00.533 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:55:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:56:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:57:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:57:47.232 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:57:47.248 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:58:00.040 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 15:58:18.942 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 15:58:19.405 | INFO     | app.tasks.simu_tasks:simu_ncee:216 - [simu_ncee] year=2030 高三学生 ID 范围 [12, 998]，窗口数=1，线程数=8
+2026-09-10 15:58:19.451 | INFO     | app.tasks.simu_tasks:simu_ncee:250 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2030, 'exam_date': '2030-06-20', 'simulated': 47, 'elapsed_seconds': 0.25}
+2026-09-10 15:59:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:00:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:01:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:02:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:03:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:04:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:05:00.032 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:06:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:07:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:08:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3

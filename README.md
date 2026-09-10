@@ -346,6 +346,23 @@ def send_notice(user_id: int, content: str) -> str:
 
 \* 使用 `--task un` 时必填。
 
+## 跨服务任务契约包
+
+本项目配套独立的契约包 [`alt_celery3_contract`](../alt_celery3_contract)（平级目录），静态提炼全部 11 个 Celery 任务的注册名、强类型入参 Schema（Pydantic v2）与契约函数，供其他服务在不依赖 Celery/业务实现的情况下类型化地调用任务：
+
+```python
+from alt_celery3_contract import TaskName, schemas
+
+# 跨服务投递时引用枚举任务名，并用 Schema 校验入参
+payload = schemas.GenerateManyStudentsPayload(numbers=1_000_000)
+app.send_task(TaskName.GENERATE_MANY_STUDENTS.value, kwargs=payload.model_dump())
+```
+
+- 本项目的任务注册名与 `task_routes` 均从契约包 `TaskName` 枚举引用（单一事实来源）
+- 契约包已作为依赖发布在 GitHub（`pyproject.toml` 固定 `ver0.1.0` 标签），`pip install -e .` 会自动从 GitHub 拉取安装
+
+- 兼容性验证：在契约包目录执行 `python verify_contracts.py`，可静态比对契约与源任务签名（参数名/顺序/默认值/类型注解/Schema 字段）是否漂移
+
 ## 本地开发
 
 ```bash
