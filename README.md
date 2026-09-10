@@ -255,7 +255,7 @@ python run_tasks.py --task initdb --yes --timeout 120
 
 | 表名                   | 说明                                       |
 | ---------------------- | ------------------------------------------ |
-| `students`             | 学生信息表（索引：name、birthday）         |
+| `students`             | 学生信息表（索引：name、birthday；含入学状态 status：0=未高考 / 10=已高考未入学 / 20=在读 / 30=已毕业，生成学生默认 0） |
 | `universities`         | 高校信息表（name、code 唯一）              |
 | `major_groups`         | 专业组信息表（外键关联高校，级联删除）     |
 | `gaokao_scores`        | 高考成绩表（student_id 唯一，一人一条）    |

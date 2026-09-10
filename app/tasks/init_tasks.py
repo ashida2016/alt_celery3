@@ -37,6 +37,8 @@ BUSINESS_TABLE_DDL: dict[str, str] = {
         " name VARCHAR(50) NOT NULL COMMENT '姓名',"
         " birthday DATE NOT NULL COMMENT '出生日期',"
         " gender CHAR(1) NOT NULL COMMENT '性别: M=男, F=女',"
+        " status TINYINT NOT NULL DEFAULT 0"
+        " COMMENT '入学状态: 0=未高考, 10=已高考未入学, 20=在读, 30=已毕业',"
         " created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP"
         " COMMENT '创建时间',"
         " PRIMARY KEY (id),"

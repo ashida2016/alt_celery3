@@ -21,8 +21,10 @@ from app.log_setup import init_logging
 init_logging()
 
 # 学生信息批量插入 SQL（占位符风格，防注入）
+# status 显式置 0（未高考），与表结构默认值保持一致
 INSERT_STUDENT_SQL = (
-    "INSERT INTO students (name, gender, birthday) VALUES (%s, %s, %s)"
+    "INSERT INTO students (name, gender, birthday, status)"
+    " VALUES (%s, %s, %s, 0)"
 )
 
 
@@ -91,7 +93,8 @@ def get_one_student(student_id: int) -> dict:
     try:
         db = SCDBMySQLSpeed(_build_meta())
         rows = db.fetch_all(
-            "SELECT id, name, gender, birthday FROM students WHERE id = %s LIMIT 1",
+            "SELECT id, name, gender, birthday, status"
+            " FROM students WHERE id = %s LIMIT 1",
             (student_id,),
             result_format="dict",
         )
