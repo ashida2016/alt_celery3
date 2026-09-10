@@ -14,8 +14,9 @@ services:
       dockerfile: Dockerfile
     image: alt_celery3:latest
     container_name: alt_celery3-worker
-    # threads 池：保证 sclog MySQL sink 后台写库线程随主进程存活
-    command: celery -A app.celery_app worker --loglevel=info --pool=threads --concurrency=4 -Q default,db,llm
+    # threads 池：保证 sclog MySQL sink 后台写库线程随主进程存活；
+    # 节点名 WORKER_NAME@%h（WORKER_NAME 取自 .env，%h 展开为容器主机名）
+    command: celery -A app.celery_app worker --loglevel=info --pool=threads --concurrency=4 -n ${WORKER_NAME:-alt_worker3}@%h -Q default,db,llm
     # 环境变量统一经 .env 注入（含 CELERY_BROKER_URL / CELERY_RESULT_BACKEND）
     env_file:
       - .env

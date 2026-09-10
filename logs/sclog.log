@@ -8894,3 +8894,74 @@
 2026-09-10 16:06:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
 2026-09-10 16:07:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
 2026-09-10 16:08:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:08:48.582 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:08:48.596 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:08:49.106 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:09:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:09:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:10:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:10:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:10:17.169 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:10:17.379 | INFO     | app.tasks.init_tasks:init_web_db:323 - [init_web_db] 开始初始化数据库 ...
+2026-09-10 16:10:17.664 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:210 - [init_web_db] 旧数据库与用户已删除
+2026-09-10 16:10:17.807 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:242 - [init_web_db] 数据库与用户重建完成
+2026-09-10 16:10:17.942 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: students
+2026-09-10 16:10:17.986 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: universities
+2026-09-10 16:10:18.032 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: major_groups
+2026-09-10 16:10:18.097 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-10 16:10:18.147 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-10 16:10:18.197 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-10 16:10:18.272 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-10 16:10:18.401 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:276 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-10 16:10:18.405 | INFO     | app.tasks.init_tasks:init_web_db:346 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-10 16:10:53.123 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:10:53.343 | INFO     | app.tasks.init_tasks:init_web_db:323 - [init_web_db] 开始初始化数据库 ...
+2026-09-10 16:10:53.700 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:210 - [init_web_db] 旧数据库与用户已删除
+2026-09-10 16:10:53.843 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:242 - [init_web_db] 数据库与用户重建完成
+2026-09-10 16:10:53.975 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: students
+2026-09-10 16:10:54.023 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: universities
+2026-09-10 16:10:54.071 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: major_groups
+2026-09-10 16:10:54.138 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-10 16:10:54.197 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-10 16:10:54.247 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-10 16:10:54.348 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-10 16:10:54.474 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:276 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-10 16:10:54.481 | INFO     | app.tasks.init_tasks:init_web_db:346 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-10 16:11:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:12:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:13:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:14:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:15:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:15:11.532 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:15:11.566 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:16:00.042 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:17:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:18:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:19:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:20:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:20:21.578 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:20:21.610 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:21:00.047 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:22:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:22:12.416 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:22:12.419 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:22:12.957 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:22:32.439 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 16:22:32.670 | INFO     | app.tasks.init_tasks:init_web_db:323 - [init_web_db] 开始初始化数据库 ...
+2026-09-10 16:22:33.011 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:210 - [init_web_db] 旧数据库与用户已删除
+2026-09-10 16:22:33.173 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:242 - [init_web_db] 数据库与用户重建完成
+2026-09-10 16:22:33.306 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: students
+2026-09-10 16:22:33.352 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: universities
+2026-09-10 16:22:33.410 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: major_groups
+2026-09-10 16:22:33.456 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-10 16:22:33.508 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-10 16:22:33.558 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-10 16:22:33.612 | INFO     | app.tasks.init_tasks:_create_business_tables:259 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-10 16:22:33.751 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:276 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-10 16:22:33.757 | INFO     | app.tasks.init_tasks:init_web_db:346 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-10 16:23:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:23:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:24:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:25:00.022 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:26:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-10 16:27:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3

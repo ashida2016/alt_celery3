@@ -64,6 +64,9 @@ def build_commands(loglevel: str, flower_port: int) -> dict[str, list[str]]:
         组件名到命令行列表的映射。
     """
     base = [sys.executable, "-m", "celery", "-A", "app.celery_app"]
+    # 节点名前缀取自环境变量 WORKER_NAME（.env 可配置），
+    # 实际节点名为 WORKER_NAME@主机名
+    worker_name = os.environ.get("WORKER_NAME", "alt_worker3")
     return {
         "worker": base
         + [
@@ -73,6 +76,9 @@ def build_commands(loglevel: str, flower_port: int) -> dict[str, list[str]]:
             # sink 的后台写库线程随主进程存活（prefork 子进程会丢失）
             "--pool=threads",
             "--concurrency=4",
+            # 节点名：WORKER_NAME@主机名（%h 为 Celery 主机名占位符）
+            "-n",
+            f"{worker_name}@%h",
             "-Q",
             "default,db,llm",
         ],
