@@ -33,6 +33,7 @@ app = Celery(
         "app.tasks.db_tasks",
         "app.tasks.un_tasks",
         "app.tasks.init_tasks",
+        "app.tasks.simu_tasks",
     ],
 )
 
@@ -62,6 +63,11 @@ app.conf.update(
         "tasks.generate_many_students": {"queue": "db"},
         # LLM 任务走 llm 队列（长耗时 API 调用与普通任务隔离）
         "tasks.get_un_groups": {"queue": "llm"},
+        # 业务模拟任务走 db 队列
+        "tasks.simu_ncee": {"queue": "db"},
+        "tasks.simu_admission": {"queue": "db"},
+        "tasks.simu_exam": {"queue": "db"},
+        "tasks.simu_graduate": {"queue": "db"},
     },
     # broker 连接可靠性
     broker_connection_retry_on_startup=True,

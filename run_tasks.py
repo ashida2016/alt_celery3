@@ -30,6 +30,12 @@ from app.tasks.db_tasks import (
 )
 from app.tasks.init_tasks import init_web_db
 from app.tasks.math_tasks import add, periodic_add
+from app.tasks.simu_tasks import (
+    simu_admission,
+    simu_exam,
+    simu_graduate,
+    simu_ncee,
+)
 from app.tasks.un_tasks import get_un_groups
 
 logging.basicConfig(
@@ -198,6 +204,46 @@ def run_initdb_task(args: argparse.Namespace) -> dict:
     return result
 
 
+def run_simu_task(args: argparse.Namespace) -> dict:
+    """下发业务模拟任务（ncee/admission/exam/graduate）并等待结果。
+
+    Args:
+        args: 命令行参数（task 指定具体任务，year 为业务年份）。
+
+    Returns:
+        任务执行摘要。
+
+    Raises:
+        SystemExit: 未提供 --year 时抛出。
+    """
+    simu_tasks = {
+        "ncee": simu_ncee,
+        "admission": simu_admission,
+        "exam": simu_exam,
+        "graduate": simu_graduate,
+    }
+    task_fn = simu_tasks[args.task]
+    if args.year is None:
+        raise SystemExit(f"--task {args.task} 需要通过 --year 指定年份")
+    logger.info(
+        "下发任务 %s: year=%s, chunk_size=%s, max_workers=%s",
+        task_fn.name,
+        args.year,
+        args.chunk_size,
+        args.max_workers,
+    )
+    result = task_fn.delay(
+        year=args.year,
+        chunk_size=args.chunk_size,
+        max_workers=args.max_workers,
+    ).get(timeout=args.timeout)
+    print(
+        f"[模拟任务] {task_fn.name} =",
+        json.dumps(result, ensure_ascii=False, indent=1),
+    )
+    return result
+
+
 def run_generate_task(args: argparse.Namespace) -> dict:
     """单独下发 generate_many_students 任务并等待结果。
 
@@ -238,13 +284,24 @@ def main() -> int:
     )
     parser.add_argument(
         "--task",
-        choices=["all", "generate", "un", "initdb"],
+        choices=[
+            "all", "generate", "un", "initdb",
+            "ncee", "admission", "exam", "graduate",
+        ],
         default="all",
         help=(
             "要执行的任务：all=运行全部示例（默认），"
-            "generate=仅运行批量生成学生任务，un=仅运行获取高校信息任务，"
-            "initdb=初始化数据库（危险，需 --yes）"
+            "generate=批量生成学生，un=获取高校信息，"
+            "initdb=初始化数据库（危险，需 --yes），"
+            "ncee/admission/exam/graduate=业务模拟任务（需 --year）"
         ),
+    )
+    parser.add_argument(
+        "--year",
+        type=int,
+        default=None,
+        help="业务模拟任务的年份（ncee=高考年份，admission=高考年份，"
+        "exam=学年起始年，graduate=毕业年份）",
     )
     parser.add_argument(
         "--yes",
@@ -299,6 +356,10 @@ def main() -> int:
 
     if args.task == "initdb":
         run_initdb_task(args)
+        return 0
+
+    if args.task in ("ncee", "admission", "exam", "graduate"):
+        run_simu_task(args)
         return 0
 
     if args.task == "un":

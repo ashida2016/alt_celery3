@@ -8695,3 +8695,158 @@
 2026-09-10 12:28:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
 2026-09-10 12:29:00.022 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
 2026-09-10 12:29:00.047 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:30:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:30:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:31:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:32:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:33:00.016 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:34:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:35:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:36:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:37:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:38:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:39:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:39:39.368 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:39:58.122 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:39:58.546 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 6 所高校信息 ...
+2026-09-10 12:40:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:40:04.547 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 6 条高校信息
+2026-09-10 12:40:04.668 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 北京大学
+2026-09-10 12:40:04.774 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-10 12:40:04.873 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 武汉大学
+2026-09-10 12:40:04.993 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 深圳大学
+2026-09-10 12:40:05.097 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 浙江大学城市学院
+2026-09-10 12:40:05.207 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 四川大学
+2026-09-10 12:40:05.294 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 6, 'university_dup': 0, 'major_new': 28, 'major_dup': 0}
+2026-09-10 12:40:06.056 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:40:06.436 | INFO     | app.tasks.un_tasks:get_un_groups:242 - [get_un_groups] 开始获取 6 所高校信息 ...
+2026-09-10 12:40:29.494 | INFO     | app.tasks.un_tasks:get_un_groups:250 - [get_un_groups] 模型返回并校验通过 6 条高校信息
+2026-09-10 12:40:29.614 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 清华大学
+2026-09-10 12:40:29.733 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海大学
+2026-09-10 12:40:29.824 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 深圳大学
+2026-09-10 12:40:29.881 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 上海立信会计金融学院
+2026-09-10 12:40:29.999 | INFO     | app.tasks.un_tasks:_insert_universities:151 - [get_un_groups] 高校已存在，检查其专业组: 上海建桥学院
+2026-09-10 12:40:30.080 | INFO     | app.tasks.un_tasks:_insert_universities:172 - [get_un_groups] 高校入库: 武昌理工学院
+2026-09-10 12:40:30.217 | INFO     | app.tasks.un_tasks:get_un_groups:260 - [get_un_groups] 入库统计: {'university_new': 4, 'university_dup': 2, 'major_new': 29, 'major_dup': 8}
+2026-09-10 12:40:31.209 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:40:56.680 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:41:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:41:05.016 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:41:06.336 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2025 高三学生 ID 范围 [6, 1103014]，窗口数=221，线程数=5
+2026-09-10 12:41:11.130 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2025, 'exam_date': '2025-06-20', 'simulated': 202561, 'elapsed_seconds': 6.11}
+2026-09-10 12:41:27.924 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:41:52.492 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:41:53.129 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=202561，分数线 985/211/一本 = 613/582/556
+2026-09-10 12:41:53.594 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2025 待录取学生 ID 范围 [6, 1103014]，窗口数=23，线程数=8
+2026-09-10 12:41:58.553 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2025, 'admitted': 202561, 'band_stats': {'一本': 31060, '211': 20698, '其他': 140607, '985': 10196}, 'elapsed_seconds': 6.06}
+2026-09-10 12:42:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:42:09.657 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:42:10.025 | INFO     | app.tasks.simu_tasks:simu_exam:603 - [simu_exam] 学年=2025-2026 在读学生 ID 范围 [6, 1103014]，窗口数=23，线程数=8
+2026-09-10 12:42:25.320 | INFO     | app.tasks.simu_tasks:simu_exam:630 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2025-2026', 'recorded': 1518280, 'elapsed_seconds': 15.66}
+2026-09-10 12:42:36.978 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:42:39.399 | INFO     | app.tasks.simu_tasks:simu_graduate:722 - [simu_graduate] year=2028 应届大四学生 ID 范围 [6, 1103014]，窗口数=23，线程数=8
+2026-09-10 12:42:48.396 | INFO     | app.tasks.simu_tasks:simu_graduate:764 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2028, 'graduate_date': '2028-06-30', 'graduated': 202561, 'no_score': 0, 'elapsed_seconds': 11.41}
+2026-09-10 12:43:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:43:01.488 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:44:00.034 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:45:00.014 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:46:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:47:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:47:11.609 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:47:11.672 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:47:26.612 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:47:27.359 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2026 高三学生 ID 范围 [10, 1100014]，窗口数=23，线程数=8
+2026-09-10 12:47:29.197 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2026, 'exam_date': '2026-06-20', 'simulated': 100203, 'elapsed_seconds': 2.24}
+2026-09-10 12:48:00.057 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:49:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:50:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:51:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:51:43.959 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:51:43.972 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:51:44.526 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:52:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:52:00.030 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:52:30.792 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:52:31.417 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2026 高三学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-10 12:52:31.986 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2026, 'exam_date': '2026-06-20', 'simulated': 0, 'elapsed_seconds': 0.93}
+2026-09-10 12:53:00.016 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:53:00.018 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:54:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:54:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:54:10.249 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:54:10.771 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=100203，分数线 985/211/一本 = 613/582/556
+2026-09-10 12:54:11.018 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2026 待录取学生 ID 范围 [10, 1100014]，窗口数=23，线程数=8
+2026-09-10 12:54:13.394 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2026, 'admitted': 100203, 'band_stats': {'其他': 69487, '985': 5145, '211': 10291, '一本': 15280}, 'elapsed_seconds': 2.88}
+2026-09-10 12:54:52.791 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:54:53.385 | INFO     | app.tasks.simu_tasks:simu_exam:603 - [simu_exam] 学年=2026-2027 在读学生 ID 范围 [10, 1100014]，窗口数=23，线程数=8
+2026-09-10 12:55:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:55:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:55:00.490 | INFO     | app.tasks.simu_tasks:simu_exam:630 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2026-2027', 'recorded': 751546, 'elapsed_seconds': 7.43}
+2026-09-10 12:55:21.686 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 12:55:23.716 | INFO     | app.tasks.simu_tasks:simu_graduate:722 - [simu_graduate] year=2029 应届大四学生 ID 范围 [10, 1100014]，窗口数=23，线程数=8
+2026-09-10 12:55:28.374 | INFO     | app.tasks.simu_tasks:simu_graduate:764 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2029, 'graduate_date': '2029-06-30', 'graduated': 100203, 'no_score': 0, 'elapsed_seconds': 6.4}
+2026-09-10 12:56:00.011 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:56:00.029 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:57:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:57:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:58:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:58:00.008 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 12:59:00.006 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:00:00.032 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:00:08.858 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:00:08.876 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:00:09.524 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:00:46.327 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:00:47.373 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2027 高三学生 ID 范围 [23, 1100012]，窗口数=22，线程数=8
+2026-09-10 13:00:49.301 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2027, 'exam_date': '2027-06-20', 'simulated': 99834, 'elapsed_seconds': 2.6}
+2026-09-10 13:00:56.254 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:00:56.901 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=99834，分数线 985/211/一本 = 612/582/556
+2026-09-10 13:00:57.164 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2027 待录取学生 ID 范围 [23, 1100012]，窗口数=22，线程数=8
+2026-09-10 13:00:59.342 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2027, 'admitted': 99834, 'band_stats': {'其他': 69352, '一本': 15284, '211': 10013, '985': 5185}, 'elapsed_seconds': 2.73}
+2026-09-10 13:01:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:01:00.007 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:01:06.895 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:01:07.598 | INFO     | app.tasks.simu_tasks:simu_exam:603 - [simu_exam] 学年=2027-2028 在读学生 ID 范围 [23, 1100012]，窗口数=22，线程数=8
+2026-09-10 13:01:19.031 | INFO     | app.tasks.simu_tasks:simu_exam:630 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2027-2028', 'recorded': 748402, 'elapsed_seconds': 11.78}
+2026-09-10 13:01:28.489 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:01:30.954 | INFO     | app.tasks.simu_tasks:simu_graduate:722 - [simu_graduate] year=2030 应届大四学生 ID 范围 [23, 1100012]，窗口数=22，线程数=8
+2026-09-10 13:01:36.677 | INFO     | app.tasks.simu_tasks:simu_graduate:764 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2030, 'graduate_date': '2030-06-30', 'graduated': 99834, 'no_score': 0, 'elapsed_seconds': 7.83}
+2026-09-10 13:01:37.478 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:02:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:02:00.010 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:03:00.012 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:03:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:03:25.922 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:03:25.940 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:03:27.656 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:04:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:04:24.098 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:04:46.907 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:04:48.296 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2028 高三学生 ID 范围 [28, 1100003]，窗口数=22，线程数=8
+2026-09-10 13:04:50.872 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2028, 'exam_date': '2028-06-20', 'simulated': 99980, 'elapsed_seconds': 3.57}
+2026-09-10 13:04:51.636 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:04:52.351 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=99980，分数线 985/211/一本 = 612/582/557
+2026-09-10 13:04:52.641 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2028 待录取学生 ID 范围 [28, 1100003]，窗口数=22，线程数=8
+2026-09-10 13:04:54.877 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2028, 'admitted': 99980, 'band_stats': {'211': 10050, '其他': 69929, '一本': 14819, '985': 5182}, 'elapsed_seconds': 2.82}
+2026-09-10 13:04:55.651 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:04:56.360 | INFO     | app.tasks.simu_tasks:simu_exam:603 - [simu_exam] 学年=2028-2029 在读学生 ID 范围 [28, 1100003]，窗口数=22，线程数=8
+2026-09-10 13:05:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:05:08.022 | INFO     | app.tasks.simu_tasks:simu_exam:630 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2028-2029', 'recorded': 749487, 'elapsed_seconds': 12.0}
+2026-09-10 13:05:08.769 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:05:11.509 | INFO     | app.tasks.simu_tasks:simu_graduate:722 - [simu_graduate] year=2031 应届大四学生 ID 范围 [28, 1100003]，窗口数=22，线程数=8
+2026-09-10 13:05:17.126 | INFO     | app.tasks.simu_tasks:simu_graduate:764 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2031, 'graduate_date': '2031-07-01', 'graduated': 99980, 'no_score': 0, 'elapsed_seconds': 7.99}
+2026-09-10 13:05:25.509 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:06:00.013 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:07:00.031 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:07:47.695 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:07:47.697 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:07:48.240 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:07:58.884 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:07:59.784 | INFO     | app.tasks.simu_tasks:simu_ncee:215 - [simu_ncee] year=2027 高三学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-10 13:08:00.005 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:08:00.009 | INFO     | app.tasks.math_tasks:periodic_add:45 - periodic_add(1, 2) = 3
+2026-09-10 13:08:00.353 | INFO     | app.tasks.simu_tasks:simu_ncee:249 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2027, 'exam_date': '2027-06-20', 'simulated': 0, 'elapsed_seconds': 1.19}
+2026-09-10 13:08:28.298 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-10 13:08:29.089 | INFO     | app.tasks.simu_tasks:_admission_thresholds:290 - [simu_admission] 考生总数=99834，分数线 985/211/一本 = 612/582/556
+2026-09-10 13:08:29.345 | INFO     | app.tasks.simu_tasks:simu_admission:445 - [simu_admission] year=2027 待录取学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-10 13:08:29.640 | INFO     | app.tasks.simu_tasks:simu_admission:494 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2027, 'admitted': 0, 'band_stats': {}, 'elapsed_seconds': 1.05}

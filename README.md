@@ -29,6 +29,7 @@ alt_celery3/
 │   └── tasks/               # 任务子文件夹（新增任务放这里）
 │       ├── math_tasks.py    # 示例：加法任务 add + 定时任务 periodic_add
 │       ├── db_tasks.py      # 数据库任务：try_mysql + get_one_student + generate_many_students
+│       ├── simu_tasks.py    # 业务模拟任务：高考/录取/日常考试/毕业（多线程）
 │       ├── un_tasks.py      # 高校信息任务：get_un_groups（硅基流动 API + 查重入库）
 │       └── init_tasks.py    # 数据库初始化任务：init_web_db（重建库/用户/业务表）
 ├── run_tasks.py             # 生产者脚本：调用示例任务、获取任务结果
@@ -240,6 +241,28 @@ python run_tasks.py --task un --count 3 --timeout 300
 - `major_groups`：university_id（外键）、name、code（char(5)）；同校内 (university_id, code) 唯一
 
 > 查重规则：以名称为准——高校重复不添加，但仍会检查其名下专业组并补录未出现过的专业组；专业组同样以名称查重，重复不添加。同时兼容表的唯一约束，code 冲突的条目记日志后跳过。
+
+### 高校业务模拟任务（ncee / admission / exam / graduate）
+
+覆盖学生「高考 → 录取 → 在读考试 → 毕业」全生命周期的四个模拟任务，均采用多线程 ID 窗口分块处理，面向千万级学生数据优化：
+
+| 任务                | 说明                                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `simu_ncee`         | 模拟高考：选取高三年龄段（出生年在 year-19 ~ year-18）的未高考学生，按正态分布（均值 530、标准差 50、区间 400-660）生成成绩，考试日期固定 6 月 20 日；完成后状态 0→10 |
+| `simu_admission`    | 高校录取：按当年高考成绩排名分批——985 录前 5%、211 录 5-15%、一本录 15-30%、其他录剩余；专业组随机分配，登记入学关系表；完成后状态 10→20 |
+| `simu_exam`         | 日常考试：仅针对在读学生，每学年每人 5-10 次考试，成绩正态分布（均值 75、标准差 15、区间 0-100），日期避开寒暑假（3-6、9-12 月） |
+| `simu_graduate`     | 本科毕业：针对四年前入学的大四学生，按本科全部成绩均值映射 4.0 制绩点（毕业日期 7 月 1 日）；完成后状态 20→30 |
+
+通过 `run_tasks.py` 单独运行（均需 `--year` 指定年份，可调 `--chunk-size` / `--max-workers` / `--timeout`）：
+
+```bash
+python run_tasks.py --task ncee      --year 2025 --timeout 300
+python run_tasks.py --task admission --year 2025 --timeout 300
+python run_tasks.py --task exam      --year 2025 --timeout 600
+python run_tasks.py --task graduate  --year 2028 --timeout 300
+```
+
+实测吞吐（8 线程）：20 万人高考 6.1s、录取 6.1s、毕业 11.4s；151 万行本科成绩 15.7s（约 9.7 万行/秒）。
 
 ### 数据库初始化任务 init_web_db
 
