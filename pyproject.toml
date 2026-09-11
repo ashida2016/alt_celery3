@@ -20,7 +20,7 @@ dependencies = [
     "alt_generate_zh_name @ git+https://github.com/ashida2016/alt_generate_zh_name.git@ver0.3.1",
     "scdb_mysql_speed @ git+https://github.com/ashida2016/scdb_mysql_speed.git@ver0.6.0",
     # 跨服务任务契约包（GitHub 按 tag 安装）
-    "alt_celery3_contract @ git+https://github.com/ashida2016/alt_celery3_contract.git@ver0.1.0",
+    "alt_celery3_contract @ git+https://github.com/ashida2016/alt_celery3_contract.git@ver0.1.1",
 ]
 
 [project.optional-dependencies]

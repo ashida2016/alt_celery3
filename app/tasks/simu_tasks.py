@@ -20,6 +20,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 from alt_celery3_contract.constants import TaskName
+from alt_celery3_contract.schemas import SimuSchoolYearPayload
 from scdb_mysql_speed import SCDBMySQLSpeed
 from sclog_lite import logger
 
@@ -236,6 +237,12 @@ def simu_ncee(
             " WHERE status = 0 AND YEAR(birthday) BETWEEN %s AND %s",
             (year - 19, year - 18),
         )
+        # 年度统计：本年度（exam_date 命中）实际参加高考的学生总数
+        total_for_year = db.fetch_all(
+            "SELECT COUNT(*) AS c FROM gaokao_scores WHERE exam_date = %s",
+            (exam_date,),
+            result_format="dict",
+        )[0]["c"]
     finally:
         db.close()
 
@@ -245,6 +252,7 @@ def simu_ncee(
         "year": year,
         "exam_date": exam_date,
         "simulated": inserted,
+        "total_for_year": total_for_year,
         "elapsed_seconds": elapsed,
     }
     logger.info("[simu_ncee] 完成: {}", summary)
@@ -481,6 +489,13 @@ def simu_admission(
             " WHERE s.status = 10 AND g.exam_date = %s",
             (exam_date,),
         )
+        # 年度统计：本年度（enroll_year 命中）实际被录取的学生总数
+        total_for_year = db.fetch_all(
+            "SELECT COUNT(*) AS c FROM student_enrollments"
+            " WHERE enroll_year = %s",
+            (year,),
+            result_format="dict",
+        )[0]["c"]
     finally:
         db.close()
 
@@ -489,6 +504,7 @@ def simu_admission(
         "task": "simu_admission",
         "year": year,
         "admitted": admitted,
+        "total_for_year": total_for_year,
         "band_stats": band_stats,
         "elapsed_seconds": elapsed,
     }
@@ -618,6 +634,14 @@ def simu_exam(
             ]
             for future in as_completed(futures):
                 recorded += future.result()
+        # 年度统计：本学年实际举行的日常考试行数与参考学生数
+        year_stats = db.fetch_all(
+            "SELECT COUNT(*) AS exams,"
+            " COUNT(DISTINCT student_id) AS students"
+            " FROM undergraduate_scores WHERE academic_year = %s",
+            (academic_year,),
+            result_format="dict",
+        )[0]
     finally:
         db.close()
 
@@ -626,6 +650,8 @@ def simu_exam(
         "task": "simu_exam",
         "academic_year": academic_year,
         "recorded": recorded,
+        "total_exams_for_year": year_stats["exams"],
+        "total_students_for_year": year_stats["students"],
         "elapsed_seconds": elapsed,
     }
     logger.info("[simu_exam] 完成: {}", summary)
@@ -750,6 +776,13 @@ def simu_graduate(
             " WHERE s.status = 20 AND e.enroll_year = %s",
             (year - 3,),
         )
+        # 年度统计：本年度（graduate_date 命中）实际毕业的学生总数
+        total_for_year = db.fetch_all(
+            "SELECT COUNT(*) AS c FROM graduation_scores"
+            " WHERE graduate_date = %s",
+            (graduate_date,),
+            result_format="dict",
+        )[0]["c"]
     finally:
         db.close()
 
@@ -759,8 +792,130 @@ def simu_graduate(
         "year": year,
         "graduate_date": graduate_date,
         "graduated": graduated,
+        "total_for_year": total_for_year,
         "no_score": no_score,
         "elapsed_seconds": elapsed,
     }
     logger.info("[simu_graduate] 完成: {}", summary)
+    return summary
+
+
+@app.task(name=TaskName.SIMU_SCHOOL_YEAR)
+def simu_school_year(
+    year: int,
+    stage_timeout: float = 600.0,
+    chunk_size: int = 50_000,
+    max_workers: int = 8,
+) -> dict:
+    """模拟学年例行操作：依次执行高考/录取/日常考试/毕业四个任务。
+
+    编排顺序与各阶段的目标年份：
+
+    ======  ==============================  ==========
+    阶段    任务                            目标年份
+    ======  ==============================  ==========
+    高考    tasks.simu_ncee                 year
+    录取    tasks.simu_admission            year
+    考试    tasks.simu_exam                 year
+    毕业    tasks.simu_graduate             year + 3
+    ======  ==============================  ==========
+
+    各阶段通过消息队列投递并等待结果，阶段间存在业务依赖
+    （录取依赖高考成绩、毕业依赖本科成绩），因此串行执行；
+    任一阶段失败即中断编排。
+
+    Args:
+        year: 学年起始年份。
+        stage_timeout: 单个阶段等待结果的最长秒数（默认 600）。
+        chunk_size: 传递给各阶段的 ID 窗口大小（默认 50000）。
+        max_workers: 传递给各阶段的并发线程数（默认 8）。
+
+    Returns:
+        各阶段执行摘要与年度统计的汇总::
+
+            {"year": 2025,
+             "statistics": {"gaokao_students": ...,
+                            "admitted_students": ...,
+                            "exam_records": ...,
+                            "exam_students": ...,
+                            "graduated_students": ...},
+             "stages": {"ncee": {...}, "admission": {...},
+                        "exam": {...}, "graduate": {...}},
+             "elapsed_seconds": 45.2}
+    """
+    started = time.monotonic()
+    # 入参经契约 Schema 校验
+    payload = SimuSchoolYearPayload(
+        year=year,
+        stage_timeout=stage_timeout,
+        chunk_size=chunk_size,
+        max_workers=max_workers,
+    )
+    logger.info(
+        "[simu_school_year] 开始学年例行操作: year={}, "
+        "stage_timeout={}, chunk_size={}, max_workers={}",
+        payload.year,
+        payload.stage_timeout,
+        payload.chunk_size,
+        payload.max_workers,
+    )
+
+    # 阶段定义：(阶段名, 任务函数, 目标年份)
+    stages = (
+        ("ncee", simu_ncee, payload.year),
+        ("admission", simu_admission, payload.year),
+        ("exam", simu_exam, payload.year),
+        ("graduate", simu_graduate, payload.year + 3),
+    )
+
+    stage_summaries: dict[str, dict] = {}
+    db = SCDBMySQLSpeed(_build_meta())
+    try:
+        for stage_name, task_fn, stage_year in stages:
+            logger.info(
+                "[simu_school_year] 阶段 [{}] 开始: task={}, year={}",
+                stage_name,
+                task_fn.name,
+                stage_year,
+            )
+            # 编排任务内同步等待子任务：Celery 默认禁止在任务内调用
+            # result.get()（防死锁），这里显式关闭该限制——本 worker 使用
+            # threads 池且 concurrency=4，编排任务仅占用 1 个线程，
+            # 子任务仍有剩余线程可用，不存在死锁风险
+            stage_summaries[stage_name] = task_fn.delay(
+                year=stage_year,
+                chunk_size=payload.chunk_size,
+                max_workers=payload.max_workers,
+            ).get(timeout=payload.stage_timeout, disable_sync_subtasks=False)
+            logger.info(
+                "[simu_school_year] 阶段 [{}] 完成: {}",
+                stage_name,
+                stage_summaries[stage_name],
+            )
+    finally:
+        db.close()
+
+    elapsed = round(time.monotonic() - started, 2)
+
+    # 年度统计汇总（取自各阶段摘要中基于数据库的年度计数）
+    statistics = {
+        # 本年度参加高考的学生数量
+        "gaokao_students": stage_summaries["ncee"]["total_for_year"],
+        # 本年度被高校录取的学生数量
+        "admitted_students": stage_summaries["admission"]["total_for_year"],
+        # 本学年举行的日常考试次数（成绩行数）
+        "exam_records": stage_summaries["exam"]["total_exams_for_year"],
+        # 本学年参加日常考试的学生数量
+        "exam_students": stage_summaries["exam"]["total_students_for_year"],
+        # 本年度毕业的学生数量
+        "graduated_students": stage_summaries["graduate"]["total_for_year"],
+    }
+
+    summary = {
+        "year": payload.year,
+        "statistics": statistics,
+        "stages": stage_summaries,
+        "elapsed_seconds": elapsed,
+    }
+    logger.info("[simu_school_year] 全部阶段完成: {}", summary)
     return summary

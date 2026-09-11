@@ -264,6 +264,43 @@ python run_tasks.py --task graduate  --year 2028 --timeout 300
 
 实测吞吐（8 线程）：20 万人高考 6.1s、录取 6.1s、毕业 11.4s；151 万行本科成绩 15.7s（约 9.7 万行/秒）。
 
+### 学年例行操作编排任务 simu_school_year
+
+`tasks.simu_school_year` 按学年依次编排上述四个模拟任务，一步完成整学年例行操作：
+
+| 阶段 | 任务 | 目标年份 |
+| --- | --- | --- |
+| 高考 | `simu_ncee` | `year` |
+| 录取 | `simu_admission` | `year` |
+| 日常考试 | `simu_exam` | `year`（学年 year ~ year+1） |
+| 毕业 | `simu_graduate` | `year + 3` |
+
+各阶段经消息队列投递并串行等待（阶段间存在业务依赖），任一阶段失败即中断编排；入参经契约包 `SimuSchoolYearPayload` 校验。
+
+```bash
+# 编排 2025 学年例行操作（含 2028 届毕业）
+python run_tasks.py --task school_year --year 2025 --stage-timeout 900 --timeout 1200
+```
+
+返回结果包含各阶段摘要与**年度统计汇总**（基于数据库实际数据）：
+
+```json
+{
+  "year": 2029,
+  "statistics": {
+    "gaokao_students": 100,
+    "admitted_students": 100,
+    "exam_records": 203423,
+    "exam_students": 9106,
+    "graduated_students": 100
+  },
+  "stages": {"ncee": {...}, "admission": {...}, "exam": {...}, "graduate": {...}},
+  "elapsed_seconds": 45.2
+}
+```
+
+各 `simu_*` 任务的独立返回摘要中同样包含 `total_for_year` 年度统计字段（基于数据库计数，幂等重跑不会重复累计）。
+
 ### 数据库初始化任务 init_web_db
 
 `tasks.init_web_db` 一键重建 `web_db` / `log_db` 数据库与用户 `web_user` / `log_user`，并在 `web_db` 内创建全部业务表。

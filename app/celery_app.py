@@ -69,6 +69,7 @@ app.conf.update(
         TaskName.SIMU_ADMISSION: {"queue": "db"},
         TaskName.SIMU_EXAM: {"queue": "db"},
         TaskName.SIMU_GRADUATE: {"queue": "db"},
+        TaskName.SIMU_SCHOOL_YEAR: {"queue": "db"},
     },
     # broker 连接可靠性
     broker_connection_retry_on_startup=True,

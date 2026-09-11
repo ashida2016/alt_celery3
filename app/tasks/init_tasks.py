@@ -106,6 +106,7 @@ BUSINESS_TABLE_DDL: dict[str, str] = {
         " COMMENT '创建时间',"
         " PRIMARY KEY (id),"
         " KEY idx_student_year (student_id, academic_year),"
+        " KEY idx_academic_year (academic_year),"
         " KEY idx_subject (subject)"
         ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci"
         " COMMENT='学生成绩表-本科成绩表'"

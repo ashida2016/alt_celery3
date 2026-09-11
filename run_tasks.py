@@ -37,6 +37,7 @@ from app.tasks.simu_tasks import (
     simu_exam,
     simu_graduate,
     simu_ncee,
+    simu_school_year,
 )
 from app.tasks.un_tasks import get_un_groups
 
@@ -250,6 +251,35 @@ def run_simu_task(args: argparse.Namespace) -> dict:
     return result
 
 
+def run_school_year_task(args: argparse.Namespace) -> dict:
+    """下发 simu_school_year 学年例行操作编排任务并等待结果。
+
+    Args:
+        args: 命令行参数（year 为学年起始年份）。
+
+    Returns:
+        各阶段执行摘要的汇总。
+    """
+    if args.year is None:
+        raise SystemExit("--task school_year 需要通过 --year 指定学年起始年")
+    logger.info("下发任务 tasks.simu_school_year: year=%s", args.year)
+    # 下发前经契约 Schema 校验入参
+    payload = schemas.SimuSchoolYearPayload(
+        year=args.year,
+        stage_timeout=args.stage_timeout,
+        chunk_size=args.chunk_size,
+        max_workers=args.max_workers,
+    )
+    result = simu_school_year.delay(**payload.model_dump()).get(
+        timeout=args.timeout
+    )
+    print(
+        "[模拟任务] tasks.simu_school_year =",
+        json.dumps(result, ensure_ascii=False, indent=1),
+    )
+    return result
+
+
 def run_generate_task(args: argparse.Namespace) -> dict:
     """单独下发 generate_many_students 任务并等待结果。
 
@@ -296,7 +326,7 @@ def main() -> int:
         "--task",
         choices=[
             "all", "generate", "un", "initdb",
-            "ncee", "admission", "exam", "graduate",
+            "ncee", "admission", "exam", "graduate", "school_year",
         ],
         default="all",
         help=(
@@ -312,6 +342,12 @@ def main() -> int:
         default=None,
         help="业务模拟任务的年份（ncee=高考年份，admission=高考年份，"
         "exam=学年起始年，graduate=毕业年份）",
+    )
+    parser.add_argument(
+        "--stage-timeout",
+        type=float,
+        default=600.0,
+        help="school_year 任务单个阶段等待结果的最长秒数（默认 600）",
     )
     parser.add_argument(
         "--yes",
@@ -370,6 +406,10 @@ def main() -> int:
 
     if args.task in ("ncee", "admission", "exam", "graduate"):
         run_simu_task(args)
+        return 0
+
+    if args.task == "school_year":
+        run_school_year_task(args)
         return 0
 
     if args.task == "un":
