@@ -11,6 +11,15 @@
 # -----------------------------------------------------------------------------
 FROM python:3.13-slim AS builder
 
+# Update system 
+# RUN apt-get update && apt-get upgrade -y
+
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Update pip
+RUN apt-get update && apt-get install -y python3-pip
+
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
