@@ -10537,3 +10537,828 @@
 2026-09-11 15:50:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
 2026-09-11 15:51:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
 2026-09-11 15:52:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:52:50.714 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 15:52:50.720 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 15:52:51.221 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:53:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:53:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:54:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:54:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:55:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:55:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:56:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:56:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:57:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:57:00.531 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:58:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:58:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:59:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 15:59:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:00:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:00:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:01:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:01:00.021 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:02:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:02:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:03:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:03:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:04:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:04:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:05:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:05:00.030 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:06:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:06:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:07:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:07:00.558 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:08:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:08:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:08:47.705 | INFO     | app.tasks.init_tasks:init_web_db:324 - [init_web_db] 开始初始化数据库 ...
+2026-09-11 16:08:48.163 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:211 - [init_web_db] 旧数据库与用户已删除
+2026-09-11 16:08:48.342 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:243 - [init_web_db] 数据库与用户重建完成
+2026-09-11 16:08:48.495 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: students
+2026-09-11 16:08:48.554 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: universities
+2026-09-11 16:08:48.614 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: major_groups
+2026-09-11 16:08:48.688 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-11 16:08:48.767 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-11 16:08:48.872 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-11 16:08:48.953 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-11 16:08:49.117 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:277 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-11 16:08:49.121 | INFO     | app.tasks.init_tasks:init_web_db:347 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-11 16:09:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:09:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:09:57.673 | INFO     | app.tasks.db_tasks:generate_many_students:203 - [generate_many_students] 开始: numbers=10000, range=[2000-01-01, 2010-12-31], chunk_size=10000, max_workers=8
+2026-09-11 16:10:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:10:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:10:17.547 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 10000 条
+2026-09-11 16:10:17.549 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 10000/10000 (100%)
+2026-09-11 16:10:17.559 | INFO     | app.tasks.db_tasks:generate_many_students:251 - [generate_many_students] 完成: {'inserted': 10000, 'numbers': 10000, 'chunk_size': 10000, 'max_workers': 8, 'elapsed_seconds': 19.73, 'rows_per_second': 506.8}
+2026-09-11 16:10:31.525 | INFO     | app.tasks.un_tasks:get_un_groups:243 - [get_un_groups] 开始获取 10 所高校信息 ...
+2026-09-11 16:10:47.650 | INFO     | app.tasks.un_tasks:get_un_groups:251 - [get_un_groups] 模型返回并校验通过 10 条高校信息
+2026-09-11 16:10:47.773 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京大学
+2026-09-11 16:10:47.898 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 复旦大学
+2026-09-11 16:10:47.997 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海交通大学
+2026-09-11 16:10:48.089 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武汉大学
+2026-09-11 16:10:48.175 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 郑州大学
+2026-09-11 16:10:48.280 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 深圳大学
+2026-09-11 16:10:48.387 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 首都师范大学
+2026-09-11 16:10:48.499 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-11 16:10:48.599 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京城市学院
+2026-09-11 16:10:48.767 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京理工大学
+2026-09-11 16:10:48.857 | INFO     | app.tasks.un_tasks:get_un_groups:261 - [get_un_groups] 入库统计: {'university_new': 10, 'university_dup': 0, 'major_new': 40, 'major_dup': 0}
+2026-09-11 16:11:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:11:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:12:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:12:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:12:00.360 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2018 高三学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:12:00.512 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 860, 'total_for_year': 860, 'elapsed_seconds': 0.34}
+2026-09-11 16:12:19.150 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=860，分数线 985/211/一本 = 615/583/557
+2026-09-11 16:12:19.169 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2018 待录取学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:12:19.290 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2018, 'admitted': 860, 'total_for_year': 860, 'band_stats': {'其他': 600, '一本': 130, '985': 43, '211': 87}, 'elapsed_seconds': 0.34}
+2026-09-11 16:12:33.892 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2018-2019 在读学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:12:34.460 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 6465, 'total_exams_for_year': 6465, 'total_students_for_year': 860, 'elapsed_seconds': 0.75}
+2026-09-11 16:12:51.027 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2018-2019 在读学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:12:51.290 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 6493, 'total_exams_for_year': 12958, 'total_students_for_year': 860, 'elapsed_seconds': 0.45}
+2026-09-11 16:13:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:13:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:14:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:14:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:15:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:15:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:16:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:16:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:17:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:17:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:18:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:18:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:19:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:19:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:20:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:20:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:21:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:21:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:22:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:22:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:23:00.036 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:23:00.038 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:23:06.276 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:23:06.510 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2020, stage_timeout=900.0, chunk_size=50000, max_workers=8
+2026-09-11 16:23:06.585 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2020
+2026-09-11 16:23:06.753 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2020 高三学生 ID 范围 [5, 9998]，窗口数=1，线程数=8
+2026-09-11 16:23:06.906 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 1794, 'total_for_year': 1794, 'elapsed_seconds': 0.31}
+2026-09-11 16:23:06.911 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 1794, 'total_for_year': 1794, 'elapsed_seconds': 0.31}
+2026-09-11 16:23:06.911 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2020
+2026-09-11 16:23:07.069 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=1794，分数线 985/211/一本 = 611/582/558
+2026-09-11 16:23:07.089 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2020 待录取学生 ID 范围 [5, 9998]，窗口数=1，线程数=8
+2026-09-11 16:23:07.389 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 1794, 'total_for_year': 1794, 'band_stats': {'其他': 1251, '一本': 268, '211': 181, '985': 94}, 'elapsed_seconds': 0.47}
+2026-09-11 16:23:07.394 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 1794, 'total_for_year': 1794, 'band_stats': {'其他': 1251, '一本': 268, '211': 181, '985': 94}, 'elapsed_seconds': 0.47}
+2026-09-11 16:23:07.394 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2020
+2026-09-11 16:23:07.558 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2020-2021 在读学生 ID 范围 [5, 10000]，窗口数=1，线程数=8
+2026-09-11 16:23:08.244 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 19808, 'total_exams_for_year': 19808, 'total_students_for_year': 2654, 'elapsed_seconds': 0.84}
+2026-09-11 16:23:08.248 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 19808, 'total_exams_for_year': 19808, 'total_students_for_year': 2654, 'elapsed_seconds': 0.84}
+2026-09-11 16:23:08.249 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2023
+2026-09-11 16:23:08.408 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2023 应届大四学生 ID 范围 [5, 9998]，窗口数=1，线程数=8
+2026-09-11 16:23:08.656 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 1794, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.4}
+2026-09-11 16:23:08.661 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 1794, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.4}
+2026-09-11 16:23:08.666 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2020, 'statistics': {'gaokao_students': 1794, 'admitted_students': 1794, 'exam_records': 19808, 'exam_students': 2654, 'graduated_students': 1794}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 1794, 'total_for_year': 1794, 'elapsed_seconds': 0.31}, 'admission': {'task': 'simu_admission', 'year': 2020, 'admitted': 1794, 'total_for_year': 1794, 'band_stats': {'其他': 1251, '一本': 268, '211': 181, '985': 94}, 'elapsed_seconds': 0.47}, 'exam': {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 19808, 'total_exams_for_year': 19808, 'total_students_for_year': 2654, 'elapsed_seconds': 0.84}, 'graduate': {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 1794, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.4}}, 'elapsed_seconds': 2.16}
+2026-09-11 16:24:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:24:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:25:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:25:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:26:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:26:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:27:00.029 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:27:00.045 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:28:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:28:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:29:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:29:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:30:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:30:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:31:00.033 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:31:00.039 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:32:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:32:48.862 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:32:48.866 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:32:49.390 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:32:55.462 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:32:55.687 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2020, stage_timeout=900.0, chunk_size=50000, max_workers=8
+2026-09-11 16:32:55.773 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2020
+2026-09-11 16:32:55.923 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2020 高三学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:32:55.944 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 0, 'total_for_year': 1794, 'elapsed_seconds': 0.17}
+2026-09-11 16:32:55.957 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 0, 'total_for_year': 1794, 'elapsed_seconds': 0.17}
+2026-09-11 16:32:55.958 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2020
+2026-09-11 16:32:56.113 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=1794，分数线 985/211/一本 = 611/582/558
+2026-09-11 16:32:56.134 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2020 待录取学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:32:56.164 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 0, 'total_for_year': 1794, 'band_stats': {}, 'elapsed_seconds': 0.2}
+2026-09-11 16:32:56.169 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 0, 'total_for_year': 1794, 'band_stats': {}, 'elapsed_seconds': 0.2}
+2026-09-11 16:32:56.169 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2020
+2026-09-11 16:32:56.390 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2020-2021 在读学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:32:56.696 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6546, 'total_exams_for_year': 26354, 'total_students_for_year': 2654, 'elapsed_seconds': 0.52}
+2026-09-11 16:32:56.700 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6546, 'total_exams_for_year': 26354, 'total_students_for_year': 2654, 'elapsed_seconds': 0.52}
+2026-09-11 16:32:56.700 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2023
+2026-09-11 16:32:56.844 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2023 应届大四学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:32:56.866 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 0, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.16}
+2026-09-11 16:32:56.870 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 0, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.16}
+2026-09-11 16:32:56.872 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2020, 'statistics': {'gaokao_students': 1794, 'admitted_students': 1794, 'exam_records': 26354, 'exam_students': 2654, 'graduated_students': 1794}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 0, 'total_for_year': 1794, 'elapsed_seconds': 0.17}, 'admission': {'task': 'simu_admission', 'year': 2020, 'admitted': 0, 'total_for_year': 1794, 'band_stats': {}, 'elapsed_seconds': 0.2}, 'exam': {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6546, 'total_exams_for_year': 26354, 'total_students_for_year': 2654, 'elapsed_seconds': 0.52}, 'graduate': {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 0, 'total_for_year': 1794, 'no_score': 0, 'elapsed_seconds': 0.16}}, 'elapsed_seconds': 1.18}
+2026-09-11 16:33:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:33:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:34:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:34:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:35:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:35:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:36:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:36:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:37:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:37:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:38:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:38:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:39:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:39:00.568 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:40:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:40:00.902 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:41:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:41:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:42:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:42:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:43:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:43:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:43:33.720 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:43:33.722 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:44:00.021 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:44:00.048 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:45:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:45:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:52:54.214 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:52:54.225 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:52:56.069 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:53:00.003 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:54:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:55:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:56:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:57:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:57:12.629 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 16:57:14.255 | INFO     | app.tasks.math_tasks:add:30 - add(3, 5) = 8
+2026-09-11 16:57:14.260 | INFO     | app.tasks.math_tasks:add:30 - add(7, 8) = 15
+2026-09-11 16:57:14.278 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2019, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 16:57:14.281 | INFO     | app.tasks.db_tasks:generate_many_students:203 - [generate_many_students] 开始: numbers=5000, range=[2000-01-01, 2010-12-31], chunk_size=5000, max_workers=8
+2026-09-11 16:57:14.398 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2019
+2026-09-11 16:57:14.574 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2019 高三学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:57:14.593 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 0, 'total_for_year': 0, 'elapsed_seconds': 0.18}
+2026-09-11 16:57:14.628 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 0, 'total_for_year': 0, 'elapsed_seconds': 0.18}
+2026-09-11 16:57:14.628 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2019
+2026-09-11 16:57:14.766 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=0，分数线 985/211/一本 = 400/400/400
+2026-09-11 16:57:14.778 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2019 待录取学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:57:14.790 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 0, 'total_for_year': 0, 'band_stats': {}, 'elapsed_seconds': 0.16}
+2026-09-11 16:57:14.794 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 0, 'total_for_year': 0, 'band_stats': {}, 'elapsed_seconds': 0.16}
+2026-09-11 16:57:14.794 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2019
+2026-09-11 16:57:14.938 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2019-2020 在读学生 ID 范围 [16, 10000]，窗口数=1，线程数=8
+2026-09-11 16:57:15.203 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6489, 'total_exams_for_year': 6489, 'total_students_for_year': 860, 'elapsed_seconds': 0.4}
+2026-09-11 16:57:15.207 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6489, 'total_exams_for_year': 6489, 'total_students_for_year': 860, 'elapsed_seconds': 0.4}
+2026-09-11 16:57:15.210 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2022
+2026-09-11 16:57:15.355 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2022 应届大四学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 16:57:15.374 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 0, 'total_for_year': 0, 'no_score': 0, 'elapsed_seconds': 0.16}
+2026-09-11 16:57:15.378 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 0, 'total_for_year': 0, 'no_score': 0, 'elapsed_seconds': 0.16}
+2026-09-11 16:57:15.382 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2019, 'statistics': {'gaokao_students': 0, 'admitted_students': 0, 'exam_records': 6489, 'exam_students': 860, 'graduated_students': 0}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 0, 'total_for_year': 0, 'elapsed_seconds': 0.18}, 'admission': {'task': 'simu_admission', 'year': 2019, 'admitted': 0, 'total_for_year': 0, 'band_stats': {}, 'elapsed_seconds': 0.16}, 'exam': {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6489, 'total_exams_for_year': 6489, 'total_students_for_year': 860, 'elapsed_seconds': 0.4}, 'graduate': {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 0, 'total_for_year': 0, 'no_score': 0, 'elapsed_seconds': 0.16}}, 'elapsed_seconds': 1.11}
+2026-09-11 16:57:23.453 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 5000 条
+2026-09-11 16:57:23.454 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 5000/5000 (100%)
+2026-09-11 16:57:23.459 | INFO     | app.tasks.db_tasks:generate_many_students:251 - [generate_many_students] 完成: {'inserted': 5000, 'numbers': 5000, 'chunk_size': 5000, 'max_workers': 8, 'elapsed_seconds': 9.01, 'rows_per_second': 554.9}
+2026-09-11 16:57:49.502 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2025, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 16:57:49.595 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2025
+2026-09-11 16:57:49.752 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2025 高三学生 ID 范围 [10, 14998]，窗口数=1，线程数=8
+2026-09-11 16:57:49.941 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2025, 'exam_date': '2025-06-20', 'simulated': 2708, 'total_for_year': 2708, 'elapsed_seconds': 0.34}
+2026-09-11 16:57:49.945 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2025, 'exam_date': '2025-06-20', 'simulated': 2708, 'total_for_year': 2708, 'elapsed_seconds': 0.34}
+2026-09-11 16:57:49.945 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2025
+2026-09-11 16:57:50.094 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=2708，分数线 985/211/一本 = 615/581/555
+2026-09-11 16:57:50.114 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2025 待录取学生 ID 范围 [10, 14998]，窗口数=1，线程数=8
+2026-09-11 16:57:50.379 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2025, 'admitted': 2708, 'total_for_year': 2708, 'band_stats': {'其他': 1895, '211': 273, '一本': 400, '985': 140}, 'elapsed_seconds': 0.43}
+2026-09-11 16:57:50.384 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2025, 'admitted': 2708, 'total_for_year': 2708, 'band_stats': {'其他': 1895, '211': 273, '一本': 400, '985': 140}, 'elapsed_seconds': 0.43}
+2026-09-11 16:57:50.384 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2025
+2026-09-11 16:57:50.528 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2025-2026 在读学生 ID 范围 [10, 14998]，窗口数=1，线程数=8
+2026-09-11 16:57:51.419 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2025-2026', 'recorded': 26691, 'total_exams_for_year': 26691, 'total_students_for_year': 3568, 'elapsed_seconds': 1.03}
+2026-09-11 16:57:51.425 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2025-2026', 'recorded': 26691, 'total_exams_for_year': 26691, 'total_students_for_year': 3568, 'elapsed_seconds': 1.03}
+2026-09-11 16:57:51.426 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2028
+2026-09-11 16:57:51.582 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2028 应届大四学生 ID 范围 [10, 14998]，窗口数=1，线程数=8
+2026-09-11 16:57:51.891 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2028, 'graduate_date': '2028-07-01', 'graduated': 2708, 'total_for_year': 2708, 'no_score': 0, 'elapsed_seconds': 0.45}
+2026-09-11 16:57:51.896 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2028, 'graduate_date': '2028-07-01', 'graduated': 2708, 'total_for_year': 2708, 'no_score': 0, 'elapsed_seconds': 0.45}
+2026-09-11 16:57:51.903 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2025, 'statistics': {'gaokao_students': 2708, 'admitted_students': 2708, 'exam_records': 26691, 'exam_students': 3568, 'graduated_students': 2708}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2025, 'exam_date': '2025-06-20', 'simulated': 2708, 'total_for_year': 2708, 'elapsed_seconds': 0.34}, 'admission': {'task': 'simu_admission', 'year': 2025, 'admitted': 2708, 'total_for_year': 2708, 'band_stats': {'其他': 1895, '211': 273, '一本': 400, '985': 140}, 'elapsed_seconds': 0.43}, 'exam': {'task': 'simu_exam', 'academic_year': '2025-2026', 'recorded': 26691, 'total_exams_for_year': 26691, 'total_students_for_year': 3568, 'elapsed_seconds': 1.03}, 'graduate': {'task': 'simu_graduate', 'year': 2028, 'graduate_date': '2028-07-01', 'graduated': 2708, 'total_for_year': 2708, 'no_score': 0, 'elapsed_seconds': 0.45}}, 'elapsed_seconds': 2.4}
+2026-09-11 16:58:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 16:59:00.004 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:00:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:01:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:02:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:03:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:04:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:05:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:06:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:07:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:08:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:09:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:09:45.581 | INFO     | app.tasks.math_tasks:add:30 - add(11, 31) = 42
+2026-09-11 17:09:49.630 | INFO     | app.tasks.db_tasks:try_mysql:66 - [try_mysql] 开始测试 MySQL 业务库连通性 ...
+2026-09-11 17:09:49.713 | INFO     | app.tasks.db_tasks:try_mysql:76 - [try_mysql] 测试结果: ok=True
+2026-09-11 17:10:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:10:33.621 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2026, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:10:33.703 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2026
+2026-09-11 17:10:33.860 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2026 高三学生 ID 范围 [2, 15000]，窗口数=1，线程数=8
+2026-09-11 17:10:33.972 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2026, 'exam_date': '2026-06-20', 'simulated': 1372, 'total_for_year': 1372, 'elapsed_seconds': 0.26}
+2026-09-11 17:10:33.990 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2026, 'exam_date': '2026-06-20', 'simulated': 1372, 'total_for_year': 1372, 'elapsed_seconds': 0.26}
+2026-09-11 17:10:33.990 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2026
+2026-09-11 17:10:34.135 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=1372，分数线 985/211/一本 = 611/580/556
+2026-09-11 17:10:34.153 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2026 待录取学生 ID 范围 [2, 15000]，窗口数=1，线程数=8
+2026-09-11 17:10:34.265 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2026, 'admitted': 1372, 'total_for_year': 1372, 'band_stats': {'211': 136, '一本': 207, '其他': 957, '985': 72}, 'elapsed_seconds': 0.27}
+2026-09-11 17:10:34.269 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2026, 'admitted': 1372, 'total_for_year': 1372, 'band_stats': {'211': 136, '一本': 207, '其他': 957, '985': 72}, 'elapsed_seconds': 0.27}
+2026-09-11 17:10:34.269 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2026
+2026-09-11 17:10:34.411 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2026-2027 在读学生 ID 范围 [2, 15000]，窗口数=1，线程数=8
+2026-09-11 17:10:34.924 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2026-2027', 'recorded': 16651, 'total_exams_for_year': 16651, 'total_students_for_year': 2232, 'elapsed_seconds': 0.65}
+2026-09-11 17:10:34.930 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2026-2027', 'recorded': 16651, 'total_exams_for_year': 16651, 'total_students_for_year': 2232, 'elapsed_seconds': 0.65}
+2026-09-11 17:10:34.930 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2029
+2026-09-11 17:10:35.079 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2029 应届大四学生 ID 范围 [2, 15000]，窗口数=1，线程数=8
+2026-09-11 17:10:35.237 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2029, 'graduate_date': '2029-07-01', 'graduated': 1372, 'total_for_year': 1372, 'no_score': 0, 'elapsed_seconds': 0.3}
+2026-09-11 17:10:35.241 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2029, 'graduate_date': '2029-07-01', 'graduated': 1372, 'total_for_year': 1372, 'no_score': 0, 'elapsed_seconds': 0.3}
+2026-09-11 17:10:35.244 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2026, 'statistics': {'gaokao_students': 1372, 'admitted_students': 1372, 'exam_records': 16651, 'exam_students': 2232, 'graduated_students': 1372}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2026, 'exam_date': '2026-06-20', 'simulated': 1372, 'total_for_year': 1372, 'elapsed_seconds': 0.26}, 'admission': {'task': 'simu_admission', 'year': 2026, 'admitted': 1372, 'total_for_year': 1372, 'band_stats': {'211': 136, '一本': 207, '其他': 957, '985': 72}, 'elapsed_seconds': 0.27}, 'exam': {'task': 'simu_exam', 'academic_year': '2026-2027', 'recorded': 16651, 'total_exams_for_year': 16651, 'total_students_for_year': 2232, 'elapsed_seconds': 0.65}, 'graduate': {'task': 'simu_graduate', 'year': 2029, 'graduate_date': '2029-07-01', 'graduated': 1372, 'total_for_year': 1372, 'no_score': 0, 'elapsed_seconds': 0.3}}, 'elapsed_seconds': 1.62}
+2026-09-11 17:11:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:12:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:13:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:14:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:15:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:16:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:16:02.999 | INFO     | app.log_setup:init_logging:100 - 日志中间件初始化完成（console/file/mysql sink）。
+2026-09-11 17:16:03.026 | INFO     | app.tasks.math_tasks:add:30 - add(3, 4) = 7
+2026-09-11 17:17:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:17:45.846 | INFO     | app.tasks.db_tasks:generate_many_students:203 - [generate_many_students] 开始: numbers=100000, range=[2000-01-01, 2010-12-31], chunk_size=50000, max_workers=8
+2026-09-11 17:18:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:19:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:19:27.589 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-11 17:19:27.596 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 50000/100000 (50%)
+2026-09-11 17:19:27.807 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 50000 条
+2026-09-11 17:19:27.813 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 100000/100000 (100%)
+2026-09-11 17:19:27.822 | INFO     | app.tasks.db_tasks:generate_many_students:251 - [generate_many_students] 完成: {'inserted': 100000, 'numbers': 100000, 'chunk_size': 50000, 'max_workers': 8, 'elapsed_seconds': 101.82, 'rows_per_second': 982.1}
+2026-09-11 17:19:51.925 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2022, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:19:52.025 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2022
+2026-09-11 17:19:52.234 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2022 高三学生 ID 范围 [4, 114989]，窗口数=3，线程数=8
+2026-09-11 17:19:52.738 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2022, 'exam_date': '2022-06-20', 'simulated': 20793, 'total_for_year': 20793, 'elapsed_seconds': 0.7}
+2026-09-11 17:19:52.744 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2022, 'exam_date': '2022-06-20', 'simulated': 20793, 'total_for_year': 20793, 'elapsed_seconds': 0.7}
+2026-09-11 17:19:52.745 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2022
+2026-09-11 17:19:52.947 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=20793，分数线 985/211/一本 = 612/582/556
+2026-09-11 17:19:53.017 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2022 待录取学生 ID 范围 [4, 114989]，窗口数=3，线程数=8
+2026-09-11 17:19:53.522 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2022, 'admitted': 20793, 'total_for_year': 20793, 'band_stats': {'其他': 14503, '211': 2108, '一本': 3138, '985': 1044}, 'elapsed_seconds': 0.77}
+2026-09-11 17:19:53.528 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2022, 'admitted': 20793, 'total_for_year': 20793, 'band_stats': {'其他': 14503, '211': 2108, '一本': 3138, '985': 1044}, 'elapsed_seconds': 0.77}
+2026-09-11 17:19:53.528 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2022
+2026-09-11 17:19:53.717 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2022-2023 在读学生 ID 范围 [4, 114989]，窗口数=3，线程数=8
+2026-09-11 17:19:57.033 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2022-2023', 'recorded': 162451, 'total_exams_for_year': 162451, 'total_students_for_year': 21653, 'elapsed_seconds': 3.5}
+2026-09-11 17:19:57.040 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2022-2023', 'recorded': 162451, 'total_exams_for_year': 162451, 'total_students_for_year': 21653, 'elapsed_seconds': 3.5}
+2026-09-11 17:19:57.041 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2025
+2026-09-11 17:19:57.249 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2025 应届大四学生 ID 范围 [4, 114989]，窗口数=3，线程数=8
+2026-09-11 17:19:58.206 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2025, 'graduate_date': '2025-07-01', 'graduated': 20793, 'total_for_year': 20793, 'no_score': 0, 'elapsed_seconds': 1.16}
+2026-09-11 17:19:58.213 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2025, 'graduate_date': '2025-07-01', 'graduated': 20793, 'total_for_year': 20793, 'no_score': 0, 'elapsed_seconds': 1.16}
+2026-09-11 17:19:58.218 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2022, 'statistics': {'gaokao_students': 20793, 'admitted_students': 20793, 'exam_records': 162451, 'exam_students': 21653, 'graduated_students': 20793}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2022, 'exam_date': '2022-06-20', 'simulated': 20793, 'total_for_year': 20793, 'elapsed_seconds': 0.7}, 'admission': {'task': 'simu_admission', 'year': 2022, 'admitted': 20793, 'total_for_year': 20793, 'band_stats': {'其他': 14503, '211': 2108, '一本': 3138, '985': 1044}, 'elapsed_seconds': 0.77}, 'exam': {'task': 'simu_exam', 'academic_year': '2022-2023', 'recorded': 162451, 'total_exams_for_year': 162451, 'total_students_for_year': 21653, 'elapsed_seconds': 3.5}, 'graduate': {'task': 'simu_graduate', 'year': 2025, 'graduate_date': '2025-07-01', 'graduated': 20793, 'total_for_year': 20793, 'no_score': 0, 'elapsed_seconds': 1.16}}, 'elapsed_seconds': 6.29}
+2026-09-11 17:20:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:20:43.557 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2023, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:20:43.675 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2023
+2026-09-11 17:20:43.894 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2023 高三学生 ID 范围 [7, 115001]，窗口数=3，线程数=8
+2026-09-11 17:20:44.143 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2023, 'exam_date': '2023-06-20', 'simulated': 10264, 'total_for_year': 10264, 'elapsed_seconds': 0.46}
+2026-09-11 17:20:44.147 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2023, 'exam_date': '2023-06-20', 'simulated': 10264, 'total_for_year': 10264, 'elapsed_seconds': 0.46}
+2026-09-11 17:20:44.148 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2023
+2026-09-11 17:20:44.328 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=10264，分数线 985/211/一本 = 613/583/556
+2026-09-11 17:20:44.364 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2023 待录取学生 ID 范围 [7, 115001]，窗口数=3，线程数=8
+2026-09-11 17:20:44.629 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2023, 'admitted': 10264, 'total_for_year': 10264, 'band_stats': {'985': 534, '一本': 1566, '其他': 7149, '211': 1015}, 'elapsed_seconds': 0.47}
+2026-09-11 17:20:44.637 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2023, 'admitted': 10264, 'total_for_year': 10264, 'band_stats': {'985': 534, '一本': 1566, '其他': 7149, '211': 1015}, 'elapsed_seconds': 0.47}
+2026-09-11 17:20:44.637 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2023
+2026-09-11 17:20:44.829 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2023-2024 在读学生 ID 范围 [7, 115001]，窗口数=3，线程数=8
+2026-09-11 17:20:46.594 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2023-2024', 'recorded': 83835, 'total_exams_for_year': 83835, 'total_students_for_year': 11124, 'elapsed_seconds': 1.95}
+2026-09-11 17:20:46.600 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2023-2024', 'recorded': 83835, 'total_exams_for_year': 83835, 'total_students_for_year': 11124, 'elapsed_seconds': 1.95}
+2026-09-11 17:20:46.600 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2026
+2026-09-11 17:20:46.802 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2026 应届大四学生 ID 范围 [7, 115001]，窗口数=3，线程数=8
+2026-09-11 17:20:47.136 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2026, 'graduate_date': '2026-07-01', 'graduated': 10264, 'total_for_year': 10264, 'no_score': 0, 'elapsed_seconds': 0.53}
+2026-09-11 17:20:47.141 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2026, 'graduate_date': '2026-07-01', 'graduated': 10264, 'total_for_year': 10264, 'no_score': 0, 'elapsed_seconds': 0.53}
+2026-09-11 17:20:47.147 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2023, 'statistics': {'gaokao_students': 10264, 'admitted_students': 10264, 'exam_records': 83835, 'exam_students': 11124, 'graduated_students': 10264}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2023, 'exam_date': '2023-06-20', 'simulated': 10264, 'total_for_year': 10264, 'elapsed_seconds': 0.46}, 'admission': {'task': 'simu_admission', 'year': 2023, 'admitted': 10264, 'total_for_year': 10264, 'band_stats': {'985': 534, '一本': 1566, '其他': 7149, '211': 1015}, 'elapsed_seconds': 0.47}, 'exam': {'task': 'simu_exam', 'academic_year': '2023-2024', 'recorded': 83835, 'total_exams_for_year': 83835, 'total_students_for_year': 11124, 'elapsed_seconds': 1.95}, 'graduate': {'task': 'simu_graduate', 'year': 2026, 'graduate_date': '2026-07-01', 'graduated': 10264, 'total_for_year': 10264, 'no_score': 0, 'elapsed_seconds': 0.53}}, 'elapsed_seconds': 3.59}
+2026-09-11 17:21:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:21:04.069 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2018, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:21:04.197 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2018
+2026-09-11 17:21:04.406 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2018 高三学生 ID 范围 [10010, 114997]，窗口数=3，线程数=8
+2026-09-11 17:21:04.663 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 9605, 'total_for_year': 10465, 'elapsed_seconds': 0.46}
+2026-09-11 17:21:04.668 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 9605, 'total_for_year': 10465, 'elapsed_seconds': 0.46}
+2026-09-11 17:21:04.668 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2018
+2026-09-11 17:21:04.884 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=10465，分数线 985/211/一本 = 611/581/556
+2026-09-11 17:21:04.924 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2018 待录取学生 ID 范围 [10010, 114997]，窗口数=3，线程数=8
+2026-09-11 17:21:05.221 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2018, 'admitted': 9605, 'total_for_year': 10465, 'band_stats': {'其他': 6696, '985': 488, '211': 981, '一本': 1440}, 'elapsed_seconds': 0.55}
+2026-09-11 17:21:05.230 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2018, 'admitted': 9605, 'total_for_year': 10465, 'band_stats': {'其他': 6696, '985': 488, '211': 981, '一本': 1440}, 'elapsed_seconds': 0.55}
+2026-09-11 17:21:05.230 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2018
+2026-09-11 17:21:05.427 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2018-2019 在读学生 ID 范围 [16, 114997]，窗口数=3，线程数=8
+2026-09-11 17:21:07.202 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 78439, 'total_exams_for_year': 91397, 'total_students_for_year': 10465, 'elapsed_seconds': 1.97}
+2026-09-11 17:21:07.209 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 78439, 'total_exams_for_year': 91397, 'total_students_for_year': 10465, 'elapsed_seconds': 1.97}
+2026-09-11 17:21:07.209 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2021
+2026-09-11 17:21:07.415 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2021 应届大四学生 ID 范围 [16, 114997]，窗口数=3，线程数=8
+2026-09-11 17:21:07.821 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 10465, 'total_for_year': 10465, 'no_score': 0, 'elapsed_seconds': 0.61}
+2026-09-11 17:21:07.825 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 10465, 'total_for_year': 10465, 'no_score': 0, 'elapsed_seconds': 0.61}
+2026-09-11 17:21:07.829 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2018, 'statistics': {'gaokao_students': 10465, 'admitted_students': 10465, 'exam_records': 91397, 'exam_students': 10465, 'graduated_students': 10465}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 9605, 'total_for_year': 10465, 'elapsed_seconds': 0.46}, 'admission': {'task': 'simu_admission', 'year': 2018, 'admitted': 9605, 'total_for_year': 10465, 'band_stats': {'其他': 6696, '985': 488, '211': 981, '一本': 1440}, 'elapsed_seconds': 0.55}, 'exam': {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 78439, 'total_exams_for_year': 91397, 'total_students_for_year': 10465, 'elapsed_seconds': 1.97}, 'graduate': {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 10465, 'total_for_year': 10465, 'no_score': 0, 'elapsed_seconds': 0.61}}, 'elapsed_seconds': 3.76}
+2026-09-11 17:21:20.223 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2019, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:21:20.336 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2019
+2026-09-11 17:21:20.528 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2019 高三学生 ID 范围 [10019, 114988]，窗口数=3，线程数=8
+2026-09-11 17:21:20.801 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 9568, 'total_for_year': 9568, 'elapsed_seconds': 0.46}
+2026-09-11 17:21:20.806 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 9568, 'total_for_year': 9568, 'elapsed_seconds': 0.46}
+2026-09-11 17:21:20.806 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2019
+2026-09-11 17:21:20.992 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=9568，分数线 985/211/一本 = 612/582/556
+2026-09-11 17:21:21.032 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2019 待录取学生 ID 范围 [10019, 114988]，窗口数=3，线程数=8
+2026-09-11 17:21:21.330 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 9568, 'total_for_year': 9568, 'band_stats': {'一本': 1417, '其他': 6687, '211': 964, '985': 500}, 'elapsed_seconds': 0.52}
+2026-09-11 17:21:21.336 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 9568, 'total_for_year': 9568, 'band_stats': {'一本': 1417, '其他': 6687, '211': 964, '985': 500}, 'elapsed_seconds': 0.52}
+2026-09-11 17:21:21.337 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2019
+2026-09-11 17:21:21.529 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2019-2020 在读学生 ID 范围 [10019, 114988]，窗口数=3，线程数=8
+2026-09-11 17:21:23.393 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 71788, 'total_exams_for_year': 78277, 'total_students_for_year': 10428, 'elapsed_seconds': 2.05}
+2026-09-11 17:21:23.399 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 71788, 'total_exams_for_year': 78277, 'total_students_for_year': 10428, 'elapsed_seconds': 2.05}
+2026-09-11 17:21:23.399 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2022
+2026-09-11 17:21:23.581 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2022 应届大四学生 ID 范围 [10019, 114988]，窗口数=3，线程数=8
+2026-09-11 17:21:23.942 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 9568, 'total_for_year': 9568, 'no_score': 0, 'elapsed_seconds': 0.54}
+2026-09-11 17:21:23.950 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 9568, 'total_for_year': 9568, 'no_score': 0, 'elapsed_seconds': 0.54}
+2026-09-11 17:21:23.955 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2019, 'statistics': {'gaokao_students': 9568, 'admitted_students': 9568, 'exam_records': 78277, 'exam_students': 10428, 'graduated_students': 9568}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 9568, 'total_for_year': 9568, 'elapsed_seconds': 0.46}, 'admission': {'task': 'simu_admission', 'year': 2019, 'admitted': 9568, 'total_for_year': 9568, 'band_stats': {'一本': 1417, '其他': 6687, '211': 964, '985': 500}, 'elapsed_seconds': 0.52}, 'exam': {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 71788, 'total_exams_for_year': 78277, 'total_students_for_year': 10428, 'elapsed_seconds': 2.05}, 'graduate': {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 9568, 'total_for_year': 9568, 'no_score': 0, 'elapsed_seconds': 0.54}}, 'elapsed_seconds': 3.73}
+2026-09-11 17:22:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:23:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:24:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:25:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:26:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:27:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:28:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:29:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:30:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:31:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:32:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:33:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:34:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:35:00.017 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:36:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:37:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:38:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:39:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:40:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:41:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:42:00.022 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:43:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:44:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:44:00.765 | INFO     | app.tasks.init_tasks:init_web_db:324 - [init_web_db] 开始初始化数据库 ...
+2026-09-11 17:44:01.215 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:211 - [init_web_db] 旧数据库与用户已删除
+2026-09-11 17:44:01.416 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:243 - [init_web_db] 数据库与用户重建完成
+2026-09-11 17:44:01.585 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: students
+2026-09-11 17:44:01.657 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: universities
+2026-09-11 17:44:01.715 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: major_groups
+2026-09-11 17:44:01.786 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-11 17:44:01.869 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-11 17:44:01.964 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-11 17:44:02.077 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-11 17:44:02.268 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:277 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-11 17:44:02.274 | INFO     | app.tasks.init_tasks:init_web_db:347 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-11 17:44:09.288 | INFO     | app.tasks.db_tasks:generate_many_students:203 - [generate_many_students] 开始: numbers=10000, range=[2000-01-01, 2010-12-31], chunk_size=10000, max_workers=8
+2026-09-11 17:44:29.231 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 10000 条
+2026-09-11 17:44:29.232 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 10000/10000 (100%)
+2026-09-11 17:44:29.242 | INFO     | app.tasks.db_tasks:generate_many_students:251 - [generate_many_students] 完成: {'inserted': 10000, 'numbers': 10000, 'chunk_size': 10000, 'max_workers': 8, 'elapsed_seconds': 19.78, 'rows_per_second': 505.6}
+2026-09-11 17:44:40.548 | INFO     | app.tasks.un_tasks:get_un_groups:243 - [get_un_groups] 开始获取 50 所高校信息 ...
+2026-09-11 17:45:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:45:32.598 | INFO     | app.tasks.un_tasks:get_un_groups:251 - [get_un_groups] 模型返回并校验通过 49 条高校信息
+2026-09-11 17:45:32.735 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京大学
+2026-09-11 17:45:32.882 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 清华大学
+2026-09-11 17:45:32.983 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 复旦大学
+2026-09-11 17:45:33.101 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海交通大学
+2026-09-11 17:45:33.193 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 浙江大学
+2026-09-11 17:45:33.292 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武汉大学
+2026-09-11 17:45:33.384 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京大学
+2026-09-11 17:45:33.478 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 中山大学
+2026-09-11 17:45:33.570 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 四川大学
+2026-09-11 17:45:33.697 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 厦门大学
+2026-09-11 17:45:33.824 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 中国科学技术大学
+2026-09-11 17:45:33.960 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 哈尔滨工业大学
+2026-09-11 17:45:34.094 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 西安交通大学
+2026-09-11 17:45:34.215 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京航空航天大学
+2026-09-11 17:45:34.339 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 同济大学
+2026-09-11 17:45:34.452 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 东南大学
+2026-09-11 17:45:34.599 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南开大学
+2026-09-11 17:45:34.755 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 天津大学
+2026-09-11 17:45:34.900 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 山东大学
+2026-09-11 17:45:35.036 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 中南大学
+2026-09-11 17:45:35.163 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京工业大学
+2026-09-11 17:45:35.269 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京科技大学
+2026-09-11 17:45:35.368 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京邮电大学
+2026-09-11 17:45:35.465 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京林业大学
+2026-09-11 17:45:35.562 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海大学
+2026-09-11 17:45:35.646 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京理工大学
+2026-09-11 17:45:35.763 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京航空航天大学
+2026-09-11 17:45:35.883 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 河海大学
+2026-09-11 17:45:35.992 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 江南大学
+2026-09-11 17:45:36.095 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 华东理工大学
+2026-09-11 17:45:36.184 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 合肥工业大学
+2026-09-11 17:45:36.279 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武汉理工大学
+2026-09-11 17:45:36.376 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 华中师范大学
+2026-09-11 17:45:36.468 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 华中农业大学
+2026-09-11 17:45:36.556 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 暨南大学
+2026-09-11 17:45:36.646 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 深圳大学
+2026-09-11 17:45:36.771 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海师范大学
+2026-09-11 17:45:36.865 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 浙江工业大学
+2026-09-11 17:45:36.961 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京工业大学
+2026-09-11 17:45:37.058 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 重庆邮电大学
+2026-09-11 17:45:37.156 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 广州大学
+2026-09-11 17:45:37.245 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 青岛大学
+2026-09-11 17:45:37.349 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 扬州大学
+2026-09-11 17:45:37.452 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 浙江师范大学
+2026-09-11 17:45:37.543 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-11 17:45:37.656 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京城市学院
+2026-09-11 17:45:37.760 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武昌理工学院
+2026-09-11 17:45:37.880 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武汉东湖学院
+2026-09-11 17:45:37.999 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 黄河科技学院
+2026-09-11 17:45:38.081 | INFO     | app.tasks.un_tasks:get_un_groups:261 - [get_un_groups] 入库统计: {'university_new': 49, 'university_dup': 0, 'major_new': 248, 'major_dup': 0}
+2026-09-11 17:45:56.927 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2018, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:45:57.044 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2018
+2026-09-11 17:45:57.224 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2018 高三学生 ID 范围 [35, 9991]，窗口数=1，线程数=8
+2026-09-11 17:45:57.412 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 949, 'total_for_year': 949, 'elapsed_seconds': 0.36}
+2026-09-11 17:45:57.417 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 949, 'total_for_year': 949, 'elapsed_seconds': 0.36}
+2026-09-11 17:45:57.417 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2018
+2026-09-11 17:45:57.599 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=949，分数线 985/211/一本 = 615/584/556
+2026-09-11 17:45:57.614 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2018 待录取学生 ID 范围 [35, 9991]，窗口数=1，线程数=8
+2026-09-11 17:45:57.715 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2018, 'admitted': 949, 'total_for_year': 949, 'band_stats': {'211': 95, '其他': 664, '一本': 142, '985': 48}, 'elapsed_seconds': 0.29}
+2026-09-11 17:45:57.721 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2018, 'admitted': 949, 'total_for_year': 949, 'band_stats': {'211': 95, '其他': 664, '一本': 142, '985': 48}, 'elapsed_seconds': 0.29}
+2026-09-11 17:45:57.721 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2018
+2026-09-11 17:45:57.892 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2018-2019 在读学生 ID 范围 [35, 9991]，窗口数=1，线程数=8
+2026-09-11 17:45:58.447 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 7137, 'total_exams_for_year': 7137, 'total_students_for_year': 949, 'elapsed_seconds': 0.72}
+2026-09-11 17:45:58.452 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 7137, 'total_exams_for_year': 7137, 'total_students_for_year': 949, 'elapsed_seconds': 0.72}
+2026-09-11 17:45:58.452 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2021
+2026-09-11 17:45:58.612 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2021 应届大四学生 ID 范围 [35, 9991]，窗口数=1，线程数=8
+2026-09-11 17:45:58.726 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 949, 'total_for_year': 949, 'no_score': 0, 'elapsed_seconds': 0.27}
+2026-09-11 17:45:58.731 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 949, 'total_for_year': 949, 'no_score': 0, 'elapsed_seconds': 0.27}
+2026-09-11 17:45:58.734 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2018, 'statistics': {'gaokao_students': 949, 'admitted_students': 949, 'exam_records': 7137, 'exam_students': 949, 'graduated_students': 949}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2018, 'exam_date': '2018-06-20', 'simulated': 949, 'total_for_year': 949, 'elapsed_seconds': 0.36}, 'admission': {'task': 'simu_admission', 'year': 2018, 'admitted': 949, 'total_for_year': 949, 'band_stats': {'211': 95, '其他': 664, '一本': 142, '985': 48}, 'elapsed_seconds': 0.29}, 'exam': {'task': 'simu_exam', 'academic_year': '2018-2019', 'recorded': 7137, 'total_exams_for_year': 7137, 'total_students_for_year': 949, 'elapsed_seconds': 0.72}, 'graduate': {'task': 'simu_graduate', 'year': 2021, 'graduate_date': '2021-07-01', 'graduated': 949, 'total_for_year': 949, 'no_score': 0, 'elapsed_seconds': 0.27}}, 'elapsed_seconds': 1.81}
+2026-09-11 17:46:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:46:37.976 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2019, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:46:38.081 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2019
+2026-09-11 17:46:38.295 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2019 高三学生 ID 范围 [2, 9971]，窗口数=1，线程数=8
+2026-09-11 17:46:38.418 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 887, 'total_for_year': 887, 'elapsed_seconds': 0.33}
+2026-09-11 17:46:38.425 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 887, 'total_for_year': 887, 'elapsed_seconds': 0.33}
+2026-09-11 17:46:38.426 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2019
+2026-09-11 17:46:38.595 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=887，分数线 985/211/一本 = 613/582/560
+2026-09-11 17:46:38.615 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2019 待录取学生 ID 范围 [2, 9971]，窗口数=1，线程数=8
+2026-09-11 17:46:38.764 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 887, 'total_for_year': 887, 'band_stats': {'一本': 137, '其他': 611, '985': 45, '211': 94}, 'elapsed_seconds': 0.33}
+2026-09-11 17:46:38.770 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2019, 'admitted': 887, 'total_for_year': 887, 'band_stats': {'一本': 137, '其他': 611, '985': 45, '211': 94}, 'elapsed_seconds': 0.33}
+2026-09-11 17:46:38.770 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2019
+2026-09-11 17:46:38.934 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2019-2020 在读学生 ID 范围 [2, 9971]，窗口数=1，线程数=8
+2026-09-11 17:46:39.178 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6673, 'total_exams_for_year': 6673, 'total_students_for_year': 887, 'elapsed_seconds': 0.4}
+2026-09-11 17:46:39.185 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6673, 'total_exams_for_year': 6673, 'total_students_for_year': 887, 'elapsed_seconds': 0.4}
+2026-09-11 17:46:39.185 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2022
+2026-09-11 17:46:39.357 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2022 应届大四学生 ID 范围 [2, 9971]，窗口数=1，线程数=8
+2026-09-11 17:46:39.499 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 887, 'total_for_year': 887, 'no_score': 0, 'elapsed_seconds': 0.31}
+2026-09-11 17:46:39.503 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 887, 'total_for_year': 887, 'no_score': 0, 'elapsed_seconds': 0.31}
+2026-09-11 17:46:39.511 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2019, 'statistics': {'gaokao_students': 887, 'admitted_students': 887, 'exam_records': 6673, 'exam_students': 887, 'graduated_students': 887}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2019, 'exam_date': '2019-06-20', 'simulated': 887, 'total_for_year': 887, 'elapsed_seconds': 0.33}, 'admission': {'task': 'simu_admission', 'year': 2019, 'admitted': 887, 'total_for_year': 887, 'band_stats': {'一本': 137, '其他': 611, '985': 45, '211': 94}, 'elapsed_seconds': 0.33}, 'exam': {'task': 'simu_exam', 'academic_year': '2019-2020', 'recorded': 6673, 'total_exams_for_year': 6673, 'total_students_for_year': 887, 'elapsed_seconds': 0.4}, 'graduate': {'task': 'simu_graduate', 'year': 2022, 'graduate_date': '2022-07-01', 'graduated': 887, 'total_for_year': 887, 'no_score': 0, 'elapsed_seconds': 0.31}}, 'elapsed_seconds': 1.53}
+2026-09-11 17:47:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:48:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:49:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:50:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:50:20.286 | INFO     | app.tasks.simu_tasks:simu_school_year:854 - [simu_school_year] 开始学年例行操作: year=2020, stage_timeout=600.0, chunk_size=50000, max_workers=8
+2026-09-11 17:50:20.389 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [ncee] 开始: task=tasks.simu_ncee, year=2020
+2026-09-11 17:50:20.574 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2020 高三学生 ID 范围 [1, 9985]，窗口数=1，线程数=8
+2026-09-11 17:50:20.678 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 879, 'total_for_year': 879, 'elapsed_seconds': 0.28}
+2026-09-11 17:50:20.684 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 879, 'total_for_year': 879, 'elapsed_seconds': 0.28}
+2026-09-11 17:50:20.685 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [admission] 开始: task=tasks.simu_admission, year=2020
+2026-09-11 17:50:20.860 | INFO     | app.tasks.simu_tasks:_admission_thresholds:299 - [simu_admission] 考生总数=879，分数线 985/211/一本 = 614/580/554
+2026-09-11 17:50:20.878 | INFO     | app.tasks.simu_tasks:simu_admission:454 - [simu_admission] year=2020 待录取学生 ID 范围 [1, 9985]，窗口数=1，线程数=8
+2026-09-11 17:50:21.000 | INFO     | app.tasks.simu_tasks:simu_admission:511 - [simu_admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 879, 'total_for_year': 879, 'band_stats': {'其他': 605, '211': 87, '985': 45, '一本': 142}, 'elapsed_seconds': 0.31}
+2026-09-11 17:50:21.006 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [admission] 完成: {'task': 'simu_admission', 'year': 2020, 'admitted': 879, 'total_for_year': 879, 'band_stats': {'其他': 605, '211': 87, '985': 45, '一本': 142}, 'elapsed_seconds': 0.31}
+2026-09-11 17:50:21.006 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [exam] 开始: task=tasks.simu_exam, year=2020
+2026-09-11 17:50:21.168 | INFO     | app.tasks.simu_tasks:simu_exam:620 - [simu_exam] 学年=2020-2021 在读学生 ID 范围 [1, 9985]，窗口数=1，线程数=8
+2026-09-11 17:50:21.410 | INFO     | app.tasks.simu_tasks:simu_exam:657 - [simu_exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6533, 'total_exams_for_year': 6533, 'total_students_for_year': 879, 'elapsed_seconds': 0.4}
+2026-09-11 17:50:21.415 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [exam] 完成: {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6533, 'total_exams_for_year': 6533, 'total_students_for_year': 879, 'elapsed_seconds': 0.4}
+2026-09-11 17:50:21.416 | INFO     | app.tasks.simu_tasks:simu_school_year:875 - [simu_school_year] 阶段 [graduate] 开始: task=tasks.simu_graduate, year=2023
+2026-09-11 17:50:21.573 | INFO     | app.tasks.simu_tasks:simu_graduate:749 - [simu_graduate] year=2023 应届大四学生 ID 范围 [1, 9985]，窗口数=1，线程数=8
+2026-09-11 17:50:21.700 | INFO     | app.tasks.simu_tasks:simu_graduate:799 - [simu_graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 879, 'total_for_year': 879, 'no_score': 0, 'elapsed_seconds': 0.28}
+2026-09-11 17:50:21.706 | INFO     | app.tasks.simu_tasks:simu_school_year:890 - [simu_school_year] 阶段 [graduate] 完成: {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 879, 'total_for_year': 879, 'no_score': 0, 'elapsed_seconds': 0.28}
+2026-09-11 17:50:21.710 | INFO     | app.tasks.simu_tasks:simu_school_year:920 - [simu_school_year] 全部阶段完成: {'year': 2020, 'statistics': {'gaokao_students': 879, 'admitted_students': 879, 'exam_records': 6533, 'exam_students': 879, 'graduated_students': 879}, 'stages': {'ncee': {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 879, 'total_for_year': 879, 'elapsed_seconds': 0.28}, 'admission': {'task': 'simu_admission', 'year': 2020, 'admitted': 879, 'total_for_year': 879, 'band_stats': {'其他': 605, '211': 87, '985': 45, '一本': 142}, 'elapsed_seconds': 0.31}, 'exam': {'task': 'simu_exam', 'academic_year': '2020-2021', 'recorded': 6533, 'total_exams_for_year': 6533, 'total_students_for_year': 879, 'elapsed_seconds': 0.4}, 'graduate': {'task': 'simu_graduate', 'year': 2023, 'graduate_date': '2023-07-01', 'graduated': 879, 'total_for_year': 879, 'no_score': 0, 'elapsed_seconds': 0.28}}, 'elapsed_seconds': 1.42}
+2026-09-11 17:51:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:52:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:53:00.031 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:54:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:55:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:56:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:57:00.034 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:58:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 17:59:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:00:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:01:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:02:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:03:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:04:00.020 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:05:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:06:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 18:07:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:47:37.022 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:48:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:49:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:50:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:51:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:52:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:53:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:54:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:55:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:56:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:57:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:58:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 19:59:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:00:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:01:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:02:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:03:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:04:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:05:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:06:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:07:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:08:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:09:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:10:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:11:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:12:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:13:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:14:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:15:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:16:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:17:00.033 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:18:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:19:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:20:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:21:00.026 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:22:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:23:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:24:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:25:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:26:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:27:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:28:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:29:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:30:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:31:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:32:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:33:00.035 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:34:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:35:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:36:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:37:00.032 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:38:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:39:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:40:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:41:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:42:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:43:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:44:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:45:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:46:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:47:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:48:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:49:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:50:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:51:00.016 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:52:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:53:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:54:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:55:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:56:00.020 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:57:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:58:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 20:59:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:00:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:01:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:02:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:03:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:04:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:05:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:06:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:07:00.030 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:08:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:09:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:10:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:11:00.036 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:12:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:13:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:14:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:15:00.024 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:16:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:17:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:18:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:19:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:20:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:21:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:22:00.030 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:23:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:24:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:25:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:26:00.023 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:27:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:28:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:29:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:30:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:31:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:32:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:33:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:34:00.021 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:35:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:36:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:37:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:38:00.020 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:39:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:40:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:41:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:42:00.029 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:43:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:44:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:45:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:46:00.021 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:47:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:48:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:49:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:50:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:51:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:51:33.538 | INFO     | app.tasks.simu_tasks:simu_ncee:217 - [simu_ncee] year=2020 高三学生 ID 范围 [None, None]，窗口数=0，线程数=8
+2026-09-11 21:51:33.568 | INFO     | app.tasks.simu_tasks:simu_ncee:258 - [simu_ncee] 完成: {'task': 'simu_ncee', 'year': 2020, 'exam_date': '2020-06-20', 'simulated': 0, 'total_for_year': 879, 'elapsed_seconds': 0.21}
+2026-09-11 21:52:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:53:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:54:00.030 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:55:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:56:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:57:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:58:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:59:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 21:59:31.899 | INFO     | app.tasks.init_tasks:init_web_db:324 - [init_web_db] 开始初始化数据库 ...
+2026-09-11 21:59:32.279 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:211 - [init_web_db] 旧数据库与用户已删除
+2026-09-11 21:59:32.454 | INFO     | app.tasks.init_tasks:_recreate_databases_and_users:243 - [init_web_db] 数据库与用户重建完成
+2026-09-11 21:59:32.616 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: students
+2026-09-11 21:59:32.674 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: universities
+2026-09-11 21:59:32.737 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: major_groups
+2026-09-11 21:59:32.804 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: gaokao_scores
+2026-09-11 21:59:32.877 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: undergraduate_scores
+2026-09-11 21:59:32.948 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: graduation_scores
+2026-09-11 21:59:33.018 | INFO     | app.tasks.init_tasks:_create_business_tables:260 - [init_web_db] 业务表已创建: student_enrollments
+2026-09-11 21:59:33.163 | INFO     | app.tasks.init_tasks:_restore_log_db_tables:277 - [init_web_db] log_db 日志表 app_logs 已重建
+2026-09-11 21:59:33.170 | INFO     | app.tasks.init_tasks:init_web_db:347 - [init_web_db] 初始化完成: tables=['students', 'universities', 'major_groups', 'gaokao_scores', 'undergraduate_scores', 'graduation_scores', 'student_enrollments']
+2026-09-11 21:59:47.158 | INFO     | app.tasks.db_tasks:generate_many_students:203 - [generate_many_students] 开始: numbers=10000, range=[2000-01-01, 2010-12-31], chunk_size=10000, max_workers=8
+2026-09-11 22:00:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:00:06.224 | DEBUG    | app.tasks.db_tasks:_generate_and_insert_chunk:158 - [generate_many_students] 分块入库完成: 10000 条
+2026-09-11 22:00:06.224 | INFO     | app.tasks.db_tasks:generate_many_students:233 - [generate_many_students] 进度: 10000/10000 (100%)
+2026-09-11 22:00:06.229 | INFO     | app.tasks.db_tasks:generate_many_students:251 - [generate_many_students] 完成: {'inserted': 10000, 'numbers': 10000, 'chunk_size': 10000, 'max_workers': 8, 'elapsed_seconds': 18.93, 'rows_per_second': 528.3}
+2026-09-11 22:00:19.966 | INFO     | app.tasks.un_tasks:get_un_groups:243 - [get_un_groups] 开始获取 10 所高校信息 ...
+2026-09-11 22:00:32.484 | INFO     | app.tasks.un_tasks:get_un_groups:251 - [get_un_groups] 模型返回并校验通过 10 条高校信息
+2026-09-11 22:00:32.608 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京大学
+2026-09-11 22:00:32.687 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 清华大学
+2026-09-11 22:00:32.751 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 复旦大学
+2026-09-11 22:00:32.819 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 浙江大学
+2026-09-11 22:00:32.892 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 南京大学
+2026-09-11 22:00:32.997 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武汉大学
+2026-09-11 22:00:33.061 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 吉林大学
+2026-09-11 22:00:33.134 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 上海建桥学院
+2026-09-11 22:00:33.199 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 武昌理工学院
+2026-09-11 22:00:33.263 | INFO     | app.tasks.un_tasks:_insert_universities:173 - [get_un_groups] 高校入库: 北京城市学院
+2026-09-11 22:00:33.315 | INFO     | app.tasks.un_tasks:get_un_groups:261 - [get_un_groups] 入库统计: {'university_new': 10, 'university_dup': 0, 'major_new': 30, 'major_dup': 0}
+2026-09-11 22:01:00.017 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:02:00.026 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:03:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:04:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:05:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:06:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:07:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:08:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:09:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:10:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:11:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:12:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:13:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:14:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:15:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:16:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:17:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:18:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:19:00.021 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:20:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:21:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:22:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:23:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:24:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:25:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:26:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:27:00.030 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:28:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:29:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:30:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:31:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:32:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:33:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:34:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:35:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:36:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:37:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:38:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:39:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:40:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:41:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:42:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:43:00.019 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:44:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:45:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:46:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:47:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:48:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:49:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:50:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:51:01.045 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:52:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:53:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:54:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:55:00.011 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:56:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:57:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:58:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 22:59:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:00:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:01:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:02:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:03:00.017 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:04:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:05:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:06:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:07:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:08:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:09:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:10:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:11:00.018 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:12:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:13:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:14:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:15:00.013 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:16:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:17:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:18:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:19:00.014 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:20:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:21:00.009 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:22:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:23:00.012 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:24:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:25:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:26:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:27:00.029 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:28:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:29:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:30:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:31:00.035 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:32:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:33:00.010 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:34:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:43:59.582 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:43:59.586 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:44:00.003 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:45:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:46:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:47:00.037 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:48:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:49:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:50:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:51:00.008 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:52:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:53:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:54:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:55:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:56:00.006 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:57:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:58:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-11 23:59:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-12 00:00:00.007 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-12 00:01:00.005 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
+2026-09-12 00:02:00.015 | INFO     | app.tasks.math_tasks:periodic_add:46 - periodic_add(1, 2) = 3
